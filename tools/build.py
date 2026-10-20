@@ -2363,6 +2363,110 @@ def oaks_course():
     return c
 
 
+def dc_course():
+    c = Course("wo_dc_course", "Destiny Course",
+               "A long one-life course across a map of bare test textures: a spinning bar and a moving one, a pit of stones, drifting posts, low and high bars, rides over pits, a belt, a floor of tiles, a long bunny hop, three levels of spinning bars, three turning discs, a ride, a gauntlet of lasers and the last room of moving posts.",
+               THEMES["storm"], water=-30.0, seconds=720.0)
+    c.doc["author"] = "Xmortel (port)"
+    # The rooms in the order of the original's corridors in plan view (0.02 m a unit): the
+    # spawn room in the north-west, south, then east a long way (a pit, drifting posts, low
+    # bars, two rides, a teleport up, a belt, tiles and a long hop), south down a tall room
+    # (three levels of spinning bars, three discs, a ride and a push), the laser room and the
+    # square room of moving posts in the south-east. The original is 260 m across; here the
+    # long hall is kept, but its nine bars are four and the push is a belt.
+    # 1. The spawn room: a spinning bar, then a bar that slides.
+    c.run_out(6)
+    c.safe(8.0, width=6.0)
+    c.checkpoint(6.0, back=1.2)
+    c.side_sweeper(length=14.0, width=6.0, speed=65.0, arms=2, side=1)
+    c.deck(5.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    c.pusher_alley(width=5.0, count=2, period=3.0, reach=3.0, step=4.5)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.turn(90.0, radius=3.0)
+    # 2. The big pit room: stones over a floor that hurts.
+    c.deck(4.0, width=5.0)
+    z0 = c.z
+    c.stones([(3.6, 0.0), (7.2, 0.5), (10.8, -0.4), (14.4, 0.4), (18.0, -0.3)], size=1.7, until=19.8)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    # 3. The drifting posts.
+    c.pusher_alley(width=5.0, count=3, period=3.2, reach=3.0, step=4.5)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    # 4. The corridor of low and high bars.
+    z0 = c.z
+    c.deck(16.0, width=5.0)
+    for i, at in enumerate((4.0, 8.0, 12.0)):
+        c.laser((at, 0.0), across=5.0, along=0, reach=2.2, period=3.6 + 0.3 * i, duty=0.4,
+                phase=0.4 * i, over=c.y, start=z0)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    # 5. Two rides over pits.
+    c.mover_crossing(length=10.0, size=4.0, period=6.5)
+    c.deck(4.0, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    c.mover_crossing(length=10.0, size=4.0, period=7.0, phase=0.5)
+    c.deck(4.0, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    # 6. Up through the teleport, and the belt that pushes.
+    c.climb(length=14.0, rise=4.0, width=5.0)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.flat_belt(length=12.0, width=4.0, speed=3.0)
+    c.deck(3.0, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    # 7. The floor of tiles, and the long bunny hop.
+    c.deck(3.0, width=5.0)
+    c.tiles(cols=3, rows=4, tile=1.8, period=3.2, down=0.28, seed=1)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.deck(3.0, width=5.0)
+    z0 = c.z
+    c.stones([(3.6, 0.0), (7.2, 0.5), (10.8, -0.4), (14.4, 0.4), (18.0, -0.3), (21.6, 0.0),
+              (25.2, 0.4)], size=1.7, until=27.0)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.turn(-90.0, radius=3.0)
+    # 8. The tall room: three levels of spinning bars.
+    for i in range(3):
+        c.deck(4.0, width=6.0)
+        c.centre_spinner(size=11.0, speed=55.0 + 5.0 * i, arms=2, phase=0.3 * i)
+        c.deck(4.0, width=6.0)
+        c.checkpoint(6.0, back=1.0)
+    # 9. Three turning discs.
+    for i in range(3):
+        c.deck(3.0, width=6.0)
+        c.turntable(radius=5.0, speed=30.0 + 5.0 * i)
+        c.deck(3.0, width=6.0)
+        c.checkpoint(6.0, back=1.0)
+    # 10. A ride, then the planks that tip over the long room.
+    c.mover_crossing(length=10.0, size=4.0, period=6.5)
+    c.deck(4.0, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    c.seesaws(count=3, amplitude=12, period=4.4)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    # 11. The room of lasers.
+    z0 = c.z
+    c.deck(24.0, width=5.0)
+    for i, at in enumerate((4.0, 8.0, 12.0, 16.0, 20.0)):
+        c.laser((at, 0.0), across=5.0, along=0, reach=2.2, period=3.6 + 0.2 * i, duty=0.4,
+                phase=0.4 * i, over=c.y, start=z0)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.turn(90.0, radius=3.0)
+    # 12. The last room: moving posts, then the end.
+    c.deck(4.0, width=6.0)
+    c.pendulums(width=5.0, count=3, period=3.2, swing=55.0)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.deck(4.0, width=5.0)
+    c.finish()
+    return c
+
+
 def lily_pond():
     c = Course("wo_lily_pond", "Lily Pond",
                "Round the pond on a winding path: spinning pads to hop across, planks that tip you in, waterfalls, and at the fork the ferry or the pads.",
@@ -2522,7 +2626,7 @@ def documents():
     courses = [first_splash(), spin_cycle(), big_balls(), punch_alley(), trapdoor_run(), log_roll(),
                the_sweeper(), uphill_belt(), hammer_gauntlet(), grand_tour(), lily_pond(), dans_course().build(),
                office_course().build(), pauls_course().build(),
-               scary_course().build(), lego_course().build(), oaks_course().build()]
+               scary_course().build(), lego_course().build(), oaks_course().build(), dc_course().build()]
     return courses + arenas()
 
 
