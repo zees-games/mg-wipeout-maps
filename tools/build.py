@@ -2565,6 +2565,98 @@ def waytobar_course():
     return c
 
 
+def labo_course():
+    c = Course("wo_labo_course", "Laboratory Course",
+               "A laboratory has had its disaster and you run out through the traps in one life: lasers down a hall, three spinning bars, rams in a corridor, a lift, a long ride, a room of floors that give way, a laser room of stones, spinning bars over pits and a last cage of lasers to the exit.",
+               THEMES["mint"], water=-30.0, seconds=600.0)
+    c.doc["author"] = "Patator (port)"
+    # The order is the original's own list of traps, followed in its level file (0.02 m a unit):
+    # the spawn hall south, the laser hall, three spinning bars with a push, the rams and lift
+    # columns, the obstacle rooms, a long ride on rails, the laser room, three spinning bars
+    # over pits and the cage of lasers at the exit. The two bonus rooms are left out.
+    c.run_out(6)
+    c.safe(8.0, width=6.0)
+    c.checkpoint(6.0, back=1.2)
+    # 1. The laser hall: four bars sweeping the hall, one behind another.
+    c.deck(18.0, width=5.0)
+    z0 = c.z - 18.0
+    for i, at in enumerate((3.5, 7.0, 10.5, 14.0)):
+        c.laser((at, 0.0), across=5.0, along=0, reach=2.2, period=3.8 + 0.3 * i, duty=0.4,
+                phase=0.3 * i, over=c.y, start=z0)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.turn(90.0, radius=3.0)
+    # 2. Three spinning bars in a row, with a push between them in the original.
+    c.deck(4.0, width=6.0)
+    c.side_sweeper(length=14.0, width=6.0, speed=75.0, arms=2, side=1)
+    c.deck(5.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    c.side_sweeper(length=14.0, width=6.0, speed=70.0, arms=2, phase=0.5, side=-1)
+    c.deck(5.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    c.turn(-90.0, radius=3.0)
+    # 3. The corridor of rams that close across it.
+    c.deck(4.0, width=5.0)
+    c.pusher_alley(width=5.0, count=4, period=3.0, reach=3.0, step=4.5)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    # 4. The lift columns over a deep pit: a ride across.
+    c.mover_crossing(length=10.0, size=4.0, period=6.5)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.turn(-90.0, radius=3.0)
+    # 5. The obstacle rooms: swinging doors, then jumper pads and a floor that gives way.
+    c.deck(4.0, width=5.0)
+    c.pendulums(width=4.6, count=2, period=3.2, radius=1.2)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.trampolines(count=2)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.tiles(cols=3, rows=4, tile=1.8, period=3.2, down=0.28, seed=1)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.turn(90.0, radius=3.0)
+    # 6. The long ride on rails, a hall's length, with a plain floor either end.
+    c.deck(4.0, width=5.0)
+    c.mover_crossing(length=14.0, size=4.0, period=8.0)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    # 7. The laser room: stones over a pit with bars sweeping them.
+    c.deck(3.0, width=5.0)
+    z0 = c.z
+    c.stones([(3.6, 0.0), (7.2, 0.5), (10.8, -0.4), (14.4, 0.4), (18.0, -0.3)], size=1.7, until=19.8)
+    for i, at in enumerate((5.4, 12.6)):
+        c.laser((at, 0.0), across=3.0, along=0, reach=2.2, period=3.8 + 0.4 * i, duty=0.4,
+                phase=0.4 * i, over=c.y, start=z0)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.turn(90.0, radius=3.0)
+    # 8. Three spinning bars over pits (the original has them on a row of poles).
+    c.deck(4.0, width=6.0)
+    c.centre_spinner(size=11.0, speed=60.0, arms=2)
+    c.deck(4.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    c.centre_spinner(size=11.0, speed=55.0, arms=2, phase=0.4)
+    c.deck(4.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    # 9. A trail of rollers, then the cage of lasers at the exit.
+    c.deck(3.0, width=5.0)
+    c.rollers(count=3, speed=60.0)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.deck(14.0, width=5.0)
+    z0 = c.z - 14.0
+    for i, at in enumerate((3.5, 7.0, 10.5)):
+        c.laser((at, 0.0), across=5.0, along=0, reach=2.2, period=3.4 + 0.3 * i, duty=0.45,
+                phase=0.35 * i, over=c.y, start=z0)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.deck(4.0, width=5.0)
+    c.finish()
+    return c
+
+
 def lily_pond():
     c = Course("wo_lily_pond", "Lily Pond",
                "Round the pond on a winding path: spinning pads to hop across, planks that tip you in, waterfalls, and at the fork the ferry or the pads.",
@@ -2724,7 +2816,8 @@ def documents():
     courses = [first_splash(), spin_cycle(), big_balls(), punch_alley(), trapdoor_run(), log_roll(),
                the_sweeper(), uphill_belt(), hammer_gauntlet(), grand_tour(), lily_pond(), dans_course().build(),
                office_course().build(), pauls_course().build(),
-               scary_course().build(), lego_course().build(), oaks_course().build(), dc_course().build(), waytobar_course().build()]
+               scary_course().build(), lego_course().build(), oaks_course().build(), dc_course().build(), waytobar_course().build(),
+               labo_course().build()]
     return courses + arenas()
 
 
