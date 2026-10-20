@@ -41,6 +41,10 @@ A level is **a course or an arena that plays differently from every other**, or 
 
 A new piece KIND is a game change (`wo_course_doc.gd` and `wo_course.gd`), and a level after that.
 
+## `cfg/`: a course that wants its own rules
+
+`cfg/<course id>.cfg` sets `wo_` cvars while that course is the one being played (mg-wipeout applies it when the course loads and puts back what it changed on the next); see `cfg/README.md`. The classic one-life obstacle courses want `wo_instant_death 1`. The builder neither reads nor writes it, and `build.py --check` ignores it.
+
 ## Publishing
 
 **This repository is a pack of its own, mounted on the server alone.** mg-wipeout's `game.yml` names it under `server_dependencies`; a server mounts it at `res://dot_cloud/<owner>/mg-wipeout-maps/<version>/` and the game adds that mount's `courses/` to its catalogue (`WoModule._add_delivered_courses`). It is never in a client's `content.sync`: a client is sent the one document being played. `.github/workflows/release.yml` runs `build.py --check` and then dot-ci's release with `pack: true` (and `server-compat: false`, because there is no code in it to check). In dot-server-deploy it is `content/wipeout_maps/` (`tmc/wipeout_maps`), and `examples/wipeout_client.tscn` is the proof that it arrives: it fails seven checks with the dependency removed.
