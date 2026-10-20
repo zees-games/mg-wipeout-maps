@@ -2467,6 +2467,104 @@ def dc_course():
     return c
 
 
+def waytobar_course():
+    c = Course("wo_waytobar_course", "Waytobar Course",
+               "Six one-life levels in a row, each its own long room: stones and low bars, a floor that gives way and a spinning bar, drifting posts and a lift, bars and a spinner over deep pits, tiles and a slow floor, and a long hall of pits to the end.",
+               THEMES["storm"], water=-30.0, seconds=600.0)
+    c.doc["author"] = "BeesCz (port)"
+    # Six levels, each a long room of its own, side by side in plan view (0.02 m a unit): the
+    # first runs east along the north, the next four are side-by-side halls run south, north,
+    # south and north (a teleport joins them in the original; here a u-turn does), and the last
+    # is the wide maze above them, run west. The ends are lengthened so the last hall passes the
+    # first four far enough off.
+    # Level 1: a floor with two stones in it, then eight bars across the hall (four here).
+    c.run_out(6)
+    c.safe(8.0, width=6.0)
+    c.checkpoint(6.0, back=1.2)
+    c.deck(3.0, width=5.0)
+    z0 = c.z
+    c.stones([(3.6, 0.0), (7.2, 0.5), (10.8, -0.4)], size=1.7, until=12.6)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    z0 = c.z
+    c.deck(16.0, width=5.0)
+    for i, at in enumerate((4.0, 8.0, 12.0)):
+        c.laser((at, 0.0), across=5.0, along=0, reach=2.2, period=3.6 + 0.3 * i, duty=0.4,
+                phase=0.4 * i, over=c.y, start=z0)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.turn(-90.0, radius=3.0)
+    # Level 2: a floor that gives way, a spinning bar.
+    c.deck(4.0, width=5.0)
+    c.tiles(cols=3, rows=4, tile=1.8, period=3.2, down=0.28, seed=1)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.centre_spinner(size=11.0, speed=60.0, arms=2)
+    c.deck(4.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    c.deck(28.0, width=5.0)
+    c.u_turn(side=1, spacing=18.0, radius=3.0)
+    # Level 3: drifting posts, then the lift over the floor that hurts.
+    c.deck(4.0, width=5.0)
+    c.pusher_alley(width=5.0, count=4, period=3.2, reach=3.0, step=4.5)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.mover_crossing(length=10.0, size=4.0, period=6.5)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.deck(21.0, width=5.0)
+    c.u_turn(side=-1, spacing=18.0, radius=3.0)
+    # Level 4: bars, then stones over deep pits with a spinning arm.
+    c.deck(4.0, width=5.0)
+    z0 = c.z
+    c.deck(16.0, width=5.0)
+    for i, at in enumerate((4.0, 8.0, 12.0)):
+        c.laser((at, 0.0), across=5.0, along=0, reach=2.2, period=3.8 + 0.3 * i, duty=0.4,
+                phase=0.3 * i, over=c.y, start=z0)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.deck(3.0, width=5.0)
+    z0 = c.z
+    c.stones([(3.6, 0.0), (7.2, 0.5), (10.8, -0.4), (14.4, 0.4)], size=1.7, until=16.2)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.centre_spinner(size=11.0, speed=55.0, arms=2, phase=0.3)
+    c.deck(4.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    c.deck(4.0, width=5.0)
+    c.u_turn(side=1, spacing=18.0, radius=3.0)
+    # Level 5: plates that break, then a slow floor.
+    c.deck(3.0, width=5.0)
+    c.tiles(cols=3, rows=4, tile=1.8, period=3.2, down=0.28, seed=1)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.deck(3.0, width=5.0)
+    z0 = c.z
+    c.stones([(3.6, 0.0), (7.2, 0.5), (10.8, -0.4), (14.4, 0.4), (18.0, -0.3)], size=1.7, until=19.8)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.deck(40.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.turn(90.0, radius=3.0)
+    # Level 6: the wide hall west, a long pit of stones, the belt that pushes, a second pit.
+    c.deck(4.0, width=6.0)
+    z0 = c.z
+    c.stones([(3.6, 0.0), (7.2, 0.5), (10.8, -0.4), (14.4, 0.4), (18.0, -0.3)], size=1.7, until=19.8)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.flat_belt(length=12.0, width=4.0, speed=3.0)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.deck(3.0, width=5.0)
+    z0 = c.z
+    c.stones([(3.6, 0.0), (7.2, 0.5), (10.8, -0.4), (14.4, 0.4)], size=1.7, until=16.2)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.deck(4.0, width=5.0)
+    c.finish()
+    return c
+
+
 def lily_pond():
     c = Course("wo_lily_pond", "Lily Pond",
                "Round the pond on a winding path: spinning pads to hop across, planks that tip you in, waterfalls, and at the fork the ferry or the pads.",
@@ -2626,7 +2724,7 @@ def documents():
     courses = [first_splash(), spin_cycle(), big_balls(), punch_alley(), trapdoor_run(), log_roll(),
                the_sweeper(), uphill_belt(), hammer_gauntlet(), grand_tour(), lily_pond(), dans_course().build(),
                office_course().build(), pauls_course().build(),
-               scary_course().build(), lego_course().build(), oaks_course().build(), dc_course().build()]
+               scary_course().build(), lego_course().build(), oaks_course().build(), dc_course().build(), waytobar_course().build()]
     return courses + arenas()
 
 
