@@ -97,6 +97,7 @@ Every piece has a `kind`, and may have `yaw` and a `role` (`deck`, `pillar`, `ca
 | `conveyor` | `at`, `size`, `speed`, `pitch` | a belt moving whoever is on it along its −Z at `speed` m/s (negative runs back toward the start); `pitch` lays it on a slope |
 | `tiles` | `at`, `cols`, `rows`, `tile`, `gap`, `thickness`, `period`, `down`, `seed` | a grid; each tile drops out for `down` of every `period`, each at its own point in the cycle |
 | `bouncer` | `at`, `size`, `power` | throws whoever lands on it up at `power` m/s |
+| `teleport` | `at`, `size`, `to`, `heading` | a still pad: whoever stands on it is put at `to` (their feet) facing `heading` degrees, and a stand-in carries on from the route point nearest there. The builder's `teleport(dx, dz, dy, angle)` starts the next section at the destination. Needs mg-wipeout from 2026-10-20 on: an older game refuses the document (a piece kind it does not know) and plays the rest |
 
 **Hazards:** not solid; whatever they touch is thrown
 

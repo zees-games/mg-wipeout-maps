@@ -822,6 +822,36 @@ class Course:
         self.y += rise
         self.point(self.z + 0.6)
 
+    def teleport(self, dx, dz, dy=0.0, angle=0.0, width=3.0, length=3.0, tint=None):
+        """A pad that sends a runner to the start of the next section: `dx`, `dz` metres from the
+        cursor in this frame (anywhere, even back beside the course), `dy` higher, the way
+        ahead turned `angle` degrees. The next section starts there as if it were the start of
+        a new frame, so it needs 3 m of deck first (the runner lands 1.5 m in).
+
+        The pad is solid, a still box of the `safe` role like a bouncer. The route has a point
+        on the pad and one where the runner lands; a stand-in sent across carries on from the
+        nearest point to where it stands (mg-wipeout does that, so the pad's own point need not
+        be reached). Anywhere the layout puts the destination, keep it clear of the route by
+        the same seven metres as any two legs: `_check_shape` measures along the route, and the
+        sent runner skips the length between."""
+        if self.branch:
+            raise SystemExit("%s: a teleport inside a fork's branch" % self.doc["id"])
+        pad = self.add(kind="teleport", at=v(self.x, self.y - 0.3, self.z - length / 2),
+                       size=v(width, 0.6, length), role="safe", to=v(0, 0, 0))
+        self.point(self.z - length * 0.6, reach=1.0)
+        old = self.f
+        self.z -= length
+        self._pivot(self.x + dx, self.z + dz, angle)
+        self.y += dy
+        landing = self._world(self.f, 0.0, -1.5)
+        lx, lz = self._local(old, landing[0], landing[1])
+        piece = self.pieces[pad]
+        piece["to"] = v(lx, self.y + 0.2, lz)
+        piece["_nf"] = self.f
+        if tint:
+            piece["tint"] = tint
+        self.point(-1.5, reach=1.0)
+
     def fork(self, safe, risky, spread=9.0, width=6.0, depth=7.0):
         """The way splits in two and joins again: `safe(course)` builds the left branch and
         `risky(course)` the right, each from the far edge of a wide deck, on its own lane
@@ -1088,6 +1118,9 @@ class Course:
     def build(self):
         for piece in self.pieces:
             piece["_h"] = self.frames[piece["_f"]][2]
+            if "_nf" in piece:
+                # Where the sent runner faces: the heading of the frame they land in.
+                piece["heading"] = r(self.frames[piece.pop("_nf")][2])
             self._to_world(piece)
         for point in self.route:
             self._to_world(point, turn_yaw=False)
@@ -1712,8 +1745,9 @@ def dans_course():
     # 5. The tower: the original's ladders up its shaft are three bounce pads, the nearest a plain
     #    pad can be to a ladder; the beam out of it is the bridge, and the drop off its end the
     #    hole the original's tunnel floor opens into (a pressure tile that breaks). Left out: the
-    #    stub of tunnel past it and the trap room a teleport leads to from there; a loop back
-    #    to the start of the same hall is not a section a course can have (no teleport piece).
+    #    stub of tunnel past it and the trap room a teleport leads to from there, which sends
+    #    a runner back to the start of the same hall: a trap, not a way on, so a race has no
+    #    use for it (the teleport piece is used at the end, for the winner's pad).
     c.deck(3)
     c.bouncer_up(rise=3.5)
     c.deck(2)
@@ -1809,6 +1843,9 @@ def dans_course():
     c.checkpoint(3.0, back=1.0)
     c.pusher_alley(width=3.0, count=2, period=3.0, reach=2.0)
     c.deck(3.0, width=3.0)
+    # 14. The winner's teleport: the original's last pad sends the winner to a chamber well away
+    #     from the pit (30 m beside and 6 m down in the plan view), and that is the finish.
+    c.teleport(dx=30.0, dz=0.0, dy=-6.0, width=3.0)
     c.finish()
     return c
 
