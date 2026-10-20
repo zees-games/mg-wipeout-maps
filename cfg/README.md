@@ -8,4 +8,4 @@ A course built for one life (a fall is the end of the round for you, no checkpoi
 wo_instant_death 1
 ```
 
-An operator's own change to a cvar mid-round outranks the file when it is put back. There is no file here yet: the current courses all play with checkpoints. A course converted from the classic one-life obstacle-course maps would get its own.
+An operator's own change to a cvar mid-round outranks the file when it is put back. `wo_dans_course.cfg` is the one file here: the other courses all play with checkpoints. A course converted from a classic one-life obstacle-course map gets its own.

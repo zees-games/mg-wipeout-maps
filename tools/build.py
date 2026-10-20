@@ -407,6 +407,45 @@ class Course:
         self.z = z + spacing - last
         self.point(self.z - 1.2)
 
+    def stones(self, spots, size=1.3, sink=0.3, until=None):
+        """Small square stones over the water, hopped one to the next: `spots` are (metres on
+        from the cursor, metres across) for each stone's middle.
+
+        Their tops are `sink` below the deck before, so the first hop is a small step down and
+        the last a small step up. Measured from a ported course's rooms (Dan's Course), where the
+        stones are a metre and a quarter and scattered, not in a line: every hop is under the
+        balls' 3.6 m centre to centre, which is the one a stand-in is known to clear."""
+        self.lead_in()
+        self.point(self.z + 0.6, jump=True, reach=0.55)
+        z0 = self.z
+        for dz, dx in spots:
+            top = self.y - sink
+            self.add(kind="box", at=v(self.x + dx, top - 0.3, z0 - dz), size=v(size, 0.6, size), role="deck")
+            self._route({"at": v(self.x + dx, top, z0 - dz), "jump": True, "reach": 0.7})
+        self.z = z0 - (until if until is not None else spots[-1][0] + size / 2 + 0.8)
+        self.point(self.z - 0.4)
+
+    def laser(self, at, across, along, reach, period, duty=0.4, phase=0.0, height=0.3, rest=None, over=None,
+              start=None):
+        """A low bar that sweeps through the stones: a pusher whose ram is a thin bar a hand's
+        breadth over their tops, so it is jumped, and whose home is clear of every stone.
+
+        `at` is (metres on from the cursor, metres across) of the bar's middle at rest, `across`
+        the bar's length across the way (the sweep goes along the course, 0 yaw) or, with
+        `along`, its length when the sweep goes across it (90 / -90 yaw on `rest` = +1 or -1: the
+        side it rests on). `over` is the height of what it sweeps over, default the cursor's;
+        `start` the z `at` counts from, default the cursor (after `stones`, the cursor is past them)."""
+        top = self.y if over is None else over
+        z0 = self.z if start is None else start
+        if rest is None:
+            size = v(across, height, 0.25)
+            piece = dict(yaw=0.0)
+        else:
+            size = v(along, height, 0.25)
+            piece = dict(yaw=90.0 if rest > 0 else -90.0)
+        self.add(kind="pusher", at=v(self.x + at[1], top + 0.05 + height / 2, z0 - at[0]), size=size,
+                 reach=reach, period=period, duty=duty, phase=phase, **piece)
+
     def lily_pads(self, count=4, radius=1.8, speed=45.0, spacing=3.6, swing=0.4, first=3.2, last=2.4):
         """Small turning discs over the water, side to side, to hop across centre to centre.
 
@@ -1097,6 +1136,8 @@ THEMES = {
              "sun": [1.0, 0.78, 0.60]},
     "storm": {"sky": [0.36, 0.42, 0.50], "horizon": [0.64, 0.68, 0.72], "water": [0.14, 0.26, 0.32]},
     "mint": {"sky": [0.50, 0.78, 0.80], "horizon": [0.86, 0.95, 0.90], "water": [0.10, 0.50, 0.46]},
+    "space": {"sky": [0.05, 0.06, 0.14], "horizon": [0.20, 0.16, 0.34], "water": [0.04, 0.05, 0.12],
+              "sun": [0.70, 0.74, 1.0]},
     "peach": {"sky": [0.56, 0.62, 0.86], "horizon": [0.98, 0.84, 0.72], "water": [0.16, 0.38, 0.60],
               "sun": [1.0, 0.90, 0.78]},
 }
@@ -1622,6 +1663,84 @@ def grand_tour():
     return c.build()
 
 
+# --- Ported courses -------------------------------------------------------------
+#
+# Each of these follows one community obstacle course room by room: the room sequence, the
+# obstacles and the measures are read from the original's geometry (1 source unit = 0.02 m,
+# which makes a source runner's pace a wipeout runner's), and the courses use their own art,
+# so only the layout is taken. Credit and links are in the README. The original's doors, lifts
+# and teleports become what wipeout has: a hop, a bouncer, a drop, a ride, a ram.
+
+def dans_course():
+    c = Course("wo_dans_course", "Dan's Course",
+               "A short, hard, unforgiving course in outer space after the original by Dan: stones over the dark, bars to hop, a tower to bounce up, a bridge, laser halls, a long fall to a field of pillars and the rides across it.",
+               THEMES["space"], water=-14.0, seconds=480.0)
+    c.doc["author"] = "Dan (port)"
+    # 1. The start room and the narrow corridor to the first door.
+    c.run_out(8)
+    c.safe(7.6, width=2.6)
+    # 2. Four stones over the pit, a low laser sweeping across all of them (room 3 of 9).
+    c.deck(1.0, width=5.1)
+    z0 = c.z
+    c.stones([(3.0, 0.0), (6.6, 0.0), (10.2, 0.0), (13.8, 0.0)], size=1.5, until=15.4)
+    c.laser((8.0, 2.96), across=0, along=11.2, reach=3.9, period=9.0, duty=0.35, rest=1, over=c.y - 0.3,
+            start=z0)
+    c.deck(3.2, width=5.1)
+    c.checkpoint(5.1, back=1.2)
+    # 3. Seven stones scattered down a long dark room, three bars sweeping along it.
+    c.deck(3.7, width=2.0)
+    c.deck(3.2, width=7.68)
+    z0 = c.z
+    c.stones([(3.6, 0.0), (7.2, -0.7), (10.8, 0.8), (14.4, 1.0), (18.0, 0.3),
+              (21.6, -0.9), (25.2, 0.2)], size=1.5, until=27.0)
+    for home, reach, period, phase in ((1.6, 6.0, 11.0, 0.0), (12.0, 7.0, 12.0, 0.45), (21.0, 5.0, 11.0, 0.2)):
+        c.laser((home, 0.0), across=7.4, along=0, reach=reach, period=period, duty=0.4, phase=phase,
+                over=c.y - 0.3, start=z0)
+    c.deck(3.2, width=7.68)
+    c.checkpoint(7.68, back=1.2)
+    # 4. The tower: three bounce pads up its shaft, then the bridge beam and a drop off its end.
+    c.deck(3)
+    c.bouncer_up(rise=3.5)
+    c.deck(2)
+    c.bouncer_up(rise=3.5)
+    c.deck(2)
+    c.bouncer_up(rise=3.5)
+    c.deck(4)
+    c.beam(length=14.0, width=1.6)
+    c.gap(5.0, rise=-4.0)
+    c.deck(4, width=6.0)
+    c.checkpoint(6.0, back=1.2)
+    # 5. The hall of bars: a wing of rams, a cross of pendulums, a wing back, and the stairs.
+    c.pusher_alley(width=4.0, count=3, period=3.0, reach=3.0)
+    c.deck(3)
+    c.pendulums(width=4.0, count=3, period=3.2)
+    c.deck(3)
+    c.pusher_alley(width=4.0, count=3, period=3.4, reach=3.0)
+    c.deck(3)
+    c.climb(length=8.0, rise=2.0, width=4.0)
+    c.checkpoint(6.0, back=1.2)
+    # 6. Two rooms of rollers and a long fall to the field below.
+    c.rollers(count=3)
+    c.safe(4)
+    c.rollers(count=3, speed=80)
+    c.deck(3)
+    c.gap(6.0, rise=-8.0)
+    c.safe(6)
+    c.checkpoint(6.0, back=1.2)
+    # 7. The field of pillars, the trains across it and the doors at its end.
+    c.balls(count=4)
+    c.safe(5)
+    c.mover_crossing(length=10, period=6.5)
+    c.deck(4)
+    c.mover_crossing(length=10, period=6.0, phase=0.3)
+    c.safe(6)
+    c.checkpoint(6.0, back=1.2)
+    c.pusher_alley(width=3.0, count=3, period=2.8, reach=2.0)
+    c.deck(4)
+    c.finish()
+    return c
+
+
 def lily_pond():
     c = Course("wo_lily_pond", "Lily Pond",
                "Round the pond on a winding path: spinning pads to hop across, planks that tip you in, waterfalls, and at the fork the ferry or the pads.",
@@ -1779,7 +1898,7 @@ def arenas():
 
 def documents():
     courses = [first_splash(), spin_cycle(), big_balls(), punch_alley(), trapdoor_run(), log_roll(),
-               the_sweeper(), uphill_belt(), hammer_gauntlet(), grand_tour(), lily_pond()]
+               the_sweeper(), uphill_belt(), hammer_gauntlet(), grand_tour(), lily_pond(), dans_course().build()]
     return courses + arenas()
 
 

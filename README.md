@@ -20,6 +20,7 @@ Every course and arena is a **JSON document**, not a scene. A server reads the d
 | `wo_hammer_gauntlet` (Hammer Gauntlet) | Narrow beams under swinging hammers, wrecking balls and rams, up to a high beam and down again, with a crowd |
 | `wo_grand_tour` (Grand Tour) | The long one and the season's big night: round the bay and up the hill, a bit of everything, two forks to gamble on |
 | `wo_lily_pond` (Lily Pond) | A winding path round the pond: spinning pads, tipping planks, waterfalls, and a fork between the ferry and the pads |
+| `wo_dans_course` (Dan's Course) | One life, in outer space: stones over the dark with low bars sweeping them, a tower of bounce pads, a bridge beam, a hall of rams, rollers, a long fall and a field of pillars and rides. Ported from Dan's course; see Credits |
 
 | Arena | What it is |
 | --- | --- |
@@ -151,3 +152,7 @@ Optional, and only ever drawn: a course with none plays the same. Each entry is 
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+## Credits
+
+**Dan's Course** is the layout of "Dan's Course" by Dan (skybox by shini), https://gamebanana.com/mods/127888, released under CC BY-NC-ND 4.0. Only the sequence of rooms and their obstacles was taken; every piece is built here from our own art and the rooms are approximated, not copied. Teleports are left out. If you made it and want it removed, say so and the course goes.
