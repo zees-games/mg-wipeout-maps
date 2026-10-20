@@ -407,7 +407,7 @@ class Course:
         self.z = z + spacing - last
         self.point(self.z - 1.2)
 
-    def stones(self, spots, size=1.3, sink=0.3, until=None):
+    def stones(self, spots, size=1.3, sink=0.3, until=None, wait=False):
         """Small square stones over the water, hopped one to the next: `spots` are (metres on
         from the cursor, metres across) for each stone's middle.
 
@@ -421,7 +421,13 @@ class Course:
         for dz, dx in spots:
             top = self.y - sink
             self.add(kind="box", at=v(self.x + dx, top - 0.3, z0 - dz), size=v(size, 0.6, size), role="deck")
-            self._route({"at": v(self.x + dx, top, z0 - dz), "jump": True, "reach": 0.7})
+            point = {"at": v(self.x + dx, top, z0 - dz), "jump": True, "reach": 0.7}
+            if wait:
+                # Stand on the stone until the way to the next is clear of every bar: a bar
+                # sweeping along a room crosses a stone for a second, and a stand-in that
+                # hopped as it came fell on it nineteen times in Dan's third room.
+                point["wait"] = True
+            self._route(point)
         self.z = z0 - (until if until is not None else spots[-1][0] + size / 2 + 0.8)
         self.point(self.z - 0.4)
 
@@ -1726,7 +1732,7 @@ def dans_course():
     z0 = c.z
     c.stones([(3.6, 0.0), (7.2, -0.7), (10.8, 0.8), (14.4, 1.0), (18.0, 0.3),
               (21.6, -0.9), (25.2, 0.2)], size=1.5, until=27.0)
-    for home, reach, period, phase in ((1.6, 6.0, 11.0, 0.55), (12.0, 7.0, 12.0, 0.45), (21.0, 5.0, 11.0, 0.2)):
+    for home, reach, period, phase in ((4.8, 1.8, 11.0, 0.55), (12.0, 7.0, 12.0, 0.45), (21.0, 5.0, 11.0, 0.2)):
         c.laser((home, 0.0), across=7.4, along=0, reach=reach, period=period, duty=0.4, phase=phase,
                 over=c.y - 0.3, start=z0)
     c.deck(3.2, width=7.68)
