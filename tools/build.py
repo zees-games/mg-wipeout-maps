@@ -2052,6 +2052,124 @@ def pauls_course():
     return c
 
 
+def scary_course():
+    c = Course("wo_scary_course", "Scary Course",
+               "A haunted house to run in one life: a pit of stones, a collapsing floor, a mover over a hall, a beam over the killer pit, low bars down a corridor, spinning arms, a long room of stones, a turning disc, a long climb, crushing walls, a tile room and the seesaws to the door.",
+               THEMES["storm"], water=-30.0, seconds=480.0)
+    c.doc["author"] = "mg scary course v2 (port)"
+    # No list of rooms came with the original, so the order is the corridors' own, followed in
+    # its level file in plan view (0.02 m a unit): the spawn hall, south to a pit and a small
+    # collapsing room, east to a big hall and a pit with a bridge, south down a corridor of low
+    # bars, west along a hall of spinning arms, north up a long room, west to a turning disc,
+    # north up a tall room to the upper floors, east past crushing walls and a room of tiles,
+    # then the upper hall back over the spawn hall (kept twelve metres above it) and north to the
+    # last big room and the door.
+    # 1. The spawn hall, then the passage south.
+    c.run_out(6)
+    c.safe(8.0, width=6.0)
+    c.checkpoint(6.0, back=1.2)
+    c.turn(90.0, radius=3.0)
+    # 2. The pit room: platforms over a floor that hurts.
+    c.deck(6.0, width=3.0)
+    c.deck(1.0, width=5.0)
+    z0 = c.z
+    c.stones([(3.4, 0.0), (6.8, 0.8), (10.2, -0.8), (13.6, 0.4)], size=1.6, until=15.4)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    # 3. The small room whose floor gives way.
+    c.deck(2.0, width=4.0)
+    c.tiles(cols=3, rows=3, tile=1.8, period=3.4, down=0.28, seed=1)
+    c.deck(3.0, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    c.turn(90.0, radius=3.0)
+    # 4. The big hall east, a ride across it, and the bridge over the killer pit.
+    c.deck(4.0, width=4.0)
+    c.mover_crossing(length=9.0, size=4.0, period=6.5)
+    c.deck(4.0, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    c.beam(length=10.0, width=1.6)
+    c.deck(4.0, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    c.turn(-90.0, radius=3.0)
+    # 5. The corridor of low bars going south. The original has eight, a metre and a third
+    #    apart; here four, a fair distance apart.
+    z0 = c.z
+    c.deck(18.0, width=5.0)
+    for i, at in enumerate((3.5, 7.0, 10.5, 14.0)):
+        c.laser((at, 0.0), across=5.0, along=0, reach=2.2, period=3.8 + 0.3 * i, duty=0.4,
+                phase=0.3 * i, over=c.y, start=z0)
+    c.checkpoint(5.0, back=1.0)
+    c.turn(-90.0, radius=3.0)
+    # 6. The hall of spinning arms going west: four on poles in the original, two sweepers here.
+    c.deck(4.0, width=6.0)
+    c.side_sweeper(length=14.0, width=6.0, speed=70.0, arms=2, side=1)
+    c.deck(5.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    c.side_sweeper(length=14.0, width=6.0, speed=65.0, arms=2, phase=0.5, side=-1)
+    c.deck(5.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    c.turn(-90.0, radius=3.0)
+    # 7. The long room going north: stones over a floor that hurts.
+    c.deck(3.0, width=5.0)
+    z0 = c.z
+    c.stones([(3.6, 0.0), (7.2, 0.5), (10.8, -0.4), (14.4, 0.4), (18.0, -0.3), (21.6, 0.0)], size=1.7,
+             until=23.4)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.turn(90.0, radius=3.0)
+    # 8. The turning disc, in a hall going west.
+    c.deck(4.0, width=6.0)
+    c.turntable(radius=5.0, speed=30.0)
+    c.deck(4.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    c.turn(-90.0, radius=3.0)
+    # 9. The tall room: a long climb, thirteen metres, up to the upper floors.
+    c.deck(3.0, width=5.0)
+    c.climb(length=17.0, rise=4.4, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.climb(length=17.0, rise=4.4, width=5.0)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.climb(length=17.0, rise=4.4, width=5.0)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.turn(-90.0, radius=3.0)
+    # 10. The small rooms of the upper floor: three stones over three hurting floors.
+    c.deck(3.0, width=4.0)
+    z0 = c.z
+    c.stones([(3.4, 0.0), (6.8, 0.6), (10.2, -0.5)], size=1.6, until=12.0)
+    c.deck(3.0, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    # 11. The hall of crushing walls: four walls moving across it in the original.
+    c.pusher_alley(width=5.0, count=4, period=3.0, reach=3.0, step=4.5)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.deck(6.0, width=5.0)
+    c.turn(-90.0, radius=3.0)
+    # 12. The room of tiles.
+    c.deck(3.0, width=5.0)
+    c.tiles(cols=3, rows=4, tile=1.8, period=3.2, down=0.28, seed=1)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.turn(90.0, radius=3.0)
+    # 13. The upper hall going east, over the spawn hall: stones over a floor that hurts.
+    c.deck(4.0, width=5.0)
+    z0 = c.z
+    c.stones([(3.6, 0.0), (7.2, 0.8), (10.8, -0.8), (14.4, 0.6), (18.0, -0.5), (21.6, 0.0)], size=1.6,
+             until=23.4)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.turn(90.0, radius=3.0)
+    # 14. The last big room going north: planks that tip over a floor that hurts, then the door.
+    c.deck(4.0, width=5.0)
+    c.seesaws(count=3, amplitude=12, period=4.4)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.deck(4.0, width=5.0)
+    c.finish()
+    return c
+
+
 def lily_pond():
     c = Course("wo_lily_pond", "Lily Pond",
                "Round the pond on a winding path: spinning pads to hop across, planks that tip you in, waterfalls, and at the fork the ferry or the pads.",
@@ -2210,7 +2328,8 @@ def arenas():
 def documents():
     courses = [first_splash(), spin_cycle(), big_balls(), punch_alley(), trapdoor_run(), log_roll(),
                the_sweeper(), uphill_belt(), hammer_gauntlet(), grand_tour(), lily_pond(), dans_course().build(),
-               office_course().build(), pauls_course().build()]
+               office_course().build(), pauls_course().build(),
+               scary_course().build()]
     return courses + arenas()
 
 
