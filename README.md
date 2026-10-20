@@ -20,7 +20,7 @@ Every course and arena is a **JSON document**, not a scene. A server reads the d
 | `wo_hammer_gauntlet` (Hammer Gauntlet) | Narrow beams under swinging hammers, wrecking balls and rams, up to a high beam and down again, with a crowd |
 | `wo_grand_tour` (Grand Tour) | The long one and the season's big night: round the bay and up the hill, a bit of everything, two forks to gamble on |
 | `wo_lily_pond` (Lily Pond) | A winding path round the pond: spinning pads, tipping planks, waterfalls, and a fork between the ferry and the pads |
-| `wo_dans_course` (Dan's Course) | One life, in outer space: stones over the dark with low bars sweeping them, a tower of bounce pads, a bridge beam, a hall of rams, rollers, a long fall and a field of pillars and rides. Ported from Dan's course; see Credits |
+| `wo_dans_course` (Dan's Course) | One life, in outer space: stones over the dark with low bars sweeping them, a tower of bounce pads, a bridge beam, a hall with an east wing, a cross and a west wing of low bars, a winding maze path, a long bar sweeping a room, a shaft drop and a pit of cubes and trains. Ported from Dan's course; see Credits |
 
 | Arena | What it is |
 | --- | --- |
@@ -155,4 +155,4 @@ MIT. See [LICENSE](LICENSE).
 
 ## Credits
 
-**Dan's Course** is the layout of "Dan's Course" by Dan (skybox by shini), https://gamebanana.com/mods/127888, released under CC BY-NC-ND 4.0. Only the sequence of rooms and their obstacles was taken; every piece is built here from our own art and the rooms are approximated, not copied. Teleports are left out. If you made it and want it removed, say so and the course goes.
+**Dan's Course** is the layout of "Dan's Course" by Dan (skybox by shini), https://gamebanana.com/mods/127888, released under CC BY-NC-ND 4.0. Only the sequence of rooms and their obstacles was taken; every piece is built here from our own art and the rooms are approximated, not copied. Changed on purpose: its two teleports (a decoy trap loop and the winner's) are left out or become the finish, the anti-gravity wind of its maze is left out, doors that open on a button or a shot are timed rams, ladders are bounce pads, trains are movers, and the exact way across the lower pit is approximated. Teleports are left out. If you made it and want it removed, say so and the course goes.

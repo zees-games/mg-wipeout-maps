@@ -1674,7 +1674,7 @@ def grand_tour():
 def dans_course():
     c = Course("wo_dans_course", "Dan's Course",
                "A short, hard, unforgiving course in outer space after the original by Dan: stones over the dark, bars to hop, a tower to bounce up, a bridge, laser halls, a long fall to a field of pillars and the rides across it.",
-               THEMES["space"], water=-14.0, seconds=480.0)
+               THEMES["space"], water=-22.0, seconds=480.0)
     c.doc["author"] = "Dan (port)"
     # 1. The start room and the narrow corridor to the first door.
     c.run_out(8)
@@ -1693,12 +1693,27 @@ def dans_course():
     z0 = c.z
     c.stones([(3.6, 0.0), (7.2, -0.7), (10.8, 0.8), (14.4, 1.0), (18.0, 0.3),
               (21.6, -0.9), (25.2, 0.2)], size=1.5, until=27.0)
-    for home, reach, period, phase in ((1.6, 6.0, 11.0, 0.0), (12.0, 7.0, 12.0, 0.45), (21.0, 5.0, 11.0, 0.2)):
+    for home, reach, period, phase in ((1.6, 6.0, 11.0, 0.55), (12.0, 7.0, 12.0, 0.45), (21.0, 5.0, 11.0, 0.2)):
         c.laser((home, 0.0), across=7.4, along=0, reach=reach, period=period, duty=0.4, phase=phase,
                 over=c.y - 0.3, start=z0)
     c.deck(3.2, width=7.68)
     c.checkpoint(7.68, back=1.2)
-    # 4. The tower: three bounce pads up its shaft, then the bridge beam and a drop off its end.
+    # The rest follows the original's rooms in their order, read from its level file (0.02 m a unit),
+    # in plan view: west past the two rooms above, then the tower, a hall that is the one big room
+    # (an east wing, a cross, a west wing, stairs down), south down a long corridor, a dark maze,
+    # a room with one long bar, a shaft, and the pit of cubes and trains that ends at the winner's
+    # chamber. Every turn in it is a left turn but the hall's first.
+    # 4. The exit door (a ram that strikes across the corridor) and the corridor to the tower.
+    #    Changed: the original's door opens on a timer for a button; a ram on a period is the same wait.
+    c.deck(3.0, width=2.6)
+    c.checkpoint(2.6, back=1.0)
+    c.pusher_alley(width=2.6, count=1, period=3.0, reach=2.4)
+    c.deck(5.8, width=2.6)
+    # 5. The tower: the original's ladders up its shaft are three bounce pads, the nearest a plain
+    #    pad can be to a ladder; the beam out of it is the bridge, and the drop off its end the
+    #    hole the original's tunnel floor opens into (a pressure tile that breaks). Left out: the
+    #    stub of tunnel past it and the trap room a teleport leads to from there; a loop back
+    #    to the start of the same hall is not a section a course can have (no teleport piece).
     c.deck(3)
     c.bouncer_up(rise=3.5)
     c.deck(2)
@@ -1708,35 +1723,92 @@ def dans_course():
     c.deck(4)
     c.beam(length=14.0, width=1.6)
     c.gap(5.0, rise=-4.0)
-    c.deck(4, width=6.0)
-    c.checkpoint(6.0, back=1.2)
-    # 5. The hall of bars: a wing of rams, a cross of pendulums, a wing back, and the stairs.
-    c.pusher_alley(width=4.0, count=3, period=3.0, reach=3.0)
-    c.deck(3)
-    c.pendulums(width=4.0, count=3, period=3.2)
-    c.deck(3)
-    c.pusher_alley(width=4.0, count=3, period=3.4, reach=3.0)
-    c.deck(3)
-    c.climb(length=8.0, rise=2.0, width=4.0)
-    c.checkpoint(6.0, back=1.2)
-    # 6. Two rooms of rollers and a long fall to the field below.
-    c.rollers(count=3)
-    c.safe(4)
-    c.rollers(count=3, speed=80)
-    c.deck(3)
-    c.gap(6.0, rise=-8.0)
-    c.safe(6)
-    c.checkpoint(6.0, back=1.2)
-    # 7. The field of pillars, the trains across it and the doors at its end.
-    c.balls(count=4)
-    c.safe(5)
-    c.mover_crossing(length=10, period=6.5)
-    c.deck(4)
-    c.mover_crossing(length=10, period=6.0, phase=0.3)
-    c.safe(6)
-    c.checkpoint(6.0, back=1.2)
-    c.pusher_alley(width=3.0, count=3, period=2.8, reach=2.0)
-    c.deck(4)
+    c.deck(4, width=4.0)
+    c.checkpoint(4.0, back=1.2)
+    # 6. The hall's east wing: two low bars (hopped), the first three metres in and the second at
+    #    seven and a half, then the landing, where the way turns right (north) to the cross.
+    z0 = c.z
+    c.deck(12.0, width=5.0)
+    c.laser((3.0, 0.0), across=5.0, along=0, reach=2.4, period=4.0, duty=0.4, over=c.y, start=z0)
+    c.laser((7.5, 0.0), across=5.0, along=0, reach=2.4, period=4.4, duty=0.4, phase=0.5, over=c.y, start=z0)
+    c.checkpoint(5.0, back=1.0)
+    c.turn(-90.0, radius=3.0)
+    # 7. The cross, a corridor across the hall's middle with two low bars at 4.4 m and 7 m and two
+    #    beams to cross between them; then a turn left to the west wing.
+    z0 = c.z
+    c.deck(12.0, width=4.0)
+    c.laser((4.4, 0.0), across=4.0, along=0, reach=2.2, period=4.0, duty=0.4, over=c.y, start=z0)
+    c.laser((7.0, 0.0), across=4.0, along=0, reach=2.2, period=4.2, duty=0.4, phase=0.5, over=c.y, start=z0)
+    c.beam(length=6.0, width=1.6)
+    c.deck(3.0, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    c.u_turn(side=1, spacing=14.0, radius=3.0)
+    # 8. The west wing: four low bars to hop, then the gate (a ram: the original's gate is shut
+    #    except for a window after a button, which is a ram on a long period), then stairs down.
+    z0 = c.z
+    c.deck(18.0, width=4.0)
+    for i, at in enumerate((3.0, 6.5, 10.0, 13.5)):
+        c.laser((at, 0.0), across=4.0, along=0, reach=2.2, period=3.8 + 0.3 * i, duty=0.4,
+                phase=0.3 * i, over=c.y, start=z0)
+    c.checkpoint(4.0, back=1.0)
+    c.pusher_alley(width=4.0, count=1, period=5.0, reach=3.0)
+    c.deck(2.0, width=4.0)
+    c.climb(length=7.04, rise=-1.76, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    # 9. The south room: the way out is seven metres to the side of the way in, so a ramp-free
+    #    shift across (a kink and back) and then the exit corridor.
+    c.deck(5.0, width=4.0)
+    c.kink(-90.0, width=4.0)
+    c.deck(7.0, width=3.0)
+    c.kink(90.0, width=3.0)
+    c.deck(4.0, width=3.0)
+    c.checkpoint(3.0, back=1.0)
+    c.deck(8.0, width=2.6)
+    # 10. The dark maze: in the original a hurt field of anti-gravity wind, where the way is a
+    #     twisting path a few steps wide. Left out: the wind (a deck cannot lift or push a
+    #     runner). The path is a snake, 2 m wide, that keeps its turns.
+    for k in range(4):
+        c.deck(4.0, width=2.0)
+        c.kink(90.0, width=2.0)
+        c.deck(5.0, width=2.0)
+        c.kink(-90.0, width=2.0)
+    c.deck(5.0, width=2.0)
+    c.checkpoint(2.0, back=1.0)
+    c.deck(6.0, width=2.6)
+    # 11. Room 9: one bar, very fast, at floor level, sweeping the length of the room (hopped).
+    c.deck(3.0, width=8.0)
+    c.checkpoint(8.0, back=1.0)
+    z0 = c.z
+    c.deck(30.0, width=8.0)
+    c.laser((6.0, 0.0), across=7.8, along=0, reach=20.0, period=7.0, duty=0.6, over=c.y, start=z0)
+    c.deck(3.0, width=8.0)
+    c.checkpoint(8.0, back=1.0)
+    # 12. The shaft, twelve and a half metres down onto the pit's floor, then a turn east.
+    c.deck(2.0, width=8.0)
+    c.gap(3.0, rise=-12.5)
+    c.deck(5.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    c.turn(90.0, radius=4.0)
+    # 13. The pit: cubes over a floor that kills, hopped one to the next, then the trains
+    #     (movers) across the loop between the cube clusters, then the pillars of the east corridor
+    #     as stones, the doors that open when shot (rams) and the winner's chamber (the finish).
+    #     Changed: the original's way between the north cubes and the south cubes (about 17 m)
+    #     is not readable from its entities; the trains are the movers here.
+    c.deck(3.0, width=4.0)
+    z0 = c.z
+    c.stones([(3.6, 0.0), (7.2, 0.8), (10.8, -0.6), (14.4, 0.4), (18.0, -0.5), (21.6, 0.0)], size=1.5, until=23.4)
+    c.deck(3.0, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    c.mover_crossing(length=9.0, size=4.0, period=6.5)
+    c.deck(3.0, width=4.0)
+    c.mover_crossing(length=9.0, size=4.0, period=6.0, phase=0.3)
+    c.deck(4.0, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    c.stones([(3.6, 0.0), (7.2, 0.6), (10.8, -0.6), (14.4, 0.4)], size=1.5, until=16.2)
+    c.deck(3.0, width=3.0)
+    c.checkpoint(3.0, back=1.0)
+    c.pusher_alley(width=3.0, count=2, period=3.0, reach=2.0)
+    c.deck(3.0, width=3.0)
     c.finish()
     return c
 
