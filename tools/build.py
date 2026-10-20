@@ -2273,6 +2273,96 @@ def lego_course():
     return c
 
 
+def oaks_course():
+    c = Course("wo_oaks_course", "Oaks Course",
+               "A tall hard course in one life: a climb, moving bars, pillars under a spinning arm, a box ride, ladders, boxes that appear one by one, lasers, a push over the platforms, a tunnel of cars, a stair room, a pair of rolling balls and the last button.",
+               THEMES["storm"], water=-30.0, seconds=600.0)
+    c.doc["author"] = "ProfessorOak (port)"
+    # The original lists twelve levels; this keeps the kinds of obstacle in their order and
+    # drops the rest (its respawn gate, the button puzzles and the secrets). Levels 1 to 7 are
+    # in its tall tower going down the map's west lane, level 8 is the long tunnel running east
+    # (seventy metres of it, so here two halves), and 9 to 12 are in the small tower at the
+    # east end. Plan view in the original is a long L, followed here by a left turn out of
+    # the lane and a right turn at the far end.
+    # Level 1: the climb.
+    c.run_out(6)
+    c.safe(8.0, width=6.0)
+    c.checkpoint(6.0, back=1.2)
+    c.climb(length=16.0, rise=4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    # Level 2: moving bars to pass.
+    c.deck(3.0, width=5.0)
+    c.side_sweeper(length=14.0, width=5.0, speed=65.0, arms=2, side=1)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.pusher_alley(width=5.0, count=3, period=3.0, reach=3.0, step=4.5)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    # Level 3: pillars, with a spinning arm over them.
+    c.deck(4.0, width=6.0)
+    c.centre_spinner(size=11.0, speed=55.0, arms=2)
+    c.deck(4.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    # Level 4: boxes, then a ride on a moving box.
+    c.deck(3.0, width=5.0)
+    z0 = c.z
+    c.stones([(3.6, 0.0), (7.2, 0.5), (10.8, -0.4), (14.4, 0.4)], size=1.7, until=16.2)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.mover_crossing(length=10.0, size=4.0, period=6.5)
+    c.deck(4.0, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    # Level 5: the ladders up.
+    c.climb(length=14.0, rise=4.0, width=4.0)
+    c.deck(3.0, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    # Level 6: boxes that appear one by one.
+    c.deck(3.0, width=5.0)
+    c.tiles(cols=3, rows=4, tile=1.8, period=3.2, down=0.28, seed=1)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    # Level 7: lasers, a push over the platforms, then the big jump.
+    z0 = c.z
+    c.deck(15.0, width=5.0)
+    for i, at in enumerate((4.0, 8.5, 13.0)):
+        c.laser((at, 0.0), across=5.0, along=0, reach=2.2, period=3.8 + 0.3 * i, duty=0.4,
+                phase=0.3 * i, over=c.y, start=z0)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.flat_belt(length=12.0, width=4.0, speed=3.0)
+    c.deck(3.0, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    c.gap(2.6)
+    c.deck(4.0, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    c.turn(90.0, radius=3.0)
+    # Level 8: the tunnel of cars, in two halves.
+    c.deck(10.0, width=5.0)
+    c.pusher_alley(width=5.0, count=4, period=3.0, reach=3.0, step=4.5)
+    c.deck(6.0, width=5.0)
+    c.checkpoint(6.0, back=1.0)
+    c.rollers(count=2, speed=60.0)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(6.0, back=1.0)
+    c.pusher_alley(width=5.0, count=4, period=3.2, reach=3.0, step=4.5)
+    c.deck(6.0, width=5.0)
+    c.checkpoint(6.0, back=1.0)
+    c.turn(-90.0, radius=3.0)
+    # Level 9: the stairs of the tower room.
+    c.deck(3.0, width=5.0)
+    c.climb(length=17.0, rise=4.4, width=5.0)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    # Level 11: the two big balls, as balls to hop across.
+    c.balls(count=3, radius=1.5)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    # Level 12: the last buttons are the door.
+    c.deck(4.0, width=5.0)
+    c.finish()
+    return c
+
+
 def lily_pond():
     c = Course("wo_lily_pond", "Lily Pond",
                "Round the pond on a winding path: spinning pads to hop across, planks that tip you in, waterfalls, and at the fork the ferry or the pads.",
@@ -2432,7 +2522,7 @@ def documents():
     courses = [first_splash(), spin_cycle(), big_balls(), punch_alley(), trapdoor_run(), log_roll(),
                the_sweeper(), uphill_belt(), hammer_gauntlet(), grand_tour(), lily_pond(), dans_course().build(),
                office_course().build(), pauls_course().build(),
-               scary_course().build(), lego_course().build()]
+               scary_course().build(), lego_course().build(), oaks_course().build()]
     return courses + arenas()
 
 
