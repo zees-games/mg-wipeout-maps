@@ -1964,6 +1964,94 @@ def office_course():
     return c
 
 
+def pauls_course():
+    c = Course("wo_pauls_course", "Pauls Mine Course",
+               "A very hard one-life course in a mine: carts crossing a lava hall, a memorised path of blocks, falling lava to time, jumping stones, a climb up out of the lava, a room of blocks that blow up, a long spiral fall, two stretches of beams that throw you up and a spiral back to the top.",
+               THEMES["dusk"], water=-52.0, seconds=540.0)
+    c.doc["author"] = "Paul (port)"
+    # The original is one long row of halls from west to east, which is a straight line here, then
+    # a shaft down, a long hall back east along the bottom, and a spiral rise. Its own list of ten
+    # obstacles is the order; each hall's length is read from its level file (0.02 m a unit) in
+    # plan and side view: the top row is 160 m, the bottom row 126 m.
+    # 0. The start room and the halls before the first obstacle (a nuke room and a passage).
+    c.run_out(8)
+    c.safe(30.0, width=6.0)
+    c.checkpoint(6.0, back=1.2)
+    # 1. The minecarts (obstacle 1): a lava hall 33 m long with three sets of carts crossing it.
+    #    Changed: a cart that cannot be touched is a mover crossing, a platform that carries you.
+    for i, period in enumerate((6.5, 6.0, 5.5)):
+        c.deck(3.0, width=4.0)
+        c.mover_crossing(length=9.0, size=4.0, period=period, phase=0.3 * i)
+    c.deck(3.0, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    # 2. The moving path (obstacle 2): a path of blocks over lava, which the player has to
+    #    memorise. Changed: tiles that drop out on their own schedule are the nearest a stand-in
+    #    can read; the grid is the original's twenty-six blocks, fifteen metres of them.
+    c.deck(3.0, width=5.0)
+    c.tiles(cols=3, rows=5, tile=1.8, period=3.4, down=0.25, seed=1)
+    c.deck(3.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    # 3. The lava jump (obstacle 3): three streams of lava fall across the way in turn; "don't
+    #    jump too early". The curtains are waterfalls that push the runner off.
+    c.waterfalls(count=3, width=4.0, period=3.4, duty=0.4)
+    c.deck(3.0, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    # 4. The standard jumping stones (obstacle 4).
+    c.deck(3.0, width=3.0)
+    z0 = c.z
+    c.stones([(3.6, 0.0), (7.2, 0.7), (10.8, -0.6), (14.4, 0.5), (18.0, 0.0)], size=1.6, until=19.8)
+    c.deck(3.0, width=3.0)
+    c.checkpoint(3.0, back=1.0)
+    # 5. The lava climb (obstacle 5): two towers twelve metres high, climbed before the lava that
+    #    rises behind the climber gets there. Left out: the rising lava. The climb is a switchback
+    #    of ramps, the last with a belt against the climber, which is the pressure.
+    c.deck(3.0, width=4.0)
+    c.climb(length=17.0, rise=4.4, width=4.0)
+    c.u_turn(side=1, spacing=14.0, radius=3.0)
+    c.climb(length=17.0, rise=4.4, width=4.0)
+    c.u_turn(side=-1, spacing=14.0, radius=3.0)
+    c.conveyor_climb(length=17.0, width=4.0, rise=4.4, speed=2.5)
+    c.deck(3.0, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    # 6. The room of TNT (obstacle 6): a field of blocks that blow up, five across and three
+    #    deep in the original. Changed: tiles that drop out.
+    c.tiles(cols=3, rows=4, tile=1.8, period=3.2, down=0.25, seed=1)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    # 7. The spiral fall (obstacle 7): a shaft with rings to avoid, a hundred and sixty metres
+    #    deep. Changed: a spiral of ramps down, two turns, thirty-five metres: the fall is what a
+    #    stand-in cannot be asked to survive.
+    c.deck(3.0, width=4.0)
+    for _ in range(2):
+        for _ in range(4):
+            c.climb(length=17.0, rise=-4.4, width=4.0)
+            c.turn(90.0, radius=3.0)
+    c.checkpoint(4.0, back=1.0)
+    # 8. The anti-gravity beams, the easy stage (obstacle 8): beams that throw the runner up and
+    #    along. Changed: pads that bounce you on to the next.
+    c.deck(2.0, width=4.0)
+    c.trampolines(count=2, power=10.0)
+    c.deck(4.0, width=4.0)
+    c.checkpoint(4.0, back=1.0)
+    # 9. The insane stage (obstacle 9): the same on narrower pads with stones between.
+    c.deck(2.0, width=3.0)
+    z0 = c.z
+    c.stones([(3.0, 0.0), (6.6, 0.5), (10.2, -0.5), (13.8, 0.4), (17.4, 0.0)], size=1.6, until=19.2)
+    c.deck(2.0, width=3.0)
+    c.trampolines(count=2, power=10.0)
+    c.deck(3.0, width=3.0)
+    c.checkpoint(3.0, back=1.0)
+    # 10. The spiral rise (obstacle 10): a spiral of ramps up, two turns, to the top.
+    c.deck(3.0, width=4.0)
+    for _ in range(2):
+        for _ in range(4):
+            c.climb(length=17.0, rise=4.4, width=4.0)
+            c.turn(-90.0, radius=3.0)
+    c.deck(3.0, width=4.0)
+    c.finish()
+    return c
+
+
 def lily_pond():
     c = Course("wo_lily_pond", "Lily Pond",
                "Round the pond on a winding path: spinning pads to hop across, planks that tip you in, waterfalls, and at the fork the ferry or the pads.",
@@ -2122,7 +2210,7 @@ def arenas():
 def documents():
     courses = [first_splash(), spin_cycle(), big_balls(), punch_alley(), trapdoor_run(), log_roll(),
                the_sweeper(), uphill_belt(), hammer_gauntlet(), grand_tour(), lily_pond(), dans_course().build(),
-               office_course().build()]
+               office_course().build(), pauls_course().build()]
     return courses + arenas()
 
 
