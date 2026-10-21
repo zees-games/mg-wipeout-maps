@@ -2657,6 +2657,95 @@ def labo_course():
     return c
 
 
+def sweet_course():
+    c = Course("wo_sweet_course", "Sweet Course",
+               "One life, down a long run of sweet-shop halls: lasers and spinning bars, stones, a floor of tiles, a long hall of pillars with a bar sweeping it, a corridor of walls that slide across it, a belt and bounce pads, and a last maze of lifts and lasers.",
+               THEMES["peach"], water=-30.0, seconds=720.0)
+    c.doc["author"] = "Nexore (port)"
+    # The order follows the original's own rooms in its level file (0.02 m a unit): the start hall
+    # in the north-east, a laser and spinning-bar hall west of it, a room of stones, a room whose
+    # floor is tiles, a long hall of pillars with a bar along it, a long corridor of sliding walls
+    # with pushes down it, a big room of bouncers, and the last wide maze of lifts and lasers.
+    # The teleports between rooms are turns, and the bonus room and the secret are left out.
+    c.run_out(6)
+    c.safe(8.0, width=6.0)
+    c.checkpoint(6.0, back=1.2)
+    c.deck(8.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    c.turn(-90.0, radius=3.0)
+    # 1. The laser hall: three pairs of lasers (low, high, middle) and three spinning bars.
+    c.deck(4.0, width=6.0)
+    z0 = c.z
+    c.deck(15.0, width=6.0)
+    for i, at in enumerate((3.5, 7.5, 11.5)):
+        c.laser((at, 0.0), across=6.0, along=0, reach=2.2, period=3.8 + 0.3 * i, duty=0.4,
+                phase=0.3 * i, over=c.y, start=z0)
+    c.checkpoint(6.0, back=1.0)
+    c.side_sweeper(length=14.0, width=6.0, speed=70.0, arms=2, side=1)
+    c.deck(4.0, width=6.0)
+    c.high_sweeper(length=14.0, width=6.0, speed=60.0, arms=2, phase=0.5, side=-1)
+    c.deck(4.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    # 2. The room of stones over a pit.
+    c.deck(3.0, width=6.0)
+    c.stones([(3.6, 0.0), (7.2, 0.6), (10.8, -0.5), (14.4, 0.5), (18.0, -0.4)], size=1.7, until=19.8)
+    c.deck(4.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    c.turn(90.0, radius=3.0)
+    # 3. The floor of tiles that drop out, either side of a lane.
+    c.deck(4.0, width=6.0)
+    c.tiles(cols=3, rows=4, tile=1.8, period=3.2, down=0.28, seed=1)
+    c.deck(4.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    c.tiles(cols=3, rows=4, tile=1.8, period=3.4, down=0.30, seed=1)
+    c.deck(4.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    c.turn(-90.0, radius=3.0)
+    # 4. The long hall of pillars: stones, with a bar along it.
+    c.deck(4.0, width=6.0)
+    c.side_sweeper(length=16.0, width=6.0, speed=65.0, arms=2, side=-1)
+    c.deck(4.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    c.stones([(3.6, 0.0), (7.2, -0.6), (10.8, 0.5), (14.4, -0.4)], size=1.7, until=16.2)
+    c.deck(4.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    c.mover_crossing(length=10.0, size=4.0, period=6.5)
+    c.deck(4.0, width=6.0)
+    c.checkpoint(6.0, back=1.0)
+    c.turn(90.0, radius=3.0)
+    # 5. The corridor of walls that slide across it, then a belt.
+    c.deck(4.0, width=5.0)
+    c.pusher_alley(width=5.0, count=5, period=3.0, reach=3.0, step=4.5)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.flat_belt(length=12.0, width=5.0, speed=3.0)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    # 6. The big room of bouncers.
+    c.trampolines(count=3)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.turn(-90.0, radius=3.0)
+    # 7. The last maze: a lift, rollers and a cage of lasers to the end.
+    c.deck(4.0, width=5.0)
+    c.mover_crossing(length=12.0, size=4.0, period=7.0)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.rollers(count=3, speed=60.0)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.deck(14.0, width=5.0)
+    z0 = c.z - 14.0
+    for i, at in enumerate((3.5, 7.0, 10.5)):
+        c.laser((at, 0.0), across=5.0, along=0, reach=2.2, period=3.4 + 0.3 * i, duty=0.45,
+                phase=0.35 * i, over=c.y, start=z0)
+    c.deck(4.0, width=5.0)
+    c.checkpoint(5.0, back=1.0)
+    c.deck(4.0, width=5.0)
+    c.finish()
+    return c
+
+
 def lily_pond():
     c = Course("wo_lily_pond", "Lily Pond",
                "Round the pond on a winding path: spinning pads to hop across, planks that tip you in, waterfalls, and at the fork the ferry or the pads.",
@@ -2817,7 +2906,7 @@ def documents():
                the_sweeper(), uphill_belt(), hammer_gauntlet(), grand_tour(), lily_pond(), dans_course().build(),
                office_course().build(), pauls_course().build(),
                scary_course().build(), lego_course().build(), oaks_course().build(), dc_course().build(), waytobar_course().build(),
-               labo_course().build()]
+               labo_course().build(), sweet_course().build()]
     return courses + arenas()
 
 
