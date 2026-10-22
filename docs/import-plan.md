@@ -16,7 +16,7 @@ Pit crossings by water or a hurt plane, ladders (the importer makes bounce pads)
 
 ## Open items
 
-- Online clients receive only the course document, not the mesh in `worlds/`; every imported course shows an empty stage online until the mesh is delivered with the pack.
+- Online clients get the mesh from the maps pack, which mg-wipeout's `game.yml` now sends to every client (`maps_delivery: client`). With all 19 courses imported that is about 20 MB per join: split the meshes into a pack of their own, fetched per course, before then. dot-server-deploy's `wipeout_client` example still expects `server` delivery.
 - The pilot's bot falls about 25 times at the two island jumps before it lands them; the takeoffs want tuning.
 - dot-map (held by another agent during the pilot) may want vent bounds and rock-wall texture rows in the importer.
 
