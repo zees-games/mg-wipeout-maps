@@ -18,7 +18,7 @@ Pit crossings by water or a hurt plane, ladders (the importer makes bounce pads)
 
 - Online clients still get the whole maps pack (`maps_delivery: client`), about 20 MB with all 19 imported. mg-wipeout now asks for a course's mesh by group when a stage names a mesh no mounted pack holds (`WoWorld.fetch`), but nothing publishes groups yet: nightly item `wipeout-mesh-groups` (a `groups.json` read by `DotCloudPublisher`, passed through by the site, written here one group per course). dot-server-deploy's `wipeout_client` example still expects `server` delivery.
 - The pilot's bot falls about 25 times at the two island jumps before it lands them; the takeoffs want tuning.
-- Dan's Course needed no vent bounds or rock-wall rows in dot-map. Its second stage (the hall of stones with two sweeping walls of light) is not finished by the stand-in yet: the zig-zag jumps between stones need run-up tuning in `tools/imports/wo_dans_course.json`, and it stays scenery until then.
+- Dan's Course needed no vent bounds or rock-wall rows in dot-map. Its second stage (the hall of seven stones with two sweeping walls of light) is not finished by the stand-in: with `tune` the walls hold in the gaps (`at` -79.0 and -56.2, `reach` 22.8, `period` 40, `duty` 0.8) and a route lined up at (-49.9, 0, -3.3) takes the first jump, but a run-up that fast overshoots each 2 m stone and the follow-up hop carries it back into the gap, so the hall stays scenery. A human crosses it; the stand-in needs a slower, stone-by-stone hop (a route point that caps the take-off speed) before it will. `mg-wipeout/tools/trace_course.tscn --heights=x0,x1,z0,z1` prints the floor heights of a box.
 
 ## Effort
 
