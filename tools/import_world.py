@@ -86,6 +86,10 @@ def pieces_from(manifest, spec):
     attached = set(spec.get("attached", []))
     for m in manifest["movers"]:
         cls = m["classname"]
+        if m.get("model") is None:
+            # A prop-model mover (prop_door_rotating) has no brush model to build a piece from.
+            notes.append("WARNING %s %s: no brush model, skipped" % (cls, m.get("targetname") or m.get("entity")))
+            continue
         name = m.get("targetname") or "model %d" % m["model"]
         if m["kind"] == "path" and len(m.get("path", [])) >= 2 and "path" in m and m.get("speed", 0) > 0:
             corners = [p["at"] for p in m["path"] if "at" in p][:2]
@@ -121,6 +125,9 @@ def pieces_from(manifest, spec):
         elif m["kind"] != "button":
             notes.append("%s %s (%s): no equivalent, not built" % (cls, name, m["kind"]))
     for v in manifest["volumes"]:
+        if v.get("model") is None:
+            notes.append("WARNING %s volume %s: no brush model, skipped" % (v.get("kind"), v.get("targetname") or v.get("entity")))
+            continue
         b = volume_bounds(v)
         if b is None:
             continue
@@ -164,7 +171,7 @@ def main():
                     "--page", spec["credit"]["page"]], check=True, stdout=subprocess.DEVNULL)
     manifest = json.load(open(os.path.join(worlds, cid + ".json")))
     generated, notes = pieces_from(manifest, spec)
-    skip = sorted({m["model"] for m in manifest["movers"]} | {v["model"] for v in manifest["volumes"] if v["model"]}
+    skip = sorted({m["model"] for m in manifest["movers"] if m.get("model") is not None} | {v["model"] for v in manifest["volumes"] if v["model"]}
                   | set(spec.get("hidden", [])))
     doc = {k: spec[k] for k in ("format", "kind", "id", "name", "author", "blurb", "theme", "water_height",
                                 "course_seconds", "start", "finish", "checkpoints", "route") if k in spec}
