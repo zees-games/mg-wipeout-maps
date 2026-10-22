@@ -1,6 +1,6 @@
 # Importing the other courses
 
-The Office Course (`wo_office_course`) is the pilot: `tools/import_world.py tools/imports/<id>.json` reads a map through dot-map's BSP mesh tool and writes `worlds/<id>.{json,bin}` plus `courses/<id>.json` with a `world` piece, `kill` volumes and the scripted pieces mapped from the source map's movers. The 18 other hand-built courses (everything in `tools/build.py`, 1 of 19 imported) each need the same steps.
+The Office Course (`wo_office_course`) is the pilot, `wo_dans_course` the second: `tools/import_world.py tools/imports/<id>.json` reads a map through dot-map's BSP mesh tool and writes `worlds/<id>.{json,bin}` plus `courses/<id>.json` with a `world` piece, `kill` volumes and the scripted pieces mapped from the source map's movers. The 18 other hand-built courses (everything in `tools/build.py`, 2 of 19 imported) each need the same steps.
 
 ## Per course
 
@@ -16,9 +16,9 @@ Pit crossings by water or a hurt plane, ladders (the importer makes bounce pads)
 
 ## Open items
 
-- Online clients get the mesh from the maps pack, which mg-wipeout's `game.yml` now sends to every client (`maps_delivery: client`). With all 19 courses imported that is about 20 MB per join: split the meshes into a pack of their own, fetched per course, before then. dot-server-deploy's `wipeout_client` example still expects `server` delivery.
+- Online clients still get the whole maps pack (`maps_delivery: client`), about 20 MB with all 19 imported. mg-wipeout now asks for a course's mesh by group when a stage names a mesh no mounted pack holds (`WoWorld.fetch`), but nothing publishes groups yet: nightly item `wipeout-mesh-groups` (a `groups.json` read by `DotCloudPublisher`, passed through by the site, written here one group per course). dot-server-deploy's `wipeout_client` example still expects `server` delivery.
 - The pilot's bot falls about 25 times at the two island jumps before it lands them; the takeoffs want tuning.
-- dot-map (held by another agent during the pilot) may want vent bounds and rock-wall texture rows in the importer.
+- Dan's Course needed no vent bounds or rock-wall rows in dot-map. Its second stage (the hall of stones with two sweeping walls of light) is not finished by the stand-in yet: the zig-zag jumps between stones need run-up tuning in `tools/imports/wo_dans_course.json`, and it stays scenery until then.
 
 ## Effort
 

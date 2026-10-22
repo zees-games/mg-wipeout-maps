@@ -13,7 +13,10 @@ reads a BSP itself. Rules, per mover and volume the converter lists:
     trigger_hurt of 100 or more      -> kill box, unless the import file lists its model under "attached"
     func_brush the map toggles away  -> listed under "hidden" in the import file: left out of the mesh (a door that
                                         shuts the spawn room until the round starts would box the runners in)
-    ladder volume                    -> bouncer at its foot
+    ladder volume                    -> bouncer at its foot (a spec's "drop": ["bouncer"] leaves them out)
+    spec "tune": {"<mover name>": {"period": 9, "duty": 0.35}} -> fields overwritten on that mover's piece (a stand-in
+                                        trace asks for a slower punch than the map's own speed gives)
+    spec "stage": [[min x,y,z],[max x,y,z]] -> generated pieces outside that box are dropped
     everything else (buttons, other rotators, pushes, secret teleports, timed hurts) -> listed, not built
 """
 
@@ -78,6 +81,8 @@ def yaw_toward(dx, dz):
 
 def pieces_from(manifest, spec):
     pieces, notes = [], []
+    box = spec.get("stage")
+    tune = spec.get("tune", {})
     attached = set(spec.get("attached", []))
     for m in manifest["movers"]:
         cls = m["classname"]
@@ -98,6 +103,12 @@ def pieces_from(manifest, spec):
             along = abs(math.sin(math.radians(yaw))) > 0.5
             # size is (across, up, along the push): the pusher's local Z is the way it travels.
             across, depth = (size[2], size[0]) if along else (size[0], size[2])
+            # A bar resting at its track's start stands where the ledge it sweeps from ends: the spec's
+            # "pusher_inset" moves the rest position that far along the track so a runner can take off.
+            inset = min(float(spec.get("pusher_inset", 0.0)), dist * 0.5)
+            ux, uz = dx / dist, dz / dist
+            a = [a[0] + ux * inset, a[1], a[2] + uz * inset]
+            dist -= inset
             pieces.append({"kind": "pusher", "at": [r(a[0] + off[0]), r(a[1] + off[1]), r(a[2] + off[2])],
                            "size": [r(max(across, 0.3)), r(max(size[1], 0.3)), r(max(depth, 0.25))],
                            "reach": r(dist), "period": r(2 * dist / m["speed"] + 1.0), "duty": 0.55,
@@ -127,6 +138,18 @@ def pieces_from(manifest, spec):
                            "size": [r(max(size[0], 1.2)), 0.2, r(max(size[2], 1.2))], "power": LADDER_POWER, "yaw": 0.0})
         elif v["kind"] in ("push", "gravity", "teleport"):
             notes.append("%s volume %s: no equivalent, not built" % (v["kind"], v.get("targetname") or v["model"]))
+    for p in pieces:
+        p.update(tune.get(p.get("source", ""), {}))
+    if box:
+        # Generated pieces outside the stage the course plays are scenery in the mesh only: a mover or kill
+        # box in a part nobody reaches would still be simulated and sent in STAGE.
+        lo, hi = box
+        kept = [p for p in pieces if all(lo[c] <= p["at"][c] <= hi[c] for c in range(3))]
+        notes.append("stage box dropped %d of %d generated pieces" % (len(pieces) - len(kept), len(pieces)))
+        pieces = kept
+    drop = set(spec.get("drop", []))
+    if drop:
+        pieces = [p for p in pieces if p["kind"] not in drop]
     return pieces, notes
 
 

@@ -1,0 +1,199 @@
+{
+ "format": 2,
+ "kind": "course",
+ "id": "wo_dans_course",
+ "name": "Dan's Course",
+ "author": "mg_dans_course by Dan (skybox by shini)",
+ "source": "~/mapsrc/wipeout/127888/x/mg_dans_course.bsp",
+ "credit": {
+  "author": "Dan (skybox by shini)",
+  "page": "https://gamebanana.com/mods/127888"
+ },
+ "blurb": "One life, stage one of a course in outer space, imported whole: out of the start room, down a corridor and across a dark pit by stones with a low bar sweeping them, to a door. The hall beyond, and the rest of the original (towers, mazes, lasers and trains), is scenery here.",
+ "theme": {
+  "sky": [
+   0.56,
+   0.62,
+   0.86
+  ],
+  "horizon": [
+   0.98,
+   0.84,
+   0.72
+  ],
+  "water": [
+   0.16,
+   0.38,
+   0.6
+  ],
+  "sun": [
+   1.0,
+   0.9,
+   0.78
+  ]
+ },
+ "water_height": -20.0,
+ "course_seconds": 300.0,
+ "attached": [
+  4,
+  9,
+  11
+ ],
+ "start": {
+  "at": [
+   -4.0,
+   0.0,
+   -6.5
+  ],
+  "size": [
+   5,
+   8
+  ],
+  "yaw": 90
+ },
+ "finish": {
+  "at": [
+   -48.0,
+   0.0,
+   -6.5
+  ],
+  "size": [
+   3,
+   6,
+   2.4
+  ],
+  "yaw": 90
+ },
+ "checkpoints": [
+  {
+   "at": [
+    -14.5,
+    0.0,
+    -6.5
+   ],
+   "size": [
+    3,
+    4,
+    2.4
+   ],
+   "yaw": 90
+  }
+ ],
+ "route": [
+  {
+   "at": [
+    -8,
+    0.0,
+    -6.5
+   ],
+   "reach": 1.0
+  },
+  {
+   "at": [
+    -22.6,
+    0.0,
+    -6.45
+   ],
+   "jump": true,
+   "reach": 0.7
+  },
+  {
+   "at": [
+    -26.85,
+    -0.75,
+    -6.45
+   ],
+   "jump": true,
+   "reach": 0.7
+  },
+  {
+   "at": [
+    -30.9,
+    -0.75,
+    -6.45
+   ],
+   "jump": true,
+   "reach": 0.7
+  },
+  {
+   "at": [
+    -35.0,
+    -0.75,
+    -6.45
+   ],
+   "jump": true,
+   "reach": 0.7
+  },
+  {
+   "at": [
+    -39.0,
+    -0.75,
+    -6.45
+   ],
+   "jump": true,
+   "reach": 0.7
+  },
+  {
+   "at": [
+    -43.0,
+    0.0,
+    -6.45
+   ]
+  },
+  {
+   "at": [
+    -48.0,
+    0.0,
+    -6.5
+   ]
+  }
+ ],
+ "hidden": [],
+ "pieces": [],
+ "toys": [
+  {
+   "toy": "beach_ball",
+   "at": [
+    -3.0,
+    0.0,
+    -2.2
+   ]
+  },
+  {
+   "toy": "beach_ball",
+   "at": [
+    -3.0,
+    0.0,
+    -10.8
+   ]
+  }
+ ],
+ "stage": [
+  [
+   -100,
+   -6,
+   -14
+  ],
+  [
+   8,
+   6,
+   2
+  ]
+ ],
+ "drop": [
+  "bouncer"
+ ],
+ "pusher_inset": 1.2,
+ "tune": {
+  "swifty": {
+   "period": 9.0,
+   "duty": 0.35
+  },
+  "ramen": {
+   "reach": 21.5
+  },
+  "sphoncter1": {
+   "reach": 22.0
+  }
+ }
+}
