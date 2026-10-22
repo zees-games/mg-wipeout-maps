@@ -1856,114 +1856,6 @@ def dans_course():
     return c
 
 
-def office_course():
-    c = Course("wo_office_course", "Office Course",
-               "A one-life run through an office block: a choice of ways over a pit, a floor that gives way underfoot, doors that slide shut, vending machines to hop, a laser along a corridor, three ladders (one is the way), a plate floor, a spinning vent, low lasers, a climb and a long jump, and a winner's teleport to the disco.",
-               THEMES["peach"], water=-24.0, seconds=480.0)
-    c.doc["author"] = "mg office coursee (port)"
-    # The rooms follow the original's trap list (its own order, 1 to 12), each placed from the
-    # entities in its level file (0.02 m a unit) read in plan view: the start room, a pit south
-    # of it, a long run east, a corridor of doors going north past a row of vending machines, a
-    # corridor west with one laser, three ladders going south, then the upper floors going west,
-    # a vent room, a room of low lasers and the rope cave that ends at the winner's teleport.
-    # 1. The start room, then the pit with two breakable platforms (trap 1: choose left or right,
-    #    one of the two gives way). Changed: the original's choice is a coin toss; here the left is
-    #    stones and the right a plain jump, the faster of the two.
-    c.run_out(8)
-    c.safe(14.0, width=6.0)
-
-    def by_stones(k):
-        k.stones([(3.4, 0.0), (6.8, 0.0)], size=1.5, until=8.5)
-
-    def by_jump(k):
-        k.gap(3.2)
-
-    c.fork(by_stones, by_jump, spread=4.0, width=3.5, depth=5.0)
-    c.checkpoint(6.0, back=1.2)
-    c.turn(90.0, radius=3.0)
-    # 2. "Run!" (trap 2): twenty-five metres east over a floor that gives way under the runner.
-    #    Changed: the original's floor is one slab that breaks when stepped on; here a field of
-    #    tiles that drop out on their own schedule is the nearest thing a stand-in can read.
-    c.deck(30.0, width=5.1)
-    c.tiles(cols=3, rows=6, tile=1.6, period=3.4, down=0.3, seed=3)
-    c.deck(4.0, width=5.1)
-    c.checkpoint(5.1, back=1.2)
-    c.turn(90.0, radius=3.0)
-    # 3. Five sliding doors (trap 3), each striking across the corridor in turn; the corridor runs
-    #    north. Changed: the doors are rams on a period, spread a little wider than the original's.
-    c.deck(3.0, width=3.2)
-    c.pusher_alley(width=3.2, count=5, period=2.8, reach=2.6, step=4.5)
-    c.deck(3.0, width=3.2)
-    c.checkpoint(3.2, back=1.0)
-    # 4. Vending machines to hop (trap 4): stones, higher than the floor, over a pit.
-    c.deck(3.0, width=3.2)
-    z0 = c.z
-    c.stones([(3.4, 0.0), (6.8, 0.7), (10.2, -0.7), (13.6, 0.5), (17.0, 0.0)], size=1.7, until=18.8)
-    c.deck(3.0, width=3.2)
-    c.checkpoint(3.2, back=1.0)
-    c.turn(90.0, radius=3.0)
-    # 5. The moving laser (trap 5): one low bar sweeping the length of a corridor going west.
-    z0 = c.z
-    c.deck(48.0, width=5.1)
-    c.laser((38.0, 0.0), across=5.0, along=0, reach=6.0, period=6.0, duty=0.45, over=c.y, start=z0)
-    c.deck(8.0, width=5.1)
-    c.checkpoint(5.1, back=1.0)
-    c.turn(90.0, radius=3.0)
-    # 6. The ladders (trap 6, only one of the three kills): three bounce pads, the nearest a plain
-    #    pad can be to a ladder.
-    c.deck(3.0, width=4.0)
-    for _ in range(3):
-        c.bouncer_up(rise=2.6)
-        c.deck(3.0, width=4.0)
-    c.checkpoint(4.0, back=1.0)
-    c.turn(-90.0, radius=3.0)
-    # 7. The invisible floor (trap 7): an ordinary floor here, ten metres west, at the top of the
-    #    ladders.
-    c.deck(10.0, width=5.1)
-    c.checkpoint(5.1, back=1.0)
-    # 8. The platforms to choose (trap 8): a field of plates, three across, that drop out in turn.
-    c.tiles(cols=3, rows=4, tile=1.8, period=3.2, down=0.3, seed=1)
-    c.deck(4.0, width=5.1)
-    c.checkpoint(5.1, back=1.0)
-    c.turn(90.0, radius=3.0)
-    # 9. The spinning vent (trap 9), over a drop to the lower floor.
-    c.climb(length=16.0, rise=-4.0, width=6.0)
-    c.deck(3.0, width=11.0)
-    c.centre_spinner(size=11.0, speed=60.0, height=0.6, arms=2)
-    c.deck(3.0, width=11.0)
-    c.checkpoint(6.0, back=1.0)
-    # 10. The easy lasers (trap 10): four low bars across a corridor, a few metres apart.
-    z0 = c.z
-    c.deck(16.0, width=4.0)
-    for i, at in enumerate((3.0, 6.5, 10.0, 13.5)):
-        c.laser((at, 0.0), across=4.0, along=0, reach=2.2, period=3.8 + 0.3 * i, duty=0.4,
-                phase=0.3 * i, over=c.y, start=z0)
-    c.checkpoint(4.0, back=1.0)
-    # 11. The walls to jump around (trap 11): beams past the corners of a wall, a turn between.
-    c.deck(3.0, width=4.0)
-    c.beam(length=7.0, width=1.6)
-    c.deck(2.0, width=4.0)
-    c.turn(90.0, radius=3.0)
-    c.beam(length=7.0, width=1.6)
-    c.deck(3.0, width=4.0)
-    c.checkpoint(4.0, back=1.0)
-    # 12. The climb and the long jump (trap 12): a pad up, a ledge, and the longest jump in the
-    #     course (3.4 m, nearly the most a run clears), the rope cave of the original.
-    c.deck(3.0, width=4.0)
-    c.bouncer_up(rise=3.0)
-    c.deck(3.0, width=4.0)
-    c.gap(3.4)
-    c.deck(4.0, width=4.0)
-    c.checkpoint(4.0, back=1.0)
-    # 13. The winner's teleport to the disco: the original's last pad sends the winner to a room
-    #     far from the course (about 40 m away and down), and that is the finish. Left out: the
-    #     disco's powers, its lasers and its tesla coil, for the next rounds.
-    c.deck(3.0, width=3.0)
-    c.teleport(dx=24.0, dz=0.0, dy=-6.0, width=3.0)
-    c.finish()
-    return c
-
-
 def pauls_course():
     c = Course("wo_pauls_course", "Pauls Mine Course",
                "A very hard one-life course in a mine: carts crossing a lava hall, a memorised path of blocks, falling lava to time, jumping stones, a climb up out of the lava, a room of blocks that blow up, a long spiral fall, two stretches of beams that throw you up and a spiral back to the top.",
@@ -2904,7 +2796,7 @@ def arenas():
 def documents():
     courses = [first_splash(), spin_cycle(), big_balls(), punch_alley(), trapdoor_run(), log_roll(),
                the_sweeper(), uphill_belt(), hammer_gauntlet(), grand_tour(), lily_pond(), dans_course().build(),
-               office_course().build(), pauls_course().build(),
+               pauls_course().build(),
                scary_course().build(), lego_course().build(), oaks_course().build(), dc_course().build(), waytobar_course().build(),
                labo_course().build(), sweet_course().build()]
     return courses + arenas()
