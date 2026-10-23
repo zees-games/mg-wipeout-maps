@@ -1,0 +1,4 @@
+# Every converted course. Values are commented: uncomment to bend a rule for these courses only (an operator overrides in cfg/server/game/mg-wipeout/dot_map/map/). A course's cfg/<id>.cfg is applied after this file.
+# wo_knock_damage: 1.0
+# wo_fall_damage: 0.5
+# wo_gravity: 20
