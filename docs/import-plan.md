@@ -22,8 +22,10 @@ Pit crossings by water or a hurt plane, ladders (the importer makes bounce pads)
 
 ## Io courses (WP9)
 
-`wo_oaks_course` is imported whole through `tools/import_world.py`'s `main_io` (spec has an `io` store; the course document's world piece sets `io: true`) and the game runs its entities through dot-map's `DotMapWorld`. This replaces the stand-in built by `tools/build.py`. The other stand-ins in `build.py` are unchanged (1 converted); each community map with a source `.bsp` follows the same spec. The finish zone is inferred from the map's score trigger and wants a look from a human run.
+`wo_oaks_course` is imported whole through `tools/import_world.py`'s `main_io` (spec has an `io` store; the course document's world piece sets `io: true`) and the game runs its entities through dot-map's `DotMapWorld`. This replaces the stand-in built by `tools/build.py`. The other stand-ins in `build.py` are unchanged (3 converted: oaks, office, dans); each community map with a source `.bsp` follows the same spec. The finish zone is inferred from the map's score trigger and wants a look from a human run.
 
 ## Effort
 
 Per course, one builder session: simple linear courses (spin cycle, big balls, punch alley and similar) half a day each; the large themed maps (Pauls, Oaks, Labo, Sweet, Scary) a day each because of the route and the unmapped mechanisms. Only community maps have a source `.bsp` (under `~/mapsrc/wipeout/`); the eleven courses of our own (first splash to lily pond) have none and stay as built, so the 18 is an upper bound to be counted when the sources are matched to the courses.
+
+`wo_office_course` and `wo_dans_course` were converted the same way (2026-10-23): the spec drops the route, checkpoints and hand-made pieces and names the store entry; `finish` is the map's own score trigger (office: the teleport that applies `End_points`; Dan's: the `trigger_once` that applies `scortle`). `mg-wipeout/examples/headless_io.gd` checks each, including the office's lava room (hurt enabled 3 s after entry) and ladders. Still stand-ins: pauls, scary, lego, dc, waytobar, labo, sweet (nightly `wipeout-real-imports-1`).

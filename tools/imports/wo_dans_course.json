@@ -9,7 +9,7 @@
   "author": "Dan (skybox by shini)",
   "page": "https://gamebanana.com/mods/127888"
  },
- "blurb": "One life, stage one of a course in outer space, imported whole: out of the start room, down a corridor and across a dark pit by stones with a low bar sweeping them, to a door. The hall beyond, and the rest of the original (towers, mazes, lasers and trains), is scenery here.",
+ "blurb": "One life, in a long course imported whole and running its own machinery: buttons, doors, trains and bars that do what the original's entities say, over a floor that kills. Reach the far end.",
  "theme": {
   "sky": [
    0.56,
@@ -33,167 +33,39 @@
   ]
  },
  "water_height": -20.0,
- "course_seconds": 300.0,
- "attached": [
-  4,
-  9,
-  11
- ],
+ "course_seconds": 900.0,
  "start": {
   "at": [
-   -4.0,
-   0.0,
-   -6.5
+   -1.22,
+   0.4,
+   -7.3
   ],
   "size": [
-   5,
+   10,
    8
   ],
   "yaw": 90
  },
  "finish": {
   "at": [
-   -48.0,
-   0.0,
-   -6.5
+   -58.5,
+   -13.5,
+   81.1
   ],
   "size": [
-   3,
-   6,
-   2.4
+   6.0,
+   4.0,
+   4.0
   ],
-  "yaw": 90
- },
- "checkpoints": [
-  {
-   "at": [
-    -14.5,
-    0.0,
-    -6.5
-   ],
-   "size": [
-    3,
-    4,
-    2.4
-   ],
-   "yaw": 90
-  }
- ],
- "route": [
-  {
-   "at": [
-    -8,
-    0.0,
-    -6.5
-   ],
-   "reach": 1.0,
-   "wait": true,
-   "span": 5
-  },
-  {
-   "at": [
-    -22.6,
-    0.0,
-    -6.45
-   ],
-   "jump": true,
-   "reach": 0.7
-  },
-  {
-   "at": [
-    -26.85,
-    -0.75,
-    -6.45
-   ],
-   "jump": true,
-   "reach": 0.7
-  },
-  {
-   "at": [
-    -30.9,
-    -0.75,
-    -6.45
-   ],
-   "jump": true,
-   "reach": 0.7
-  },
-  {
-   "at": [
-    -35.0,
-    -0.75,
-    -6.45
-   ],
-   "jump": true,
-   "reach": 0.7
-  },
-  {
-   "at": [
-    -39.0,
-    -0.75,
-    -6.45
-   ],
-   "jump": true,
-   "reach": 0.7
-  },
-  {
-   "at": [
-    -43.0,
-    0.0,
-    -6.45
-   ]
-  },
-  {
-   "at": [
-    -48.0,
-    0.0,
-    -6.5
-   ]
-  }
- ],
- "hidden": [],
- "pieces": [],
- "toys": [
-  {
-   "toy": "beach_ball",
-   "at": [
-    -3.0,
-    0.0,
-    -2.2
-   ]
-  },
-  {
-   "toy": "beach_ball",
-   "at": [
-    -3.0,
-    0.0,
-    -10.8
-   ]
-  }
- ],
- "stage": [
-  [
-   -100,
-   -6,
-   -14
-  ],
-  [
-   8,
-   14,
-   2
+  "yaw": 0,
+  "lounge": [
+   -58.5,
+   -13.5,
+   81.1
   ]
- ],
- "drop": [],
- "pusher_inset": 1.2,
- "tune": {
-  "swifty": {
-   "period": 9.0,
-   "duty": 0.35
-  },
-  "ramen": {
-   "reach": 21.5
-  },
-  "sphoncter1": {
-   "reach": 22.0
-  }
- }
+ },
+ "io": {
+  "store": "wipeout/mg_dans_course"
+ },
+ "instant": true
 }

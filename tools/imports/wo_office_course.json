@@ -9,7 +9,7 @@
   "author": "Lionheartnl",
   "page": "https://gamebanana.com/mods/127637"
  },
- "blurb": "The first stage of a large office map: out of the spawn room, down a corridor, across a lethal floor by hopping between islands and into the long hall. The rest of the original (the pit, the ram yard, lifts and secrets) is scenery here.",
+ "blurb": "One life, in an office full of traps, imported whole and running its own machinery: the lava room that heats up three seconds after you step in, sliding doors, ladders where only one is safe, lifts and lasers. Reach the end of the map.",
  "theme": {
   "sky": [
    0.56,
@@ -33,232 +33,39 @@
   ]
  },
  "water_height": -24.0,
- "course_seconds": 480.0,
- "attached": [
-  37,
-  38,
-  39,
-  71,
-  73
- ],
+ "course_seconds": 900.0,
  "start": {
   "at": [
-   -20.5,
-   1.63,
-   16.0
+   -18.29,
+   1.5,
+   12.2
   ],
   "size": [
-   5,
+   10,
    8
   ],
   "yaw": -90
  },
  "finish": {
   "at": [
-   16.8,
-   1.63,
-   50.0
+   -25.6,
+   -3.2,
+   89.3
   ],
   "size": [
-   6,
-   3,
-   2.4
+   6.0,
+   4.0,
+   4.0
   ],
-  "yaw": 90
+  "yaw": 0,
+  "lounge": [
+   -25.6,
+   -3.2,
+   89.3
+  ]
  },
- "checkpoints": [
-  {
-   "at": [
-    -2.75,
-    1.63,
-    23.5
-   ],
-   "size": [
-    3,
-    4,
-    2.4
-   ],
-   "yaw": 0
-  },
-  {
-   "at": [
-    -1.9,
-    1.63,
-    44.5
-   ],
-   "size": [
-    3,
-    4,
-    2.4
-   ],
-   "yaw": 0
-  },
-  {
-   "at": [
-    12.0,
-    1.63,
-    50.0
-   ],
-   "size": [
-    3,
-    4,
-    2.4
-   ],
-   "yaw": 90
-  }
- ],
- "route": [
-  {
-   "at": [
-    -14.25,
-    1.63,
-    17.75
-   ],
-   "reach": 1.0
-  },
-  {
-   "at": [
-    -13.2,
-    1.63,
-    19.3
-   ]
-  },
-  {
-   "at": [
-    -4.25,
-    1.63,
-    19.25
-   ]
-  },
-  {
-   "at": [
-    -2.25,
-    1.63,
-    21.25
-   ]
-  },
-  {
-   "at": [
-    -1.1,
-    1.63,
-    29.5
-   ],
-   "jump": true,
-   "reach": 0.7
-  },
-  {
-   "at": [
-    0.2,
-    1.63,
-    32.0
-   ],
-   "jump": true,
-   "reach": 0.7
-  },
-  {
-   "at": [
-    0.8,
-    1.63,
-    33.9
-   ]
-  },
-  {
-   "at": [
-    0.8,
-    1.63,
-    34.6
-   ],
-   "jump": true,
-   "reach": 0.7
-  },
-  {
-   "at": [
-    -0.5,
-    1.63,
-    37.3
-   ],
-   "jump": true,
-   "reach": 0.7
-  },
-  {
-   "at": [
-    -1.2,
-    1.63,
-    38.9
-   ]
-  },
-  {
-   "at": [
-    -1.75,
-    1.63,
-    47.75
-   ]
-  },
-  {
-   "at": [
-    0.25,
-    1.63,
-    49.75
-   ]
-  },
-  {
-   "at": [
-    16.0,
-    1.63,
-    50.0
-   ]
-  }
- ],
- "hidden": [
-  86
- ],
- "pieces": [
-  {
-   "kind": "box",
-   "at": [
-    0.2,
-    1.23,
-    31.5
-   ],
-   "size": [
-    1.6,
-    0.8,
-    1.6
-   ],
-   "yaw": 0.0
-  },
-  {
-   "kind": "box",
-   "at": [
-    -0.5,
-    1.23,
-    36.8
-   ],
-   "size": [
-    1.6,
-    0.8,
-    1.6
-   ],
-   "yaw": 0.0
-  }
- ],
- "toys": [
-  {
-   "toy": "beach_ball",
-   "at": [
-    -22.0,
-    1.63,
-    14.5
-   ]
-  },
-  {
-   "toy": "beach_ball",
-   "at": [
-    -22.0,
-    1.63,
-    17.5
-   ]
-  }
- ],
- "ladder_as": "bouncer"
+ "io": {
+  "store": "wipeout/mg_office_coursee"
+ },
+ "instant": true
 }
