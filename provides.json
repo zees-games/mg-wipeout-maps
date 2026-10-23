@@ -1,0 +1,159 @@
+{
+    "schema": 1,
+    "title": "Wipeout courses",
+    "kinds": [
+        "map"
+    ],
+    "games": [
+        "gamemann/mg-wipeout"
+    ],
+    "entries": [
+        {
+            "kind": "map",
+            "id": "wo_big_balls",
+            "name": "Big Balls",
+            "scene": "courses/wo_big_balls.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_dans_course",
+            "name": "Dan's Course",
+            "scene": "courses/wo_dans_course.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_dc_course",
+            "name": "Destiny Course",
+            "scene": "courses/wo_dc_course.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_first_splash",
+            "name": "First Splash",
+            "scene": "courses/wo_first_splash.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_grand_tour",
+            "name": "Grand Tour",
+            "scene": "courses/wo_grand_tour.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_hammer_gauntlet",
+            "name": "Hammer Gauntlet",
+            "scene": "courses/wo_hammer_gauntlet.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_labo_course",
+            "name": "Laboratory Course",
+            "scene": "courses/wo_labo_course.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_lego_course",
+            "name": "Lego Course",
+            "scene": "courses/wo_lego_course.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_lily_pond",
+            "name": "Lily Pond",
+            "scene": "courses/wo_lily_pond.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_log_roll",
+            "name": "Log Roll",
+            "scene": "courses/wo_log_roll.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_oaks_course",
+            "name": "Oaks Course",
+            "scene": "courses/wo_oaks_course.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_office_course",
+            "name": "Office Course",
+            "scene": "courses/wo_office_course.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_pauls_course",
+            "name": "Pauls Mine Course",
+            "scene": "courses/wo_pauls_course.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_punch_alley",
+            "name": "Punch Alley",
+            "scene": "courses/wo_punch_alley.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_scary_course",
+            "name": "Scary Course",
+            "scene": "courses/wo_scary_course.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_spin_cycle",
+            "name": "Spin Cycle",
+            "scene": "courses/wo_spin_cycle.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_sweet_course",
+            "name": "Sweet Course",
+            "scene": "courses/wo_sweet_course.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_the_sweeper",
+            "name": "The Sweeper",
+            "scene": "courses/wo_the_sweeper.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_trapdoor_run",
+            "name": "Trapdoor Run",
+            "scene": "courses/wo_trapdoor_run.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_uphill_belt",
+            "name": "Uphill Belt",
+            "scene": "courses/wo_uphill_belt.json",
+            "map_kind": "obstacle"
+        },
+        {
+            "kind": "map",
+            "id": "wo_waytobar_course",
+            "name": "Waytobar Course",
+            "scene": "courses/wo_waytobar_course.json",
+            "map_kind": "obstacle"
+        }
+    ]
+}
