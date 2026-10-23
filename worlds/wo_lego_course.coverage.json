@@ -1,0 +1,284 @@
+{
+ "format": "dot-bsp-coverage",
+ "version": 1,
+ "map": "wo_lego_course",
+ "sha256": "9599496a86a33af333dff40697cce1664534395b535b6e1e503680c1478c55a6",
+ "textures": {
+  "looked_up": 33,
+  "by_tier": {
+   "default": 3,
+   "fallback": 30
+  },
+  "free_by_tier": {
+   "default": 3,
+   "fallback": 9
+  },
+  "nearest_photo": [
+   "boharox/lego/daceil_01",
+   "boharox/lego/daceil_02",
+   "boharox/lego/daceil_03",
+   "boharox/lego/daceil_05",
+   "boharox/lego/daceil_10",
+   "boharox/lego/dafloor_01",
+   "boharox/lego/dafloor_04",
+   "boharox/lego/daplate_02",
+   "boharox/lego/daplate_06",
+   "boharox/lego/daplate_07",
+   "boharox/lego/daplate_09",
+   "boharox/lego/dawall_01",
+   "boharox/lego/dawall_03",
+   "boharox/lego/dawall_07stripes",
+   "boharox/lego/dawall_09stripes",
+   "boharox/lego/dawall_middle",
+   "boharox/simpsons/{sewerladder",
+   "boharox/simpsons/{simpladder",
+   "courselego/courselego"
+  ]
+ },
+ "models": {
+  "looked_up": 1,
+  "by_tier": {
+   "default": 1
+  }
+ },
+ "sounds": {
+  "looked_up": 4,
+  "by_tier": {
+   "default": 4
+  }
+ },
+ "classes": {
+  "distinct": 36,
+  "entities": 261,
+  "by_tier": {
+   "default": 36
+  }
+ },
+ "keys": {
+  "catalogue": true,
+  "unmapped": {
+   "ambient_generic": [
+    "cspinup",
+    "fadeinsecs",
+    "fadeoutsecs",
+    "health",
+    "lfomodpitch",
+    "lfomodvol",
+    "lforate",
+    "lfotype",
+    "pitch",
+    "pitchstart",
+    "preset",
+    "spindown",
+    "spinup",
+    "volstart"
+   ],
+   "func_breakable": [
+    "disablereceiveshadows",
+    "disableshadows",
+    "material",
+    "nodamageforces",
+    "spawnobject"
+   ],
+   "func_brush": [
+    "InputFilter",
+    "disablereceiveshadows",
+    "disableshadows",
+    "vrad_brush_cast_shadows"
+   ],
+   "func_door": [
+    "disablereceiveshadows",
+    "disableshadows",
+    "locked_sentence",
+    "unlocked_sentence"
+   ],
+   "func_illusionary": [
+    "disablereceiveshadows",
+    "disableshadows"
+   ],
+   "func_physbox": [
+    "ExplodeDamage",
+    "ExplodeRadius",
+    "PerformanceMode",
+    "disablereceiveshadows",
+    "disableshadows",
+    "explodemagnitude",
+    "explosion",
+    "gibdir",
+    "health",
+    "material",
+    "nodamageforces",
+    "pressuredelay",
+    "propdata",
+    "renderamt",
+    "rendercolor",
+    "renderfx",
+    "rendermode",
+    "spawnobject"
+   ],
+   "func_rotating": [
+    "_minlight",
+    "disablereceiveshadows"
+   ],
+   "func_tracktrain": [
+    "disablereceiveshadows",
+    "disableshadows",
+    "speed",
+    "volume"
+   ],
+   "game_player_equip": [
+    "weapon_knife"
+   ],
+   "light_spot": [
+    "_cone",
+    "_exponent",
+    "_inner_cone",
+    "pitch"
+   ],
+   "path_track": [
+    "speed"
+   ],
+   "point_viewcontrol": [
+    "acceleration",
+    "deceleration",
+    "speed"
+   ],
+   "trigger_once": [
+    "wait"
+   ],
+   "worldspawn": [
+    "mapversion"
+   ]
+  }
+ },
+ "links": {
+  "total": 45,
+  "unresolved": 0
+ },
+ "lists": {
+  "textures_unmapped": [
+   "BOHAROX/LEGO/DACEIL_01",
+   "BOHAROX/LEGO/DACEIL_02",
+   "BOHAROX/LEGO/DACEIL_03",
+   "BOHAROX/LEGO/DACEIL_04",
+   "BOHAROX/LEGO/DACEIL_05",
+   "BOHAROX/LEGO/DACEIL_09",
+   "BOHAROX/LEGO/DACEIL_10",
+   "BOHAROX/LEGO/DAFLOOR_01",
+   "BOHAROX/LEGO/DAFLOOR_03",
+   "BOHAROX/LEGO/DAFLOOR_04",
+   "BOHAROX/LEGO/DAFLOOR_05",
+   "BOHAROX/LEGO/DAPLATE_02",
+   "BOHAROX/LEGO/DAPLATE_03",
+   "BOHAROX/LEGO/DAPLATE_04",
+   "BOHAROX/LEGO/DAPLATE_06",
+   "BOHAROX/LEGO/DAPLATE_07",
+   "BOHAROX/LEGO/DAPLATE_08",
+   "BOHAROX/LEGO/DAPLATE_09",
+   "BOHAROX/LEGO/DAPLATE_10",
+   "BOHAROX/LEGO/DAWALL_01",
+   "BOHAROX/LEGO/DAWALL_03",
+   "BOHAROX/LEGO/DAWALL_05",
+   "BOHAROX/LEGO/DAWALL_07",
+   "BOHAROX/LEGO/DAWALL_07STRIPES",
+   "BOHAROX/LEGO/DAWALL_09",
+   "BOHAROX/LEGO/DAWALL_09STRIPES",
+   "BOHAROX/LEGO/DAWALL_MIDDLE",
+   "BOHAROX/SIMPSONS/{SEWERLADDER",
+   "BOHAROX/SIMPSONS/{SIMPLADDER",
+   "COURSELEGO/COURSELEGO"
+  ],
+  "textures_flat": [
+   "boharox/lego/daceil_04",
+   "boharox/lego/daceil_09",
+   "boharox/lego/dafloor_03",
+   "boharox/lego/dafloor_05",
+   "boharox/lego/daplate_03",
+   "boharox/lego/daplate_04",
+   "boharox/lego/daplate_08",
+   "boharox/lego/daplate_10",
+   "boharox/lego/dawall_05",
+   "boharox/lego/dawall_07",
+   "boharox/lego/dawall_09"
+  ],
+  "models_unmapped": [],
+  "sounds_unmapped": [],
+  "classes_unmapped": [],
+  "keys_unmapped": [
+   "ambient_generic.cspinup",
+   "ambient_generic.fadeinsecs",
+   "ambient_generic.fadeoutsecs",
+   "ambient_generic.health",
+   "ambient_generic.lfomodpitch",
+   "ambient_generic.lfomodvol",
+   "ambient_generic.lforate",
+   "ambient_generic.lfotype",
+   "ambient_generic.pitch",
+   "ambient_generic.pitchstart",
+   "ambient_generic.preset",
+   "ambient_generic.spindown",
+   "ambient_generic.spinup",
+   "ambient_generic.volstart",
+   "func_breakable.disablereceiveshadows",
+   "func_breakable.disableshadows",
+   "func_breakable.material",
+   "func_breakable.nodamageforces",
+   "func_breakable.spawnobject",
+   "func_brush.InputFilter",
+   "func_brush.disablereceiveshadows",
+   "func_brush.disableshadows",
+   "func_brush.vrad_brush_cast_shadows",
+   "func_door.disablereceiveshadows",
+   "func_door.disableshadows",
+   "func_door.locked_sentence",
+   "func_door.unlocked_sentence",
+   "func_illusionary.disablereceiveshadows",
+   "func_illusionary.disableshadows",
+   "func_physbox.ExplodeDamage",
+   "func_physbox.ExplodeRadius",
+   "func_physbox.PerformanceMode",
+   "func_physbox.disablereceiveshadows",
+   "func_physbox.disableshadows",
+   "func_physbox.explodemagnitude",
+   "func_physbox.explosion",
+   "func_physbox.gibdir",
+   "func_physbox.health",
+   "func_physbox.material",
+   "func_physbox.nodamageforces",
+   "func_physbox.pressuredelay",
+   "func_physbox.propdata",
+   "func_physbox.renderamt",
+   "func_physbox.rendercolor",
+   "func_physbox.renderfx",
+   "func_physbox.rendermode",
+   "func_physbox.spawnobject",
+   "func_rotating._minlight",
+   "func_rotating.disablereceiveshadows",
+   "func_tracktrain.disablereceiveshadows",
+   "func_tracktrain.disableshadows",
+   "func_tracktrain.speed",
+   "func_tracktrain.volume",
+   "game_player_equip.weapon_knife",
+   "light_spot._cone",
+   "light_spot._exponent",
+   "light_spot._inner_cone",
+   "light_spot.pitch",
+   "path_track.speed",
+   "point_viewcontrol.acceleration",
+   "point_viewcontrol.deceleration",
+   "point_viewcontrol.speed",
+   "trigger_once.wait",
+   "worldspawn.mapversion"
+  ],
+  "links_unresolved": []
+ },
+ "counts": {
+  "textures_unmapped": 30,
+  "textures_flat": 11,
+  "models_unmapped": 0,
+  "sounds_unmapped": 0,
+  "classes_unmapped": 0,
+  "keys_unmapped": 64,
+  "links_unresolved": 0
+ }
+}

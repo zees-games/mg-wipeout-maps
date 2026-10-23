@@ -1,0 +1,71 @@
+{
+ "format": 2,
+ "kind": "course",
+ "id": "wo_lego_course",
+ "name": "Lego Course",
+ "author": "mg_LEGO_course by The_Prodigy",
+ "source": "~/mapsrc/wipeout/128253/x/mg_LEGO_course.bsp",
+ "credit": {
+  "author": "The_Prodigy",
+  "page": "https://gamebanana.com/mods/128253"
+ },
+ "blurb": "One life, in a brick-toy course imported whole and running its own machinery: movers, rails, spinning bars and hurt volumes do what the original's entities say. Reach the end pad.",
+ "theme": {
+  "sky": [
+   0.56,
+   0.62,
+   0.86
+  ],
+  "horizon": [
+   0.98,
+   0.84,
+   0.72
+  ],
+  "water": [
+   0.16,
+   0.38,
+   0.6
+  ],
+  "sun": [
+   1.0,
+   0.9,
+   0.78
+  ]
+ },
+ "water_height": -40.0,
+ "course_seconds": 720.0,
+ "io": {
+  "store": "wipeout/mg_lego_course"
+ },
+ "instant": true,
+ "start": {
+  "at": [
+   -19.8,
+   0.15,
+   2.7
+  ],
+  "size": [
+   8,
+   8
+  ],
+  "yaw": 90
+ },
+ "finish": {
+  "at": [
+   -61.2,
+   -11.1,
+   -87.0
+  ],
+  "size": [
+   7.0,
+   4.0,
+   4.0
+  ],
+  "yaw": 0,
+  "lounge": [
+   -61.2,
+   -11.1,
+   -87.0
+  ]
+ }
+}

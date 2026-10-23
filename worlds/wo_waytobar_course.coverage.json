@@ -1,0 +1,291 @@
+{
+ "format": "dot-bsp-coverage",
+ "version": 1,
+ "map": "wo_waytobar_course",
+ "sha256": "0e39768989f601513344ee78327905d80f228585dd5a69ecd156edc49f85e2df",
+ "textures": {
+  "looked_up": 41,
+  "by_tier": {
+   "default": 41
+  },
+  "free_by_tier": {
+   "default": 14
+  },
+  "nearest_photo": []
+ },
+ "models": {
+  "looked_up": 22,
+  "by_tier": {
+   "default": 16,
+   "fallback": 6
+  }
+ },
+ "sounds": {
+  "looked_up": 1,
+  "by_tier": {
+   "default": 1
+  }
+ },
+ "classes": {
+  "distinct": 42,
+  "entities": 630,
+  "by_tier": {
+   "default": 42
+  }
+ },
+ "keys": {
+  "catalogue": true,
+  "unmapped": {
+   "ambient_generic": [
+    "cspinup",
+    "fadeinsecs",
+    "fadeoutsecs",
+    "health",
+    "lfomodpitch",
+    "lfomodvol",
+    "lforate",
+    "lfotype",
+    "pitch",
+    "pitchstart",
+    "preset",
+    "spindown",
+    "spinup",
+    "volstart"
+   ],
+   "func_Detail": [
+    "StartDisabled",
+    "damage",
+    "damagecap",
+    "damagemodel",
+    "damagetype",
+    "nodmgforce",
+    "spawnflags"
+   ],
+   "func_breakable": [
+    "disablereceiveshadows",
+    "disableshadows",
+    "material",
+    "nodamageforces",
+    "spawnobject"
+   ],
+   "func_button": [
+    "disablereceiveshadows"
+   ],
+   "func_door": [
+    "disablereceiveshadows",
+    "disableshadows",
+    "locked_sentence",
+    "unlocked_sentence"
+   ],
+   "func_illusionary": [
+    "",
+    "disablereceiveshadows",
+    "disableshadows",
+    "spawnflags"
+   ],
+   "func_rotating": [
+    "disablereceiveshadows",
+    "disableshadows"
+   ],
+   "func_tracktrain": [
+    "disablereceiveshadows",
+    "disableshadows",
+    "speed",
+    "volume"
+   ],
+   "func_wall_toggle": [
+    "disablereceiveshadows",
+    "disableshadows",
+    "renderamt",
+    "rendercolor",
+    "renderfx",
+    "rendermode"
+   ],
+   "game_player_equip": [
+    "weapon_knife"
+   ],
+   "path_track": [
+    "speed"
+   ],
+   "point_spotlight": [
+    "disablereceiveshadows"
+   ],
+   "point_viewcontrol": [
+    "acceleration",
+    "deceleration",
+    "speed"
+   ],
+   "prop_door_rotating": [
+    "speed"
+   ],
+   "prop_dynamic_override": [
+    "SetBodyGroup",
+    "disablereceiveshadows",
+    "disableshadows",
+    "fademaxdist",
+    "fademindist",
+    "fadescale",
+    "solid"
+   ],
+   "prop_physics_multiplayer": [
+    "Damagetype",
+    "ExplodeDamage",
+    "ExplodeRadius",
+    "PerformanceMode",
+    "damagetoenablemotion",
+    "disablereceiveshadows",
+    "disableshadows",
+    "fademaxdist",
+    "fademindist",
+    "fadescale",
+    "forcetoenablemotion",
+    "inertiaScale",
+    "massScale",
+    "maxdxlevel",
+    "mindxlevel",
+    "minhealthdmg",
+    "nodamageforces",
+    "physdamagescale",
+    "pressuredelay",
+    "renderamt",
+    "rendercolor",
+    "renderfx",
+    "rendermode",
+    "shadowcastdist",
+    "skin",
+    "spawnflags"
+   ],
+   "trigger_push": [
+    "speed"
+   ],
+   "weapon_m3": [
+    "spawnflags"
+   ],
+   "worldspawn": [
+    "mapversion"
+   ]
+  }
+ },
+ "links": {
+  "total": 16,
+  "unresolved": 1
+ },
+ "lists": {
+  "textures_unmapped": [],
+  "textures_flat": [],
+  "models_unmapped": [
+   "props/cs_militia/bottle01.mdl",
+   "props/cs_office/fire_extinguisher.mdl",
+   "props/cs_office/ladder1.mdl",
+   "props/cs_office/phone.mdl",
+   "props_c17/door01_left.mdl",
+   "props_lab/walllight001a.mdl"
+  ],
+  "sounds_unmapped": [],
+  "classes_unmapped": [],
+  "keys_unmapped": [
+   "ambient_generic.cspinup",
+   "ambient_generic.fadeinsecs",
+   "ambient_generic.fadeoutsecs",
+   "ambient_generic.health",
+   "ambient_generic.lfomodpitch",
+   "ambient_generic.lfomodvol",
+   "ambient_generic.lforate",
+   "ambient_generic.lfotype",
+   "ambient_generic.pitch",
+   "ambient_generic.pitchstart",
+   "ambient_generic.preset",
+   "ambient_generic.spindown",
+   "ambient_generic.spinup",
+   "ambient_generic.volstart",
+   "func_Detail.StartDisabled",
+   "func_Detail.damage",
+   "func_Detail.damagecap",
+   "func_Detail.damagemodel",
+   "func_Detail.damagetype",
+   "func_Detail.nodmgforce",
+   "func_Detail.spawnflags",
+   "func_breakable.disablereceiveshadows",
+   "func_breakable.disableshadows",
+   "func_breakable.material",
+   "func_breakable.nodamageforces",
+   "func_breakable.spawnobject",
+   "func_button.disablereceiveshadows",
+   "func_door.disablereceiveshadows",
+   "func_door.disableshadows",
+   "func_door.locked_sentence",
+   "func_door.unlocked_sentence",
+   "func_illusionary.",
+   "func_illusionary.disablereceiveshadows",
+   "func_illusionary.disableshadows",
+   "func_illusionary.spawnflags",
+   "func_rotating.disablereceiveshadows",
+   "func_rotating.disableshadows",
+   "func_tracktrain.disablereceiveshadows",
+   "func_tracktrain.disableshadows",
+   "func_tracktrain.speed",
+   "func_tracktrain.volume",
+   "func_wall_toggle.disablereceiveshadows",
+   "func_wall_toggle.disableshadows",
+   "func_wall_toggle.renderamt",
+   "func_wall_toggle.rendercolor",
+   "func_wall_toggle.renderfx",
+   "func_wall_toggle.rendermode",
+   "game_player_equip.weapon_knife",
+   "path_track.speed",
+   "point_spotlight.disablereceiveshadows",
+   "point_viewcontrol.acceleration",
+   "point_viewcontrol.deceleration",
+   "point_viewcontrol.speed",
+   "prop_door_rotating.speed",
+   "prop_dynamic_override.SetBodyGroup",
+   "prop_dynamic_override.disablereceiveshadows",
+   "prop_dynamic_override.disableshadows",
+   "prop_dynamic_override.fademaxdist",
+   "prop_dynamic_override.fademindist",
+   "prop_dynamic_override.fadescale",
+   "prop_dynamic_override.solid",
+   "prop_physics_multiplayer.Damagetype",
+   "prop_physics_multiplayer.ExplodeDamage",
+   "prop_physics_multiplayer.ExplodeRadius",
+   "prop_physics_multiplayer.PerformanceMode",
+   "prop_physics_multiplayer.damagetoenablemotion",
+   "prop_physics_multiplayer.disablereceiveshadows",
+   "prop_physics_multiplayer.disableshadows",
+   "prop_physics_multiplayer.fademaxdist",
+   "prop_physics_multiplayer.fademindist",
+   "prop_physics_multiplayer.fadescale",
+   "prop_physics_multiplayer.forcetoenablemotion",
+   "prop_physics_multiplayer.inertiaScale",
+   "prop_physics_multiplayer.massScale",
+   "prop_physics_multiplayer.maxdxlevel",
+   "prop_physics_multiplayer.mindxlevel",
+   "prop_physics_multiplayer.minhealthdmg",
+   "prop_physics_multiplayer.nodamageforces",
+   "prop_physics_multiplayer.physdamagescale",
+   "prop_physics_multiplayer.pressuredelay",
+   "prop_physics_multiplayer.renderamt",
+   "prop_physics_multiplayer.rendercolor",
+   "prop_physics_multiplayer.renderfx",
+   "prop_physics_multiplayer.rendermode",
+   "prop_physics_multiplayer.shadowcastdist",
+   "prop_physics_multiplayer.skin",
+   "prop_physics_multiplayer.spawnflags",
+   "trigger_push.speed",
+   "weapon_m3.spawnflags",
+   "worldspawn.mapversion"
+  ],
+  "links_unresolved": [
+   "prop_physics_multiplayer.OnMotionEnabled->steam"
+  ]
+ },
+ "counts": {
+  "textures_unmapped": 0,
+  "textures_flat": 0,
+  "models_unmapped": 6,
+  "sounds_unmapped": 0,
+  "classes_unmapped": 0,
+  "keys_unmapped": 90,
+  "links_unresolved": 1
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "format": 2,
+ "kind": "course",
+ "id": "wo_waytobar_course",
+ "name": "Waytobar Course",
+ "author": "mg_waytobar_course_2012 by BeesCz",
+ "source": "~/mapsrc/wipeout/128852/x/mg_waytobar_course_2012.bsp",
+ "credit": {
+  "author": "BeesCz",
+  "page": "https://gamebanana.com/mods/128852"
+ },
+ "blurb": "One life, in six long halls imported whole and running their own machinery: movers, doors, teleports and hurt volumes do what the original's entities say. Reach the last hall's end.",
+ "theme": {
+  "sky": [
+   0.56,
+   0.62,
+   0.86
+  ],
+  "horizon": [
+   0.98,
+   0.84,
+   0.72
+  ],
+  "water": [
+   0.16,
+   0.38,
+   0.6
+  ],
+  "sun": [
+   1.0,
+   0.9,
+   0.78
+  ]
+ },
+ "water_height": -40.0,
+ "course_seconds": 720.0,
+ "io": {
+  "store": "wipeout/mg_waytobar_course_2012"
+ },
+ "instant": true,
+ "start": {
+  "at": [
+   5.5,
+   1.24,
+   -1.5
+  ],
+  "size": [
+   9,
+   13
+  ],
+  "yaw": 180
+ },
+ "finish": {
+  "at": [
+   25.7,
+   -1.8,
+   17.4
+  ],
+  "size": [
+   4.5,
+   4.0,
+   3.0
+  ],
+  "yaw": 0,
+  "lounge": [
+   25.7,
+   -1.8,
+   17.4
+  ]
+ }
+}
