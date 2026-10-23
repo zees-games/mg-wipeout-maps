@@ -1,0 +1,372 @@
+{
+ "format": "dot-bsp-coverage",
+ "version": 1,
+ "map": "wo_pauls_course",
+ "sha256": "c1f2c6ea7867b8230848e149cb8cceff159df6138d6d6c41398b2ab9a0668fc0",
+ "textures": {
+  "looked_up": 59,
+  "by_tier": {
+   "default": 25,
+   "fallback": 34
+  },
+  "free_by_tier": {
+   "default": 10,
+   "fallback": 14
+  },
+  "nearest_photo": [
+   "custom/mcchest_front",
+   "custom/mcchest_large",
+   "custom/mcchest_side",
+   "custom/mcchest_top",
+   "custom/mccoal",
+   "custom/mcdiamond",
+   "custom/mcfurnace_side",
+   "custom/mcgold",
+   "custom/mchalfblockside",
+   "custom/mchalfblocktop",
+   "custom/mcinnertree",
+   "custom/mcleaves",
+   "custom/mcmossy",
+   "custom/mctntbottom",
+   "custom/mctntside",
+   "custom/mctnttop",
+   "custom/mctrack",
+   "custom/mctreetrunk",
+   "custom/mcworkbench_side2",
+   "custom/mcworkbench_top",
+   "mytextures/bannerminecraft",
+   "mytextures/cher1",
+   "mytextures/cher2",
+   "mytextures/cher3",
+   "mytextures/cher4",
+   "mytextures/howto",
+   "mytextures/lookagain",
+   "mytextures/paul3",
+   "mytextures/qqcorner"
+  ]
+ },
+ "models": {
+  "looked_up": 3,
+  "by_tier": {
+   "default": 1,
+   "fallback": 2
+  }
+ },
+ "sounds": {
+  "looked_up": 7,
+  "by_tier": {
+   "default": 7
+  }
+ },
+ "classes": {
+  "distinct": 49,
+  "entities": 555,
+  "by_tier": {
+   "default": 49
+  }
+ },
+ "keys": {
+  "catalogue": true,
+  "unmapped": {
+   "ambient_generic": [
+    "cspinup",
+    "fadeinsecs",
+    "fadeoutsecs",
+    "health",
+    "lfomodpitch",
+    "lfomodvol",
+    "lforate",
+    "lfotype",
+    "pitch",
+    "pitchstart",
+    "preset",
+    "spindown",
+    "spinup",
+    "volstart"
+   ],
+   "env_fade": [
+    "renderamt",
+    "rendercolor"
+   ],
+   "env_spritetrail": [
+    "spawnflags"
+   ],
+   "filter_activator_name": [
+    "Negated"
+   ],
+   "filter_activator_team": [
+    "Negated"
+   ],
+   "func_breakable": [
+    "",
+    "disablereceiveshadows",
+    "disableshadows",
+    "material",
+    "nodamageforces",
+    "spawnobject"
+   ],
+   "func_button": [
+    "disablereceiveshadows"
+   ],
+   "func_illusionary": [
+    "disablereceiveshadows",
+    "disableshadows"
+   ],
+   "func_physbox": [
+    "ExplodeDamage",
+    "ExplodeRadius",
+    "PerformanceMode",
+    "disablereceiveshadows",
+    "disableshadows",
+    "explodemagnitude",
+    "explosion",
+    "gibdir",
+    "health",
+    "material",
+    "nodamageforces",
+    "pressuredelay",
+    "propdata",
+    "renderamt",
+    "rendercolor",
+    "renderfx",
+    "rendermode",
+    "spawnobject"
+   ],
+   "func_rotating": [
+    "disablereceiveshadows",
+    "disableshadows"
+   ],
+   "func_tracktrain": [
+    "disablereceiveshadows",
+    "disableshadows",
+    "speed",
+    "volume"
+   ],
+   "func_wall_toggle": [
+    "disablereceiveshadows",
+    "disableshadows",
+    "renderamt",
+    "rendercolor",
+    "renderfx",
+    "rendermode"
+   ],
+   "game_player_equip": [
+    "weapon_knife"
+   ],
+   "path_track": [
+    "speed"
+   ],
+   "point_viewcontrol": [
+    "acceleration",
+    "deceleration"
+   ],
+   "prop_dynamic": [
+    "SetBodyGroup",
+    "disablereceiveshadows",
+    "fademindist",
+    "fadescale",
+    "solid"
+   ],
+   "prop_physics_multiplayer": [
+    "Damagetype",
+    "ExplodeDamage",
+    "ExplodeRadius",
+    "PerformanceMode",
+    "damagetoenablemotion",
+    "disableshadows",
+    "fademaxdist",
+    "fademindist",
+    "fadescale",
+    "forcetoenablemotion",
+    "inertiaScale",
+    "massScale",
+    "maxdxlevel",
+    "mindxlevel",
+    "minhealthdmg",
+    "multiplayer_physics_mode",
+    "nodamageforces",
+    "physdamagescale",
+    "pressuredelay",
+    "renderamt",
+    "rendercolor",
+    "shadowcastdist",
+    "skin",
+    "spawnflags"
+   ],
+   "trigger_push": [
+    "speed"
+   ],
+   "weapon_hegrenade": [
+    "_minlight",
+    "disablereceiveshadows",
+    "disableshadows"
+   ],
+   "worldspawn": [
+    "mapversion"
+   ]
+  }
+ },
+ "links": {
+  "total": 415,
+  "unresolved": 0
+ },
+ "lists": {
+  "textures_unmapped": [
+   "CS_ITALY/YELLOW",
+   "CUSTOM/MCCAGE",
+   "CUSTOM/MCCHEST_FRONT",
+   "CUSTOM/MCCHEST_LARGE",
+   "CUSTOM/MCCHEST_SIDE",
+   "CUSTOM/MCCHEST_TOP",
+   "CUSTOM/MCCOAL",
+   "CUSTOM/MCDIAMOND",
+   "CUSTOM/MCFURNACE_SIDE",
+   "CUSTOM/MCGOLD",
+   "CUSTOM/MCHALFBLOCKSIDE",
+   "CUSTOM/MCHALFBLOCKTOP",
+   "CUSTOM/MCINNERTREE",
+   "CUSTOM/MCLAVA",
+   "CUSTOM/MCLEAVES",
+   "CUSTOM/MCMOSSY",
+   "CUSTOM/MCOBSIDIAN",
+   "CUSTOM/MCRED",
+   "CUSTOM/MCTNTBOTTOM",
+   "CUSTOM/MCTNTSIDE",
+   "CUSTOM/MCTNTTOP",
+   "CUSTOM/MCTRACK",
+   "CUSTOM/MCTREETRUNK",
+   "CUSTOM/MCWORKBENCH_SIDE2",
+   "CUSTOM/MCWORKBENCH_TOP",
+   "MYTEXTURES/BANNERMINECRAFT",
+   "MYTEXTURES/CHER1",
+   "MYTEXTURES/CHER2",
+   "MYTEXTURES/CHER3",
+   "MYTEXTURES/CHER4",
+   "MYTEXTURES/HOWTO",
+   "MYTEXTURES/LOOKAGAIN",
+   "MYTEXTURES/PAUL3",
+   "MYTEXTURES/QQCORNER"
+  ],
+  "textures_flat": [
+   "cs_italy/yellow",
+   "custom/mccage",
+   "custom/mclava",
+   "custom/mcobsidian",
+   "custom/mcred"
+  ],
+  "models_unmapped": [
+   "extras/info_speech.mdl",
+   "props_c17/pulleywheels_small01.mdl"
+  ],
+  "sounds_unmapped": [],
+  "classes_unmapped": [],
+  "keys_unmapped": [
+   "ambient_generic.cspinup",
+   "ambient_generic.fadeinsecs",
+   "ambient_generic.fadeoutsecs",
+   "ambient_generic.health",
+   "ambient_generic.lfomodpitch",
+   "ambient_generic.lfomodvol",
+   "ambient_generic.lforate",
+   "ambient_generic.lfotype",
+   "ambient_generic.pitch",
+   "ambient_generic.pitchstart",
+   "ambient_generic.preset",
+   "ambient_generic.spindown",
+   "ambient_generic.spinup",
+   "ambient_generic.volstart",
+   "env_fade.renderamt",
+   "env_fade.rendercolor",
+   "env_spritetrail.spawnflags",
+   "filter_activator_name.Negated",
+   "filter_activator_team.Negated",
+   "func_breakable.",
+   "func_breakable.disablereceiveshadows",
+   "func_breakable.disableshadows",
+   "func_breakable.material",
+   "func_breakable.nodamageforces",
+   "func_breakable.spawnobject",
+   "func_button.disablereceiveshadows",
+   "func_illusionary.disablereceiveshadows",
+   "func_illusionary.disableshadows",
+   "func_physbox.ExplodeDamage",
+   "func_physbox.ExplodeRadius",
+   "func_physbox.PerformanceMode",
+   "func_physbox.disablereceiveshadows",
+   "func_physbox.disableshadows",
+   "func_physbox.explodemagnitude",
+   "func_physbox.explosion",
+   "func_physbox.gibdir",
+   "func_physbox.health",
+   "func_physbox.material",
+   "func_physbox.nodamageforces",
+   "func_physbox.pressuredelay",
+   "func_physbox.propdata",
+   "func_physbox.renderamt",
+   "func_physbox.rendercolor",
+   "func_physbox.renderfx",
+   "func_physbox.rendermode",
+   "func_physbox.spawnobject",
+   "func_rotating.disablereceiveshadows",
+   "func_rotating.disableshadows",
+   "func_tracktrain.disablereceiveshadows",
+   "func_tracktrain.disableshadows",
+   "func_tracktrain.speed",
+   "func_tracktrain.volume",
+   "func_wall_toggle.disablereceiveshadows",
+   "func_wall_toggle.disableshadows",
+   "func_wall_toggle.renderamt",
+   "func_wall_toggle.rendercolor",
+   "func_wall_toggle.renderfx",
+   "func_wall_toggle.rendermode",
+   "game_player_equip.weapon_knife",
+   "path_track.speed",
+   "point_viewcontrol.acceleration",
+   "point_viewcontrol.deceleration",
+   "prop_dynamic.SetBodyGroup",
+   "prop_dynamic.disablereceiveshadows",
+   "prop_dynamic.fademindist",
+   "prop_dynamic.fadescale",
+   "prop_dynamic.solid",
+   "prop_physics_multiplayer.Damagetype",
+   "prop_physics_multiplayer.ExplodeDamage",
+   "prop_physics_multiplayer.ExplodeRadius",
+   "prop_physics_multiplayer.PerformanceMode",
+   "prop_physics_multiplayer.damagetoenablemotion",
+   "prop_physics_multiplayer.disableshadows",
+   "prop_physics_multiplayer.fademaxdist",
+   "prop_physics_multiplayer.fademindist",
+   "prop_physics_multiplayer.fadescale",
+   "prop_physics_multiplayer.forcetoenablemotion",
+   "prop_physics_multiplayer.inertiaScale",
+   "prop_physics_multiplayer.massScale",
+   "prop_physics_multiplayer.maxdxlevel",
+   "prop_physics_multiplayer.mindxlevel",
+   "prop_physics_multiplayer.minhealthdmg",
+   "prop_physics_multiplayer.multiplayer_physics_mode",
+   "prop_physics_multiplayer.nodamageforces",
+   "prop_physics_multiplayer.physdamagescale",
+   "prop_physics_multiplayer.pressuredelay",
+   "prop_physics_multiplayer.renderamt",
+   "prop_physics_multiplayer.rendercolor",
+   "prop_physics_multiplayer.shadowcastdist",
+   "prop_physics_multiplayer.skin",
+   "prop_physics_multiplayer.spawnflags",
+   "trigger_push.speed",
+   "weapon_hegrenade._minlight",
+   "weapon_hegrenade.disablereceiveshadows",
+   "weapon_hegrenade.disableshadows",
+   "worldspawn.mapversion"
+  ],
+  "links_unresolved": []
+ },
+ "counts": {
+  "textures_unmapped": 34,
+  "textures_flat": 5,
+  "models_unmapped": 2,
+  "sounds_unmapped": 0,
+  "classes_unmapped": 0,
+  "keys_unmapped": 96,
+  "links_unresolved": 0
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "format": 2,
+ "kind": "course",
+ "id": "wo_pauls_course",
+ "name": "Pauls Mine Course",
+ "author": "mg_pauls_minecraft_course_v2 by Paul_Deagle ([SG]Paul)",
+ "source": "~/mapsrc/wipeout/128438/x/mg_pauls_minecraft_course_v2.bsp",
+ "credit": {
+  "author": "Paul_Deagle ([SG]Paul)",
+  "page": "https://gamebanana.com/mods/128438"
+ },
+ "blurb": "One life, in a very hard mine imported whole and running its own machinery: carts, a moving path, lava, blocks that blow up and beams that throw you up, all doing what the original's entities say. Reach the end.",
+ "theme": {
+  "sky": [
+   0.56,
+   0.62,
+   0.86
+  ],
+  "horizon": [
+   0.98,
+   0.84,
+   0.72
+  ],
+  "water": [
+   0.16,
+   0.38,
+   0.6
+  ],
+  "sun": [
+   1.0,
+   0.9,
+   0.78
+  ]
+ },
+ "water_height": -80.0,
+ "course_seconds": 720.0,
+ "io": {
+  "store": "wipeout/mg_pauls_minecraft_course_v2"
+ },
+ "instant": true,
+ "start": {
+  "at": [
+   5.41,
+   -9.7,
+   -1.77
+  ],
+  "size": [
+   2.5,
+   2.5
+  ],
+  "yaw": -90
+ },
+ "finish": {
+  "at": [
+   23.47,
+   -23.0,
+   -3.66
+  ],
+  "size": [
+   2.4,
+   4.0,
+   2.4
+  ],
+  "yaw": 0,
+  "lounge": [
+   23.47,
+   -23.0,
+   -3.66
+  ]
+ }
+}
