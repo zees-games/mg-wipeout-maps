@@ -1,0 +1,66 @@
+{
+ "format": 2,
+ "kind": "course",
+ "id": "wo_labo_course",
+ "name": "Laboratory Course",
+ "author": "mg_labo_course_fix by Patator (with Artek and Xmortel, for the Furaxx team)",
+ "source": "~/mapsrc/wipeout/128233/x/mg_labo_course_fix.bsp",
+ "credit": {
+  "author": "Patator, Artek, Xmortel",
+  "page": "https://gamebanana.com/mods/128233"
+ },
+ "blurb": "One life, in a laboratory after its disaster, imported whole and running its own machinery: lasers, bars, rams, lifts, jumper pads and floors that give way do what the original's entities say. Reach the exit.",
+ "theme": {
+  "sky": [
+   0.5,
+   0.78,
+   0.8
+  ],
+  "horizon": [
+   0.86,
+   0.95,
+   0.9
+  ],
+  "water": [
+   0.1,
+   0.5,
+   0.46
+  ]
+ },
+ "water_height": -40.0,
+ "course_seconds": 600.0,
+ "io": {
+  "store": "wipeout/mg_labo_course_fix"
+ },
+ "instant": true,
+ "start": {
+  "at": [
+   4.9,
+   0.65,
+   23.6
+  ],
+  "size": [
+   8,
+   8
+  ],
+  "yaw": 90
+ },
+ "finish": {
+  "at": [
+   -72.3,
+   0.05,
+   -82.6
+  ],
+  "size": [
+   6.0,
+   4.0,
+   9.0
+  ],
+  "yaw": 0,
+  "lounge": [
+   -72.3,
+   0.05,
+   -82.6
+  ]
+ }
+}

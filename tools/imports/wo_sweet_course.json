@@ -1,0 +1,71 @@
+{
+ "format": 2,
+ "kind": "course",
+ "id": "wo_sweet_course",
+ "name": "Sweet Course",
+ "author": "mg_sweet_course_rework by Nexore",
+ "source": "~/mapsrc/wipeout/658326/x/mg_sweet_course_rework/mg_sweet_course_rework.bsp",
+ "credit": {
+  "author": "Nexore",
+  "page": "https://gamebanana.com/mods/658326"
+ },
+ "blurb": "One life, down a long run of sweet-shop halls imported whole and running its own machinery: lasers, bars, sliding walls, belts and lifts do what the original's entities say. Reach the end.",
+ "theme": {
+  "sky": [
+   0.56,
+   0.62,
+   0.86
+  ],
+  "horizon": [
+   0.98,
+   0.84,
+   0.72
+  ],
+  "water": [
+   0.16,
+   0.38,
+   0.6
+  ],
+  "sun": [
+   1.0,
+   0.9,
+   0.78
+  ]
+ },
+ "water_height": -40.0,
+ "course_seconds": 720.0,
+ "io": {
+  "store": "wipeout/mg_sweet_course_rework"
+ },
+ "instant": true,
+ "start": {
+  "at": [
+   -9.1,
+   0.02,
+   -17.7
+  ],
+  "size": [
+   8,
+   8
+  ],
+  "yaw": 90
+ },
+ "finish": {
+  "at": [
+   -147.5,
+   0.3,
+   210.5
+  ],
+  "size": [
+   6.0,
+   4.0,
+   6.0
+  ],
+  "yaw": 0,
+  "lounge": [
+   -147.5,
+   0.3,
+   210.5
+  ]
+ }
+}
