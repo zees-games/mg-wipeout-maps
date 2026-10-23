@@ -13,7 +13,8 @@ reads a BSP itself. Rules, per mover and volume the converter lists:
     trigger_hurt of 100 or more      -> kill box, unless the import file lists its model under "attached"
     func_brush the map toggles away  -> listed under "hidden" in the import file: left out of the mesh (a door that
                                         shuts the spawn room until the round starts would box the runners in)
-    ladder volume                    -> bouncer at its foot (a spec's "drop": ["bouncer"] leaves them out)
+    ladder volume                    -> ladder piece the player climbs (a spec's "ladder_as": "bouncer" makes a bounce
+                                        pad at its foot instead, for a course routed over one)
     spec "tune": {"<mover name>": {"period": 9, "duty": 0.35}} -> fields overwritten on that mover's piece (a stand-in
                                         trace asks for a slower punch than the map's own speed gives)
     spec "stage": [[min x,y,z],[max x,y,z]] -> generated pieces outside that box are dropped
@@ -31,7 +32,6 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.join(HERE, "..")
 BSP = os.environ.get("DOTBSP_PATH") or os.path.join(REPO, "..", "dot-map", "tools", "bsp")
 MAX_SPIN = 120.0
-LADDER_POWER = 13.5
 
 
 def r(x):
@@ -141,8 +141,11 @@ def pieces_from(manifest, spec):
                 continue
             pieces.append({"kind": "kill", "at": [r(c) for c in centre], "size": [r(s) for s in size], "yaw": 0.0})
         elif v["kind"] == "ladder":
-            pieces.append({"kind": "bouncer", "at": [r(centre[0]), r(lo[1] + 0.1), r(centre[2])],
-                           "size": [r(max(size[0], 1.2)), 0.2, r(max(size[2], 1.2))], "power": LADDER_POWER, "yaw": 0.0})
+            if spec.get("ladder_as") == "bouncer":
+                pieces.append({"kind": "bouncer", "at": [r(centre[0]), r(lo[1] + 0.1), r(centre[2])],
+                               "size": [r(max(size[0], 1.2)), 0.2, r(max(size[2], 1.2))], "power": 13.5, "yaw": 0.0})
+            else:
+                pieces.append({"kind": "ladder", "at": [r(c) for c in centre], "size": [r(max(x, 0.1)) for x in size]})
         elif v["kind"] in ("push", "gravity", "teleport"):
             notes.append("%s volume %s: no equivalent, not built" % (v["kind"], v.get("targetname") or v["model"]))
     for p in pieces:

@@ -178,13 +178,11 @@
   ],
   [
    8,
-   6,
+   14,
    2
   ]
  ],
- "drop": [
-  "bouncer"
- ],
+ "drop": [],
  "pusher_inset": 1.2,
  "tune": {
   "swifty": {
