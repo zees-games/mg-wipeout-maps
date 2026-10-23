@@ -25,6 +25,7 @@ import itertools
 import json
 import math
 import os
+import shutil
 import subprocess
 import sys
 
@@ -163,12 +164,34 @@ def pieces_from(manifest, spec):
     return pieces, notes
 
 
+def main_io(spec, worlds):
+    """A course that runs the map's own entity logic (dot-map's DotMapWorld): the whole map from the store,
+    with its source document beside it, and nothing generated; the game hosts what the map's entities do."""
+    cid = spec["id"]
+    prefix = os.path.join(worlds, cid)
+    subprocess.run([sys.executable, "-I", os.path.join(BSP, "bsp.py"), "regen", spec["io"]["store"],
+                    "--out", prefix, "--name", cid], check=True, stdout=subprocess.DEVNULL)
+    # The converter also writes free textures, credits and a rule stub; the game draws by generic kind.
+    for extra in ("textures", "dot_map"):
+        shutil.rmtree(os.path.join(worlds, extra), ignore_errors=True)
+    if os.path.exists(os.path.join(worlds, "CREDITS.md")):
+        os.remove(os.path.join(worlds, "CREDITS.md"))
+    doc = {k: spec[k] for k in ("format", "kind", "id", "name", "author", "blurb", "theme", "water_height",
+                                "course_seconds", "instant", "start", "finish") if k in spec}
+    doc["pieces"] = [{"kind": "world", "mesh": cid, "io": True}] + spec.get("pieces", [])
+    with open(os.path.join(REPO, "courses", cid + ".json"), "w") as out:
+        out.write(json.dumps(doc, indent=1) + "\n")
+    print("%s: runs the map's own entities" % cid)
+
+
 def main():
     spec_path = sys.argv[1]
     spec = json.load(open(spec_path))
     cid = spec["id"]
     worlds = os.path.join(REPO, "worlds")
     os.makedirs(worlds, exist_ok=True)
+    if spec.get("io"):
+        return main_io(spec, worlds)
     subprocess.run([sys.executable, "-I", os.path.join(BSP, "bsp.py"), "mesh", os.path.expanduser(spec["source"]),
                     "--out", os.path.join(worlds, cid), "--scale", "hull", "--author", spec["credit"]["author"],
                     "--page", spec["credit"]["page"]], check=True, stdout=subprocess.DEVNULL)

@@ -1,0 +1,66 @@
+{
+ "format": 2,
+ "kind": "course",
+ "id": "wo_oaks_course",
+ "name": "Oaks Course",
+ "author": "mg_oaks_course by ProfessorOak",
+ "source": "~/mapsrc/wipeout/128401/x/mg_oaks_course.bsp",
+ "credit": {
+  "author": "ProfessorOak",
+  "page": "https://gamebanana.com/mods/128401"
+ },
+ "io": {
+  "store": "wipeout/mg_oaks_course"
+ },
+ "blurb": "One life, a tall puzzle course imported whole and running its own machinery: buttons, teleports, pushes, doors and trains do what the original's entities say. Reach the room at the far end.",
+ "theme": {
+  "sky": [
+   0.36,
+   0.42,
+   0.5
+  ],
+  "horizon": [
+   0.64,
+   0.68,
+   0.72
+  ],
+  "water": [
+   0.14,
+   0.26,
+   0.32
+  ]
+ },
+ "water_height": -30.0,
+ "course_seconds": 900.0,
+ "instant": true,
+ "start": {
+  "at": [
+   -6.0,
+   1.4,
+   -3.0
+  ],
+  "size": [
+   10,
+   8
+  ],
+  "yaw": 0
+ },
+ "finish": {
+  "at": [
+   92.9,
+   6.97,
+   66.8
+  ],
+  "size": [
+   6.0,
+   4.0,
+   2.4
+  ],
+  "yaw": 0,
+  "lounge": [
+   92.9,
+   7.0,
+   66.8
+  ]
+ }
+}
