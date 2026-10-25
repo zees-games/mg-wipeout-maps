@@ -5,19 +5,26 @@
  "sha256": "1bfc0465b683c94b88b64d18ea97cf46c8f6ca64c12ac34149402bf8d5711e2f",
  "textures": {
   "looked_up": 44,
+  "drawn": 43,
   "by_tier": {
-   "default": 44
+   "addon": 32,
+   "default": 12
   },
   "free_by_tier": {
-   "default": 6
+   "addon": 35,
+   "default": 8
   },
-  "nearest_photo": []
+  "nearest_photo": [
+   "dev/dev_bumptest",
+   "metal/citadel_metalwall063a_cheap",
+   "metal/metalwall075a"
+  ]
  },
  "models": {
-  "looked_up": 47,
+  "looked_up": 44,
   "by_tier": {
-   "default": 22,
-   "fallback": 25
+   "default": 40,
+   "fallback": 4
   }
  },
  "sounds": {
@@ -37,73 +44,13 @@
   "catalogue": true,
   "unmapped": {
    "ambient_generic": [
-    "health",
-    "pitch",
-    "pitchstart",
-    "volstart"
-   ],
-   "func_breakable": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "material",
-    "nodamageforces",
-    "spawnobject"
-   ],
-   "func_button": [
-    "disablereceiveshadows"
-   ],
-   "func_door": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "locked_sentence",
-    "unlocked_sentence"
-   ],
-   "func_illusionary": [
-    "disablereceiveshadows",
-    "disableshadows"
-   ],
-   "func_rotating": [
-    "disablereceiveshadows",
-    "disableshadows"
-   ],
-   "func_tracktrain": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "speed",
-    "volume"
+    "pitch"
    ],
    "game_player_equip": [
     "weapon_knife"
    ],
-   "light_spot": [
-    "_cone",
-    "_exponent",
-    "_inner_cone",
-    "pitch"
-   ],
-   "prop_dynamic": [
-    "SetBodyGroup",
-    "disablereceiveshadows",
-    "fademindist",
-    "fadescale",
-    "solid"
-   ],
-   "prop_physics": [
-    "disablereceiveshadows",
-    "nodamageforces",
-    "shadowcastdist"
-   ],
-   "trigger_push": [
-    "speed"
-   ],
    "weapon_awp": [
     "ammo"
-   ],
-   "weapon_smokegrenade": [
-    "_minlight"
-   ],
-   "worldspawn": [
-    "mapversion"
    ]
   }
  },
@@ -115,74 +62,17 @@
   "textures_unmapped": [],
   "textures_flat": [],
   "models_unmapped": [
-   "humans/charple01.mdl",
-   "props/cs_assault/wall_wires2.mdl",
-   "props/de_prodigy/concretebags3.mdl",
    "props/de_train/biohazardtank_dm_01.mdl",
    "props/de_train/biohazardtank_dm_02.mdl",
-   "props/de_train/processor.mdl",
-   "props_lab/binderredlabel.mdl",
    "props_lab/cleaver.mdl",
-   "props_lab/clipboard.mdl",
-   "props_lab/corkboard001.mdl",
-   "props_lab/corkboard002.mdl",
-   "props_lab/crematorcase.mdl",
-   "props_lab/frame001a.mdl",
-   "props_lab/generatorconsole.mdl",
-   "props_lab/hev_case.mdl",
-   "props_lab/huladoll.mdl",
-   "props_lab/jar01b.mdl",
-   "props_lab/reciever01b.mdl",
-   "props_lab/reciever_cart.mdl",
-   "props_lab/securitybank.mdl",
-   "props_lab/servers.mdl",
-   "props_lab/workspace001.mdl",
-   "props_lab/workspace002.mdl",
-   "props_lab/workspace003.mdl",
-   "props_lab/workspace004.mdl"
+   "props_lab/crematorcase.mdl"
   ],
   "sounds_unmapped": [],
   "classes_unmapped": [],
   "keys_unmapped": [
-   "ambient_generic.health",
    "ambient_generic.pitch",
-   "ambient_generic.pitchstart",
-   "ambient_generic.volstart",
-   "func_breakable.disablereceiveshadows",
-   "func_breakable.disableshadows",
-   "func_breakable.material",
-   "func_breakable.nodamageforces",
-   "func_breakable.spawnobject",
-   "func_button.disablereceiveshadows",
-   "func_door.disablereceiveshadows",
-   "func_door.disableshadows",
-   "func_door.locked_sentence",
-   "func_door.unlocked_sentence",
-   "func_illusionary.disablereceiveshadows",
-   "func_illusionary.disableshadows",
-   "func_rotating.disablereceiveshadows",
-   "func_rotating.disableshadows",
-   "func_tracktrain.disablereceiveshadows",
-   "func_tracktrain.disableshadows",
-   "func_tracktrain.speed",
-   "func_tracktrain.volume",
    "game_player_equip.weapon_knife",
-   "light_spot._cone",
-   "light_spot._exponent",
-   "light_spot._inner_cone",
-   "light_spot.pitch",
-   "prop_dynamic.SetBodyGroup",
-   "prop_dynamic.disablereceiveshadows",
-   "prop_dynamic.fademindist",
-   "prop_dynamic.fadescale",
-   "prop_dynamic.solid",
-   "prop_physics.disablereceiveshadows",
-   "prop_physics.nodamageforces",
-   "prop_physics.shadowcastdist",
-   "trigger_push.speed",
-   "weapon_awp.ammo",
-   "weapon_smokegrenade._minlight",
-   "worldspawn.mapversion"
+   "weapon_awp.ammo"
   ],
   "links_unresolved": [
    "trigger_once.OnStartTouch->b1"
@@ -191,10 +81,10 @@
  "counts": {
   "textures_unmapped": 0,
   "textures_flat": 0,
-  "models_unmapped": 25,
+  "models_unmapped": 4,
   "sounds_unmapped": 0,
   "classes_unmapped": 0,
-  "keys_unmapped": 39,
+  "keys_unmapped": 3,
   "links_unresolved": 1
  }
 }

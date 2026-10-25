@@ -5,28 +5,34 @@
  "sha256": "4766e2f212ceaff0aa7abe4a9bd632ed4b85b04604521ff3e81eabd48c3a188b",
  "textures": {
   "looked_up": 20,
+  "drawn": 20,
   "by_tier": {
-   "default": 11,
+   "addon": 5,
+   "default": 6,
    "fallback": 9
   },
   "free_by_tier": {
+   "addon": 15,
    "default": 4,
-   "fallback": 6
+   "nearest": 1
   },
   "nearest_photo": [
    "destinyclan",
+   "destinyrouge",
+   "dev/reflectivity_50b",
+   "devneons/blue_neon",
    "devneons/white_neon",
    "mgdccourse",
    "ryan_dev/10",
    "ryan_dev/80",
+   "ryan_dev/black",
    "ryan_dev/dev_30"
   ]
  },
  "models": {
-  "looked_up": 2,
+  "looked_up": 1,
   "by_tier": {
-   "default": 1,
-   "fallback": 1
+   "default": 1
   }
  },
  "sounds": {
@@ -46,54 +52,10 @@
   "catalogue": true,
   "unmapped": {
    "ambient_generic": [
-    "health",
-    "pitch",
-    "pitchstart"
-   ],
-   "func_button": [
-    "disablereceiveshadows"
-   ],
-   "func_door": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "locked_sentence",
-    "unlocked_sentence"
-   ],
-   "func_illusionary": [
-    "disablereceiveshadows",
-    "disableshadows"
-   ],
-   "func_rotating": [
-    "_minlight",
-    "disablereceiveshadows",
-    "disableshadows"
-   ],
-   "func_tracktrain": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "speed",
-    "volume"
+    "pitch"
    ],
    "game_player_equip": [
     "weapon_knife"
-   ],
-   "path_track": [
-    "speed"
-   ],
-   "point_spotlight": [
-    "disablereceiveshadows"
-   ],
-   "prop_dynamic": [
-    "fademindist",
-    "fadescale",
-    "solid"
-   ],
-   "trigger_push": [
-    "speed"
-   ],
-   "worldspawn": [
-    "comment",
-    "mapversion"
    ]
   }
  },
@@ -113,54 +75,23 @@
    "RYAN_DEV/BLACK",
    "RYAN_DEV/DEV_30"
   ],
-  "textures_flat": [
-   "destinyrouge",
-   "devneons/blue_neon",
-   "ryan_dev/black",
-   "tools/toolsblack"
-  ],
-  "models_unmapped": [
-   "extras/info_speech.mdl"
-  ],
+  "textures_flat": [],
+  "models_unmapped": [],
   "sounds_unmapped": [],
   "classes_unmapped": [],
   "keys_unmapped": [
-   "ambient_generic.health",
    "ambient_generic.pitch",
-   "ambient_generic.pitchstart",
-   "func_button.disablereceiveshadows",
-   "func_door.disablereceiveshadows",
-   "func_door.disableshadows",
-   "func_door.locked_sentence",
-   "func_door.unlocked_sentence",
-   "func_illusionary.disablereceiveshadows",
-   "func_illusionary.disableshadows",
-   "func_rotating._minlight",
-   "func_rotating.disablereceiveshadows",
-   "func_rotating.disableshadows",
-   "func_tracktrain.disablereceiveshadows",
-   "func_tracktrain.disableshadows",
-   "func_tracktrain.speed",
-   "func_tracktrain.volume",
-   "game_player_equip.weapon_knife",
-   "path_track.speed",
-   "point_spotlight.disablereceiveshadows",
-   "prop_dynamic.fademindist",
-   "prop_dynamic.fadescale",
-   "prop_dynamic.solid",
-   "trigger_push.speed",
-   "worldspawn.comment",
-   "worldspawn.mapversion"
+   "game_player_equip.weapon_knife"
   ],
   "links_unresolved": []
  },
  "counts": {
   "textures_unmapped": 9,
-  "textures_flat": 4,
-  "models_unmapped": 1,
+  "textures_flat": 0,
+  "models_unmapped": 0,
   "sounds_unmapped": 0,
   "classes_unmapped": 0,
-  "keys_unmapped": 26,
+  "keys_unmapped": 2,
   "links_unresolved": 0
  }
 }

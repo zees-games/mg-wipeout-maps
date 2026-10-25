@@ -5,23 +5,25 @@
  "sha256": "5e6faff9c21cade5a9b917bcc2453db22ea5269a9fc5e20c463c0e14677f1c9c",
  "textures": {
   "looked_up": 28,
+  "drawn": 28,
   "by_tier": {
-   "default": 27,
+   "addon": 21,
+   "default": 6,
    "fallback": 1
   },
   "free_by_tier": {
-   "default": 9,
-   "fallback": 1
+   "addon": 23,
+   "default": 5
   },
   "nearest_photo": [
    "course_map/credits"
   ]
  },
  "models": {
-  "looked_up": 30,
+  "looked_up": 17,
   "by_tier": {
-   "default": 9,
-   "fallback": 21
+   "default": 13,
+   "fallback": 4
   }
  },
  "sounds": {
@@ -41,115 +43,11 @@
   "catalogue": true,
   "unmapped": {
    "ambient_generic": [
-    "cspinup",
-    "fadeinsecs",
-    "fadeoutsecs",
-    "health",
-    "lfomodpitch",
-    "lfomodvol",
-    "lforate",
-    "lfotype",
-    "pitch",
-    "pitchstart",
-    "preset",
-    "spindown",
-    "spinup",
-    "volstart"
-   ],
-   "func_breakable": [
-    "_minlight",
-    "disablereceiveshadows",
-    "disableshadows",
-    "material",
-    "nodamageforces",
-    "spawnobject"
-   ],
-   "func_button": [
-    "disablereceiveshadows"
-   ],
-   "func_illusionary": [
-    "_minlight",
-    "disablereceiveshadows",
-    "disableshadows"
-   ],
-   "func_movelinear": [
-    "disablereceiveshadows"
-   ],
-   "func_physbox": [
-    "ExplodeDamage",
-    "ExplodeRadius",
-    "PerformanceMode",
-    "disablereceiveshadows",
-    "disableshadows",
-    "explodemagnitude",
-    "explosion",
-    "gibdir",
-    "health",
-    "material",
-    "nodamageforces",
-    "pressuredelay",
-    "propdata",
-    "renderamt",
-    "rendercolor",
-    "renderfx",
-    "rendermode",
-    "spawnobject"
-   ],
-   "func_rotating": [
-    "disablereceiveshadows",
-    "disableshadows"
-   ],
-   "func_tracktrain": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "speed",
-    "volume"
-   ],
-   "func_wall_toggle": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "renderamt",
-    "rendercolor",
-    "renderfx",
-    "rendermode"
-   ],
-   "path_track": [
-    "speed"
+    "pitch"
    ],
    "point_viewcontrol": [
     "acceleration",
-    "deceleration",
-    "speed"
-   ],
-   "prop_dynamic": [
-    "_minlight",
-    "disableshadows",
-    "fademaxdist",
-    "fademindist",
-    "fadescale",
-    "solid"
-   ],
-   "prop_dynamic_override": [
-    "SetBodyGroup",
-    "_minlight",
-    "disablereceiveshadows",
-    "disableshadows",
-    "fademaxdist",
-    "fademindist",
-    "fadescale",
-    "solid"
-   ],
-   "prop_physics": [
-    "nodamageforces",
-    "shadowcastdist"
-   ],
-   "prop_ragdoll": [
-    "fademaxdist",
-    "fademindist",
-    "fadescale"
-   ],
-   "worldspawn": [
-    "mapversion"
+    "deceleration"
    ]
   }
  },
@@ -163,110 +61,17 @@
   ],
   "textures_flat": [],
   "models_unmapped": [
-   "characters/hostage_01.mdl",
-   "characters/hostage_02.mdl",
-   "characters/hostage_03.mdl",
-   "humans/charple01.mdl",
-   "humans/charple02.mdl",
-   "humans/group02/male_04.mdl",
    "pg_props/pg_hospital/pg_opplate.mdl",
    "pg_props/pg_hospital/pg_oprollwagen.mdl",
    "pg_props/pg_hospital/pg_optabel_simpel.mdl",
-   "pg_props/pg_hospital/pg_opverbandschere.mdl",
-   "props/cs_militia/ladderrung.mdl",
-   "props/de_nuke/electricalbox02.mdl",
-   "props/de_train/de_train_securityguard.mdl",
-   "props_junk/sawblade001a.mdl",
-   "props_lab/tpswitch.mdl",
-   "weapons/w_c4.mdl",
-   "zombie/classic.mdl",
-   "zombie/classic_legs.mdl",
-   "zombie/classic_torso.mdl",
-   "zombie/fast.mdl",
-   "zombie/poison.mdl"
+   "pg_props/pg_hospital/pg_opverbandschere.mdl"
   ],
   "sounds_unmapped": [],
   "classes_unmapped": [],
   "keys_unmapped": [
-   "ambient_generic.cspinup",
-   "ambient_generic.fadeinsecs",
-   "ambient_generic.fadeoutsecs",
-   "ambient_generic.health",
-   "ambient_generic.lfomodpitch",
-   "ambient_generic.lfomodvol",
-   "ambient_generic.lforate",
-   "ambient_generic.lfotype",
    "ambient_generic.pitch",
-   "ambient_generic.pitchstart",
-   "ambient_generic.preset",
-   "ambient_generic.spindown",
-   "ambient_generic.spinup",
-   "ambient_generic.volstart",
-   "func_breakable._minlight",
-   "func_breakable.disablereceiveshadows",
-   "func_breakable.disableshadows",
-   "func_breakable.material",
-   "func_breakable.nodamageforces",
-   "func_breakable.spawnobject",
-   "func_button.disablereceiveshadows",
-   "func_illusionary._minlight",
-   "func_illusionary.disablereceiveshadows",
-   "func_illusionary.disableshadows",
-   "func_movelinear.disablereceiveshadows",
-   "func_physbox.ExplodeDamage",
-   "func_physbox.ExplodeRadius",
-   "func_physbox.PerformanceMode",
-   "func_physbox.disablereceiveshadows",
-   "func_physbox.disableshadows",
-   "func_physbox.explodemagnitude",
-   "func_physbox.explosion",
-   "func_physbox.gibdir",
-   "func_physbox.health",
-   "func_physbox.material",
-   "func_physbox.nodamageforces",
-   "func_physbox.pressuredelay",
-   "func_physbox.propdata",
-   "func_physbox.renderamt",
-   "func_physbox.rendercolor",
-   "func_physbox.renderfx",
-   "func_physbox.rendermode",
-   "func_physbox.spawnobject",
-   "func_rotating.disablereceiveshadows",
-   "func_rotating.disableshadows",
-   "func_tracktrain.disablereceiveshadows",
-   "func_tracktrain.disableshadows",
-   "func_tracktrain.speed",
-   "func_tracktrain.volume",
-   "func_wall_toggle.disablereceiveshadows",
-   "func_wall_toggle.disableshadows",
-   "func_wall_toggle.renderamt",
-   "func_wall_toggle.rendercolor",
-   "func_wall_toggle.renderfx",
-   "func_wall_toggle.rendermode",
-   "path_track.speed",
    "point_viewcontrol.acceleration",
-   "point_viewcontrol.deceleration",
-   "point_viewcontrol.speed",
-   "prop_dynamic._minlight",
-   "prop_dynamic.disableshadows",
-   "prop_dynamic.fademaxdist",
-   "prop_dynamic.fademindist",
-   "prop_dynamic.fadescale",
-   "prop_dynamic.solid",
-   "prop_dynamic_override.SetBodyGroup",
-   "prop_dynamic_override._minlight",
-   "prop_dynamic_override.disablereceiveshadows",
-   "prop_dynamic_override.disableshadows",
-   "prop_dynamic_override.fademaxdist",
-   "prop_dynamic_override.fademindist",
-   "prop_dynamic_override.fadescale",
-   "prop_dynamic_override.solid",
-   "prop_physics.nodamageforces",
-   "prop_physics.shadowcastdist",
-   "prop_ragdoll.fademaxdist",
-   "prop_ragdoll.fademindist",
-   "prop_ragdoll.fadescale",
-   "worldspawn.mapversion"
+   "point_viewcontrol.deceleration"
   ],
   "links_unresolved": [
    "trigger_multiple.OnStartTouch->spark_on"
@@ -275,10 +80,10 @@
  "counts": {
   "textures_unmapped": 1,
   "textures_flat": 0,
-  "models_unmapped": 21,
+  "models_unmapped": 4,
   "sounds_unmapped": 0,
   "classes_unmapped": 0,
-  "keys_unmapped": 79,
+  "keys_unmapped": 3,
   "links_unresolved": 1
  }
 }

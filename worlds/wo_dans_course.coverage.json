@@ -5,24 +5,29 @@
  "sha256": "9f6fc8329ce13e3af3a2299ef94f36d08a4f56dcd855d64415a8ce13258de693",
  "textures": {
   "looked_up": 41,
+  "drawn": 41,
   "by_tier": {
-   "default": 39,
+   "addon": 29,
+   "default": 10,
    "fallback": 2
   },
   "free_by_tier": {
-   "default": 9,
-   "fallback": 1
+   "addon": 34,
+   "default": 6,
+   "nearest": 1
   },
   "nearest_photo": [
-   "mg_dans_course/credits",
-   "mg_dans_course/winnerz"
+   "cs_assault/assault_vent_decal01",
+   "effects/combinemuzzle1_nocull",
+   "halflife/steel",
+   "metal/citadel_metalwall063a",
+   "skybox/cxlf"
   ]
  },
  "models": {
   "looked_up": 4,
   "by_tier": {
-   "default": 3,
-   "fallback": 1
+   "default": 4
   }
  },
  "sounds": {
@@ -43,67 +48,7 @@
   "catalogue": true,
   "unmapped": {
    "ambient_generic": [
-    "cspinup",
-    "fadeinsecs",
-    "fadeoutsecs",
-    "health",
-    "lfomodpitch",
-    "lfomodvol",
-    "lforate",
-    "lfotype",
-    "pitch",
-    "pitchstart",
-    "preset",
-    "spindown",
-    "spinup",
-    "volstart"
-   ],
-   "env_sprite": [
-    "disablereceiveshadows"
-   ],
-   "func_breakable": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "material",
-    "nodamageforces",
-    "spawnobject"
-   ],
-   "func_brush": [
-    "InputFilter",
-    "disablereceiveshadows",
-    "disableshadows",
-    "vrad_brush_cast_shadows"
-   ],
-   "func_button": [
-    "disablereceiveshadows"
-   ],
-   "func_door": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "locked_sentence",
-    "unlocked_sentence"
-   ],
-   "func_rotating": [
-    "disablereceiveshadows",
-    "disableshadows"
-   ],
-   "func_tracktrain": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "speed",
-    "volume"
-   ],
-   "path_track": [
-    "speed"
-   ],
-   "trigger_push": [
-    "speed"
-   ],
-   "weapon_scout": [
-    "spawnflags"
-   ],
-   "worldspawn": [
-    "mapversion"
+    "pitch"
    ]
   }
  },
@@ -117,53 +62,13 @@
    "MG_DANS_COURSE/WINNERZ"
   ],
   "textures_flat": [],
-  "models_unmapped": [
-   "props_lab/walllight001a.mdl"
-  ],
+  "models_unmapped": [],
   "sounds_unmapped": [
    "mg_dans_course/endgame.wav"
   ],
   "classes_unmapped": [],
   "keys_unmapped": [
-   "ambient_generic.cspinup",
-   "ambient_generic.fadeinsecs",
-   "ambient_generic.fadeoutsecs",
-   "ambient_generic.health",
-   "ambient_generic.lfomodpitch",
-   "ambient_generic.lfomodvol",
-   "ambient_generic.lforate",
-   "ambient_generic.lfotype",
-   "ambient_generic.pitch",
-   "ambient_generic.pitchstart",
-   "ambient_generic.preset",
-   "ambient_generic.spindown",
-   "ambient_generic.spinup",
-   "ambient_generic.volstart",
-   "env_sprite.disablereceiveshadows",
-   "func_breakable.disablereceiveshadows",
-   "func_breakable.disableshadows",
-   "func_breakable.material",
-   "func_breakable.nodamageforces",
-   "func_breakable.spawnobject",
-   "func_brush.InputFilter",
-   "func_brush.disablereceiveshadows",
-   "func_brush.disableshadows",
-   "func_brush.vrad_brush_cast_shadows",
-   "func_button.disablereceiveshadows",
-   "func_door.disablereceiveshadows",
-   "func_door.disableshadows",
-   "func_door.locked_sentence",
-   "func_door.unlocked_sentence",
-   "func_rotating.disablereceiveshadows",
-   "func_rotating.disableshadows",
-   "func_tracktrain.disablereceiveshadows",
-   "func_tracktrain.disableshadows",
-   "func_tracktrain.speed",
-   "func_tracktrain.volume",
-   "path_track.speed",
-   "trigger_push.speed",
-   "weapon_scout.spawnflags",
-   "worldspawn.mapversion"
+   "ambient_generic.pitch"
   ],
   "links_unresolved": [
    "func_button.OnPressed->poopclot"
@@ -172,10 +77,10 @@
  "counts": {
   "textures_unmapped": 2,
   "textures_flat": 0,
-  "models_unmapped": 1,
+  "models_unmapped": 0,
   "sounds_unmapped": 1,
   "classes_unmapped": 0,
-  "keys_unmapped": 39,
+  "keys_unmapped": 1,
   "links_unresolved": 1
  }
 }

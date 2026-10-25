@@ -5,19 +5,51 @@
  "sha256": "3bf717883e78b8345561aea83faab86befd35e0bc8b41ab18b295445ea45d557",
  "textures": {
   "looked_up": 115,
+  "drawn": 115,
   "by_tier": {
-   "default": 115
+   "addon": 79,
+   "default": 36
   },
   "free_by_tier": {
-   "default": 14
+   "addon": 97,
+   "default": 10,
+   "nearest": 8
   },
-  "nearest_photo": []
+  "nearest_photo": [
+   "brick/brickwall008a",
+   "brick/brickwall019a",
+   "brick/brickwall022a",
+   "brick/morwllg",
+   "concrete/concreteceiling003a",
+   "concrete/concretefloor013a",
+   "concrete/concretefloor026a",
+   "concrete/concretewall039a",
+   "concrete/concretewall061a",
+   "cs_italy/boxsides_t01",
+   "cs_italy/pipe_wall5_1",
+   "de_chateau/intbrickk",
+   "de_chateau/{fence2",
+   "de_dust/picrate2",
+   "de_nuke/nuke_ceiling_02",
+   "de_prodigy/concrete03",
+   "de_train/train_metal_door_01",
+   "de_train/train_metal_door_02",
+   "dev/dev_cratewood01a",
+   "environment maps/pipemetal001a",
+   "environment maps/pipemetal004a",
+   "metal/citadel_metalwall063a",
+   "metal/ibeama",
+   "metal/metalgrate011a_nopassbullets",
+   "metal/metalwall089a",
+   "plaster/plasterceiling003a",
+   "plaster/plasterceiling008a_c17",
+   "props/metalduct004b"
+  ]
  },
  "models": {
-  "looked_up": 34,
+  "looked_up": 29,
   "by_tier": {
-   "default": 11,
-   "fallback": 23
+   "default": 29
   }
  },
  "sounds": {
@@ -38,170 +70,28 @@
   "catalogue": true,
   "unmapped": {
    "ambient_generic": [
-    "cspinup",
-    "fadeinsecs",
-    "fadeoutsecs",
-    "health",
-    "lfomodpitch",
-    "lfomodvol",
-    "lforate",
-    "lfotype",
-    "pitch",
-    "pitchstart",
-    "preset",
-    "spindown",
-    "spinup",
-    "volstart"
-   ],
-   "env_fade": [
-    "renderamt",
-    "rendercolor"
+    "pitch"
    ],
    "func_breakable": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "material",
-    "no_decomp",
-    "nodamageforces",
-    "spawnobject"
+    "no_decomp"
    ],
    "func_button": [
-    "disablereceiveshadows",
     "no_decomp"
    ],
    "func_door": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "locked_sentence",
-    "no_decomp",
-    "unlocked_sentence"
+    "no_decomp"
    ],
    "func_door_rotating": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "locked_sentence",
-    "no_decomp",
-    "unlocked_sentence"
-   ],
-   "func_illusionary": [
-    "disablereceiveshadows",
-    "disableshadows"
-   ],
-   "func_physbox": [
-    "ExplodeDamage",
-    "ExplodeRadius",
-    "PerformanceMode",
-    "disablereceiveshadows",
-    "disableshadows",
-    "explodemagnitude",
-    "explosion",
-    "gibdir",
-    "health",
-    "material",
-    "nodamageforces",
-    "pressuredelay",
-    "propdata",
-    "renderamt",
-    "rendercolor",
-    "renderfx",
-    "rendermode",
-    "spawnobject"
+    "no_decomp"
    ],
    "func_rot_button": [
     "StartDisabled"
    ],
-   "func_rotating": [
-    "disablereceiveshadows",
-    "disableshadows"
-   ],
-   "func_tanktrain": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "speed",
-    "volume"
-   ],
-   "func_tracktrain": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "speed",
-    "volume"
-   ],
-   "func_wall_toggle": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "renderamt",
-    "rendercolor",
-    "renderfx",
-    "rendermode"
-   ],
    "light": [
     "no_decomp"
    ],
-   "light_spot": [
-    "_cone",
-    "_exponent",
-    "_inner_cone",
-    "pitch"
-   ],
-   "path_track": [
-    "speed"
-   ],
-   "prop_door_rotating": [
-    "speed"
-   ],
-   "prop_dynamic": [
-    "SetBodyGroup",
-    "disablereceiveshadows",
-    "fademaxdist",
-    "fademindist",
-    "fadescale",
-    "solid"
-   ],
-   "prop_physics_multiplayer": [
-    "Damagetype",
-    "ExplodeDamage",
-    "ExplodeRadius",
-    "PerformanceMode",
-    "damagetoenablemotion",
-    "disableshadows",
-    "fademaxdist",
-    "fademindist",
-    "fadescale",
-    "forcetoenablemotion",
-    "inertiaScale",
-    "massScale",
-    "maxdxlevel",
-    "mindxlevel",
-    "minhealthdmg",
-    "nodamageforces",
-    "physdamagescale",
-    "pressuredelay",
-    "renderamt",
-    "rendercolor",
-    "shadowcastdist",
-    "skin",
-    "spawnflags"
-   ],
-   "prop_physics_override": [
-    "fademindist",
-    "fadescale",
-    "inertiaScale",
-    "physdamagescale",
-    "skin",
-    "spawnflags"
-   ],
    "trigger_hurt": [
     "no_decomp"
-   ],
-   "trigger_push": [
-    "speed"
-   ],
-   "weapon_scout": [
-    "spawnflags"
-   ],
-   "worldspawn": [
-    "comment",
-    "mapversion"
    ]
   }
  },
@@ -212,31 +102,7 @@
  "lists": {
   "textures_unmapped": [],
   "textures_flat": [],
-  "models_unmapped": [
-   "props/cs_assault/forklift.mdl",
-   "props/cs_assault/pylon.mdl",
-   "props/cs_militia/ladderrung.mdl",
-   "props/cs_militia/ropeladder01.mdl",
-   "props/cs_office/exit_ceiling.mdl",
-   "props/de_nuke/car_nuke_animation.mdl",
-   "props/de_nuke/electricalbox01.mdl",
-   "props/de_nuke/electricalbox02.mdl",
-   "props/de_nuke/wall_light.mdl",
-   "props/de_prodigy/wall_console1.mdl",
-   "props/de_prodigy/wall_console2.mdl",
-   "props/de_prodigy/wall_console3.mdl",
-   "props_c17/door01_left.mdl",
-   "props_c17/gate_door01a.mdl",
-   "props_citizen_tech/firetrap_button01a.mdl",
-   "props_citizen_tech/firetrap_buttonpad.mdl",
-   "props_lab/freightelevatorbutton.mdl",
-   "props_pipes/pipecluster32d_002a.mdl",
-   "props_pipes/pipecluster32d_003a.mdl",
-   "props_pipes/pipeset32d_128_001a.mdl",
-   "props_pipes/pipeset32d_256_001a.mdl",
-   "props_pipes/pipeset32d_bend256u_001a.mdl",
-   "props_pipes/pipeset32d_corner128d_001a.mdl"
-  ],
+  "models_unmapped": [],
   "sounds_unmapped": [
    "ambient/misc/carhonk1.wav",
    "ambient/misc/carhonk2.wav",
@@ -244,134 +110,24 @@
   ],
   "classes_unmapped": [],
   "keys_unmapped": [
-   "ambient_generic.cspinup",
-   "ambient_generic.fadeinsecs",
-   "ambient_generic.fadeoutsecs",
-   "ambient_generic.health",
-   "ambient_generic.lfomodpitch",
-   "ambient_generic.lfomodvol",
-   "ambient_generic.lforate",
-   "ambient_generic.lfotype",
    "ambient_generic.pitch",
-   "ambient_generic.pitchstart",
-   "ambient_generic.preset",
-   "ambient_generic.spindown",
-   "ambient_generic.spinup",
-   "ambient_generic.volstart",
-   "env_fade.renderamt",
-   "env_fade.rendercolor",
-   "func_breakable.disablereceiveshadows",
-   "func_breakable.disableshadows",
-   "func_breakable.material",
    "func_breakable.no_decomp",
-   "func_breakable.nodamageforces",
-   "func_breakable.spawnobject",
-   "func_button.disablereceiveshadows",
    "func_button.no_decomp",
-   "func_door.disablereceiveshadows",
-   "func_door.disableshadows",
-   "func_door.locked_sentence",
    "func_door.no_decomp",
-   "func_door.unlocked_sentence",
-   "func_door_rotating.disablereceiveshadows",
-   "func_door_rotating.disableshadows",
-   "func_door_rotating.locked_sentence",
    "func_door_rotating.no_decomp",
-   "func_door_rotating.unlocked_sentence",
-   "func_illusionary.disablereceiveshadows",
-   "func_illusionary.disableshadows",
-   "func_physbox.ExplodeDamage",
-   "func_physbox.ExplodeRadius",
-   "func_physbox.PerformanceMode",
-   "func_physbox.disablereceiveshadows",
-   "func_physbox.disableshadows",
-   "func_physbox.explodemagnitude",
-   "func_physbox.explosion",
-   "func_physbox.gibdir",
-   "func_physbox.health",
-   "func_physbox.material",
-   "func_physbox.nodamageforces",
-   "func_physbox.pressuredelay",
-   "func_physbox.propdata",
-   "func_physbox.renderamt",
-   "func_physbox.rendercolor",
-   "func_physbox.renderfx",
-   "func_physbox.rendermode",
-   "func_physbox.spawnobject",
    "func_rot_button.StartDisabled",
-   "func_rotating.disablereceiveshadows",
-   "func_rotating.disableshadows",
-   "func_tanktrain.disablereceiveshadows",
-   "func_tanktrain.disableshadows",
-   "func_tanktrain.speed",
-   "func_tanktrain.volume",
-   "func_tracktrain.disablereceiveshadows",
-   "func_tracktrain.disableshadows",
-   "func_tracktrain.speed",
-   "func_tracktrain.volume",
-   "func_wall_toggle.disablereceiveshadows",
-   "func_wall_toggle.disableshadows",
-   "func_wall_toggle.renderamt",
-   "func_wall_toggle.rendercolor",
-   "func_wall_toggle.renderfx",
-   "func_wall_toggle.rendermode",
    "light.no_decomp",
-   "light_spot._cone",
-   "light_spot._exponent",
-   "light_spot._inner_cone",
-   "light_spot.pitch",
-   "path_track.speed",
-   "prop_door_rotating.speed",
-   "prop_dynamic.SetBodyGroup",
-   "prop_dynamic.disablereceiveshadows",
-   "prop_dynamic.fademaxdist",
-   "prop_dynamic.fademindist",
-   "prop_dynamic.fadescale",
-   "prop_dynamic.solid",
-   "prop_physics_multiplayer.Damagetype",
-   "prop_physics_multiplayer.ExplodeDamage",
-   "prop_physics_multiplayer.ExplodeRadius",
-   "prop_physics_multiplayer.PerformanceMode",
-   "prop_physics_multiplayer.damagetoenablemotion",
-   "prop_physics_multiplayer.disableshadows",
-   "prop_physics_multiplayer.fademaxdist",
-   "prop_physics_multiplayer.fademindist",
-   "prop_physics_multiplayer.fadescale",
-   "prop_physics_multiplayer.forcetoenablemotion",
-   "prop_physics_multiplayer.inertiaScale",
-   "prop_physics_multiplayer.massScale",
-   "prop_physics_multiplayer.maxdxlevel",
-   "prop_physics_multiplayer.mindxlevel",
-   "prop_physics_multiplayer.minhealthdmg",
-   "prop_physics_multiplayer.nodamageforces",
-   "prop_physics_multiplayer.physdamagescale",
-   "prop_physics_multiplayer.pressuredelay",
-   "prop_physics_multiplayer.renderamt",
-   "prop_physics_multiplayer.rendercolor",
-   "prop_physics_multiplayer.shadowcastdist",
-   "prop_physics_multiplayer.skin",
-   "prop_physics_multiplayer.spawnflags",
-   "prop_physics_override.fademindist",
-   "prop_physics_override.fadescale",
-   "prop_physics_override.inertiaScale",
-   "prop_physics_override.physdamagescale",
-   "prop_physics_override.skin",
-   "prop_physics_override.spawnflags",
-   "trigger_hurt.no_decomp",
-   "trigger_push.speed",
-   "weapon_scout.spawnflags",
-   "worldspawn.comment",
-   "worldspawn.mapversion"
+   "trigger_hurt.no_decomp"
   ],
   "links_unresolved": []
  },
  "counts": {
   "textures_unmapped": 0,
   "textures_flat": 0,
-  "models_unmapped": 23,
+  "models_unmapped": 0,
   "sounds_unmapped": 3,
   "classes_unmapped": 0,
-  "keys_unmapped": 118,
+  "keys_unmapped": 8,
   "links_unresolved": 0
  }
 }

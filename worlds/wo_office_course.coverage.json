@@ -5,26 +5,36 @@
  "sha256": "a9e3ece71266f106b39d8a6bfe07a599c02a9be22c4004c3dcde8c69083ba6f8",
  "textures": {
   "looked_up": 67,
+  "drawn": 62,
   "by_tier": {
-   "default": 63,
+   "addon": 38,
+   "default": 25,
    "fallback": 4
   },
   "free_by_tier": {
-   "default": 15,
-   "fallback": 3
+   "addon": 47,
+   "default": 11,
+   "nearest": 4
   },
   "nearest_photo": [
-   "custom/office/office_intro",
+   "de_dust/tilefloor01",
+   "dev/dev_measurecolorscale01",
+   "effects/fleck_glass1",
    "models/effects/portalfunnel_sheet",
    "models/props/cs_militia/river01",
-   "particle/particle_smokegrenade1"
+   "nature/blendsandsand008b_antlion_wvt_patch",
+   "nature/rockwall009b",
+   "particle/particle_smokegrenade1",
+   "plaster/offwllf",
+   "sprites/bluelaser1",
+   "sprites/purplelaser1"
   ]
  },
  "models": {
-  "looked_up": 81,
+  "looked_up": 60,
   "by_tier": {
-   "default": 36,
-   "fallback": 45
+   "default": 59,
+   "fallback": 1
   }
  },
  "sounds": {
@@ -45,140 +55,25 @@
   "catalogue": true,
   "unmapped": {
    "ambient_generic": [
-    "health",
-    "pitch",
-    "pitchstart",
-    "volstart"
-   ],
-   "filter_activator_name": [
-    "Negated"
-   ],
-   "func_breakable": [
-    "_minlight",
-    "disablereceiveshadows",
-    "disableshadows",
-    "material",
-    "nodamageforces",
-    "spawnobject"
-   ],
-   "func_brush": [
-    "InputFilter",
-    "_minlight",
-    "disablereceiveshadows",
-    "disableshadows",
-    "vrad_brush_cast_shadows"
-   ],
-   "func_button": [
-    "disablereceiveshadows",
-    "disableshadows"
-   ],
-   "func_illusionary": [
-    "_minlight",
-    "disablereceiveshadows",
-    "disableshadows"
-   ],
-   "func_monitor": [
-    "Solidity",
-    "StartDisabled",
-    "_minlight",
-    "disablereceiveshadows",
-    "disableshadows",
-    "renderamt",
-    "rendercolor",
-    "renderfx",
-    "rendermode",
-    "solidbsp",
-    "spawnflags"
-   ],
-   "func_movelinear": [
-    "_minlight",
-    "disablereceiveshadows"
-   ],
-   "func_physbox": [
-    "ExplodeDamage",
-    "ExplodeRadius",
-    "PerformanceMode",
-    "disablereceiveshadows",
-    "disableshadows",
-    "explodemagnitude",
-    "explosion",
-    "gibdir",
-    "health",
-    "material",
-    "nodamageforces",
-    "pressuredelay",
-    "propdata",
-    "renderamt",
-    "rendercolor",
-    "renderfx",
-    "rendermode"
-   ],
-   "func_rotating": [
-    "_minlight",
-    "disablereceiveshadows",
-    "disableshadows"
-   ],
-   "func_tracktrain": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "speed",
-    "volume"
+    "pitch"
    ],
    "game_player_equip": [
     "weapon_knife"
-   ],
-   "light_spot": [
-    "_cone",
-    "_exponent",
-    "_inner_cone",
-    "pitch"
    ],
    "player_speedmod": [
     "Name",
     "name"
    ],
-   "point_spotlight": [
-    "disablereceiveshadows"
-   ],
    "point_viewcontrol": [
     "acceleration",
     "deceleration"
    ],
-   "prop_dynamic": [
-    "SetBodyGroup",
-    "_minlight",
-    "disablereceiveshadows",
-    "disableshadows",
-    "fademaxdist",
-    "fademindist",
-    "fadescale",
-    "solid"
-   ],
-   "prop_physics": [
-    "_minlight",
-    "disablereceiveshadows",
-    "disableshadows",
-    "nodamageforces",
-    "shadowcastdist"
-   ],
-   "prop_ragdoll": [
-    "_minlight",
-    "fademindist",
-    "fadescale"
-   ],
    "trigger_once": [
     "wait"
    ],
-   "trigger_push": [
-    "speed"
-   ],
    "weapon_deagle": [
-    "_minlight",
     "ammo",
     "clip"
-   ],
-   "worldspawn": [
-    "mapversion"
    ]
   }
  },
@@ -195,147 +90,22 @@
   ],
   "textures_flat": [],
   "models_unmapped": [
-   "characters/hostage_01.mdl",
-   "characters/hostage_02.mdl",
-   "combine_turrets/floor_turret.mdl",
-   "extras/info_speech.mdl",
-   "headcrabclassic.mdl",
-   "humans/corpse1.mdl",
-   "humans/group02/female_04.mdl",
-   "humans/group03/male_02.mdl",
-   "props/cs_assault/camera.mdl",
-   "props/cs_italy/bananna_bunch.mdl",
-   "props/cs_italy/orange.mdl",
-   "props/cs_militia/food_stack.mdl",
-   "props/cs_militia/lightfixture01.mdl",
-   "props/cs_militia/ropeladder01.mdl",
-   "props/cs_office/coffee_mug.mdl",
-   "props/cs_office/doorknob.mdl",
-   "props/cs_office/exit_ceiling.mdl",
-   "props/cs_office/ladder1.mdl",
-   "props/cs_office/microwave.mdl",
-   "props/cs_office/offpaintinga.mdl",
-   "props/cs_office/offpaintingd.mdl",
-   "props/cs_office/offpaintinge.mdl",
-   "props/cs_office/offpaintingf.mdl",
-   "props/cs_office/offpaintingg.mdl",
-   "props/cs_office/offpaintingh.mdl",
-   "props/cs_office/offpaintingi.mdl",
-   "props/cs_office/offpaintingj.mdl",
-   "props/cs_office/paper_towels.mdl",
-   "props/cs_office/paperbox_pile_01.mdl",
-   "props/cs_office/phone.mdl",
-   "props/cs_office/water_bottle.mdl",
-   "props/de_nuke/electricalbox02.mdl",
-   "props/de_prodigy/fanhousing.mdl",
-   "props/de_prodigy/fanoff.mdl",
-   "props_combine/breenconsole.mdl",
-   "props_combine/combine_interface001.mdl",
-   "props_junk/food_pile02.mdl",
-   "props_junk/glassbottle01a.mdl",
-   "props_junk/watermelon01.mdl",
-   "props_pipes/pipe02_straight01_long.mdl",
-   "props_pipes/pipe02_straight01_short.mdl",
-   "props_pipes/pipe03_lcurve02_long.mdl",
-   "props_pipes/pipe03_scurve02_long.mdl",
-   "props_pipes/valvewheel001.mdl",
-   "zombie/fast.mdl"
+   "props/de_prodigy/fanhousing.mdl"
   ],
   "sounds_unmapped": [
    "custom/victory.wav"
   ],
   "classes_unmapped": [],
   "keys_unmapped": [
-   "ambient_generic.health",
    "ambient_generic.pitch",
-   "ambient_generic.pitchstart",
-   "ambient_generic.volstart",
-   "filter_activator_name.Negated",
-   "func_breakable._minlight",
-   "func_breakable.disablereceiveshadows",
-   "func_breakable.disableshadows",
-   "func_breakable.material",
-   "func_breakable.nodamageforces",
-   "func_breakable.spawnobject",
-   "func_brush.InputFilter",
-   "func_brush._minlight",
-   "func_brush.disablereceiveshadows",
-   "func_brush.disableshadows",
-   "func_brush.vrad_brush_cast_shadows",
-   "func_button.disablereceiveshadows",
-   "func_button.disableshadows",
-   "func_illusionary._minlight",
-   "func_illusionary.disablereceiveshadows",
-   "func_illusionary.disableshadows",
-   "func_monitor.Solidity",
-   "func_monitor.StartDisabled",
-   "func_monitor._minlight",
-   "func_monitor.disablereceiveshadows",
-   "func_monitor.disableshadows",
-   "func_monitor.renderamt",
-   "func_monitor.rendercolor",
-   "func_monitor.renderfx",
-   "func_monitor.rendermode",
-   "func_monitor.solidbsp",
-   "func_monitor.spawnflags",
-   "func_movelinear._minlight",
-   "func_movelinear.disablereceiveshadows",
-   "func_physbox.ExplodeDamage",
-   "func_physbox.ExplodeRadius",
-   "func_physbox.PerformanceMode",
-   "func_physbox.disablereceiveshadows",
-   "func_physbox.disableshadows",
-   "func_physbox.explodemagnitude",
-   "func_physbox.explosion",
-   "func_physbox.gibdir",
-   "func_physbox.health",
-   "func_physbox.material",
-   "func_physbox.nodamageforces",
-   "func_physbox.pressuredelay",
-   "func_physbox.propdata",
-   "func_physbox.renderamt",
-   "func_physbox.rendercolor",
-   "func_physbox.renderfx",
-   "func_physbox.rendermode",
-   "func_rotating._minlight",
-   "func_rotating.disablereceiveshadows",
-   "func_rotating.disableshadows",
-   "func_tracktrain.disablereceiveshadows",
-   "func_tracktrain.disableshadows",
-   "func_tracktrain.speed",
-   "func_tracktrain.volume",
    "game_player_equip.weapon_knife",
-   "light_spot._cone",
-   "light_spot._exponent",
-   "light_spot._inner_cone",
-   "light_spot.pitch",
    "player_speedmod.Name",
    "player_speedmod.name",
-   "point_spotlight.disablereceiveshadows",
    "point_viewcontrol.acceleration",
    "point_viewcontrol.deceleration",
-   "prop_dynamic.SetBodyGroup",
-   "prop_dynamic._minlight",
-   "prop_dynamic.disablereceiveshadows",
-   "prop_dynamic.disableshadows",
-   "prop_dynamic.fademaxdist",
-   "prop_dynamic.fademindist",
-   "prop_dynamic.fadescale",
-   "prop_dynamic.solid",
-   "prop_physics._minlight",
-   "prop_physics.disablereceiveshadows",
-   "prop_physics.disableshadows",
-   "prop_physics.nodamageforces",
-   "prop_physics.shadowcastdist",
-   "prop_ragdoll._minlight",
-   "prop_ragdoll.fademindist",
-   "prop_ragdoll.fadescale",
    "trigger_once.wait",
-   "trigger_push.speed",
-   "weapon_deagle._minlight",
    "weapon_deagle.ammo",
-   "weapon_deagle.clip",
-   "worldspawn.mapversion"
+   "weapon_deagle.clip"
   ],
   "links_unresolved": [
    "func_button.OnPressed->Disco_counter_fun",
@@ -345,10 +115,10 @@
  "counts": {
   "textures_unmapped": 4,
   "textures_flat": 0,
-  "models_unmapped": 45,
+  "models_unmapped": 1,
   "sounds_unmapped": 1,
   "classes_unmapped": 0,
-  "keys_unmapped": 90,
+  "keys_unmapped": 9,
   "links_unresolved": 2
  }
 }

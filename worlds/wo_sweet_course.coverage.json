@@ -5,16 +5,25 @@
  "sha256": "88f416e8c7bd7340a0949c81c2482a76861eff56766bef37f9fb03cad6e02541",
  "textures": {
   "looked_up": 30,
+  "drawn": 30,
   "by_tier": {
-   "default": 9,
+   "addon": 3,
+   "default": 6,
    "fallback": 21
   },
   "free_by_tier": {
+   "addon": 18,
    "default": 3,
-   "fallback": 7
+   "nearest": 9
   },
   "nearest_photo": [
+   "customs/pink_neon",
+   "dev/value20",
+   "neon/blue",
+   "neon/red",
    "nexore",
+   "realworldtextures2/ground/ice_02",
+   "realworldtextures2/misc/space_08",
    "ryan_dev/10",
    "ryan_dev/20",
    "ryan_dev/30",
@@ -22,17 +31,22 @@
    "ryan_dev/65",
    "ryan_dev/75",
    "ryan_dev/85",
+   "ryan_dev/black",
    "ryan_dev/dev_15",
    "ryan_dev/dev_30",
    "ryan_dev/dev_45",
-   "ryan_dev/dev_55"
+   "ryan_dev/dev_55",
+   "ryan_dev/dev_cmyk_green",
+   "ryan_dev/dev_dark_green2",
+   "ryan_dev/dev_dark_red",
+   "ryan_dev/pastel_blue1",
+   "sprites/blackbeam"
   ]
  },
  "models": {
-  "looked_up": 2,
+  "looked_up": 1,
   "by_tier": {
-   "default": 1,
-   "fallback": 1
+   "default": 1
   }
  },
  "sounds": {
@@ -53,68 +67,7 @@
   "catalogue": true,
   "unmapped": {
    "ambient_generic": [
-    "cspinup",
-    "fadeinsecs",
-    "fadeoutsecs",
-    "health",
-    "lfomodpitch",
-    "lfomodvol",
-    "lforate",
-    "lfotype",
-    "pitch",
-    "pitchstart",
-    "preset",
-    "spindown",
-    "spinup",
-    "volstart"
-   ],
-   "func_breakable": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "material",
-    "nodamageforces",
-    "spawnobject"
-   ],
-   "func_button": [
-    "disablereceiveshadows"
-   ],
-   "func_door": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "locked_sentence",
-    "unlocked_sentence"
-   ],
-   "func_illusionary": [
-    "disablereceiveshadows",
-    "disableshadows"
-   ],
-   "func_rotating": [
-    "disablereceiveshadows",
-    "disableshadows"
-   ],
-   "func_tanktrain": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "speed",
-    "volume"
-   ],
-   "func_tracktrain": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "speed",
-    "volume"
-   ],
-   "func_wall": [
-    "disablereceiveshadows",
-    "disableshadows"
-   ],
-   "func_wall_toggle": [
-    "disablereceiveshadows",
-    "disableshadows",
-    "renderamt",
-    "rendercolor",
-    "renderfx",
-    "rendermode"
+    "pitch"
    ],
    "game_player_equip": [
     "weapon_knife"
@@ -122,45 +75,11 @@
    "info_camera_link": [
     "Solidity",
     "StartDisabled",
-    "_minlight",
-    "disablereceiveshadows",
-    "disableshadows",
-    "renderamt",
-    "rendercolor",
-    "renderfx",
-    "rendermode",
-    "solidbsp",
-    "spawnflags"
-   ],
-   "point_spotlight": [
-    "fademindist",
-    "fadescale"
+    "solidbsp"
    ],
    "point_viewcontrol": [
     "acceleration",
-    "deceleration",
-    "speed"
-   ],
-   "prop_dynamic": [
-    "SetBodyGroup",
-    "disablereceiveshadows",
-    "disableshadows",
-    "fademaxdist",
-    "fademindist",
-    "fadescale",
-    "solid"
-   ],
-   "trigger_push": [
-    "speed"
-   ],
-   "weapon_scout": [
-    "spawnflags"
-   ],
-   "weapon_usp": [
-    "spawnflags"
-   ],
-   "worldspawn": [
-    "mapversion"
+    "deceleration"
    ]
   }
  },
@@ -192,111 +111,30 @@
    "RYAN_DEV/DEV_DARK_RED",
    "RYAN_DEV/PASTEL_BLUE1"
   ],
-  "textures_flat": [
-   "cs_italy/black",
-   "customs/pink_neon",
-   "dev/dev_tvmonitornonoise",
-   "lights/white001",
-   "neon/blue",
-   "neon/red",
-   "realworldtextures2/misc/space_08",
-   "ryan_dev/black",
-   "ryan_dev/dev_cmyk_green",
-   "ryan_dev/dev_dark_green2",
-   "ryan_dev/dev_dark_red",
-   "ryan_dev/pastel_blue1",
-   "sprites/blackbeam"
-  ],
-  "models_unmapped": [
-   "extras/info_speech.mdl"
-  ],
+  "textures_flat": [],
+  "models_unmapped": [],
   "sounds_unmapped": [
    "voyagefinal.wav"
   ],
   "classes_unmapped": [],
   "keys_unmapped": [
-   "ambient_generic.cspinup",
-   "ambient_generic.fadeinsecs",
-   "ambient_generic.fadeoutsecs",
-   "ambient_generic.health",
-   "ambient_generic.lfomodpitch",
-   "ambient_generic.lfomodvol",
-   "ambient_generic.lforate",
-   "ambient_generic.lfotype",
    "ambient_generic.pitch",
-   "ambient_generic.pitchstart",
-   "ambient_generic.preset",
-   "ambient_generic.spindown",
-   "ambient_generic.spinup",
-   "ambient_generic.volstart",
-   "func_breakable.disablereceiveshadows",
-   "func_breakable.disableshadows",
-   "func_breakable.material",
-   "func_breakable.nodamageforces",
-   "func_breakable.spawnobject",
-   "func_button.disablereceiveshadows",
-   "func_door.disablereceiveshadows",
-   "func_door.disableshadows",
-   "func_door.locked_sentence",
-   "func_door.unlocked_sentence",
-   "func_illusionary.disablereceiveshadows",
-   "func_illusionary.disableshadows",
-   "func_rotating.disablereceiveshadows",
-   "func_rotating.disableshadows",
-   "func_tanktrain.disablereceiveshadows",
-   "func_tanktrain.disableshadows",
-   "func_tanktrain.speed",
-   "func_tanktrain.volume",
-   "func_tracktrain.disablereceiveshadows",
-   "func_tracktrain.disableshadows",
-   "func_tracktrain.speed",
-   "func_tracktrain.volume",
-   "func_wall.disablereceiveshadows",
-   "func_wall.disableshadows",
-   "func_wall_toggle.disablereceiveshadows",
-   "func_wall_toggle.disableshadows",
-   "func_wall_toggle.renderamt",
-   "func_wall_toggle.rendercolor",
-   "func_wall_toggle.renderfx",
-   "func_wall_toggle.rendermode",
    "game_player_equip.weapon_knife",
    "info_camera_link.Solidity",
    "info_camera_link.StartDisabled",
-   "info_camera_link._minlight",
-   "info_camera_link.disablereceiveshadows",
-   "info_camera_link.disableshadows",
-   "info_camera_link.renderamt",
-   "info_camera_link.rendercolor",
-   "info_camera_link.renderfx",
-   "info_camera_link.rendermode",
    "info_camera_link.solidbsp",
-   "info_camera_link.spawnflags",
-   "point_spotlight.fademindist",
-   "point_spotlight.fadescale",
    "point_viewcontrol.acceleration",
-   "point_viewcontrol.deceleration",
-   "point_viewcontrol.speed",
-   "prop_dynamic.SetBodyGroup",
-   "prop_dynamic.disablereceiveshadows",
-   "prop_dynamic.disableshadows",
-   "prop_dynamic.fademaxdist",
-   "prop_dynamic.fademindist",
-   "prop_dynamic.fadescale",
-   "prop_dynamic.solid",
-   "trigger_push.speed",
-   "weapon_scout.spawnflags",
-   "weapon_usp.spawnflags",
-   "worldspawn.mapversion"
+   "point_viewcontrol.deceleration"
   ],
   "links_unresolved": []
  },
  "counts": {
   "textures_unmapped": 21,
-  "textures_flat": 13,
-  "models_unmapped": 1,
+  "textures_flat": 0,
+  "models_unmapped": 0,
   "sounds_unmapped": 1,
   "classes_unmapped": 0,
-  "keys_unmapped": 72,
+  "keys_unmapped": 7,
   "links_unresolved": 0
  }
 }
