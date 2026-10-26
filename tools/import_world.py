@@ -171,8 +171,8 @@ def main_io(spec, worlds):
     prefix = os.path.join(worlds, cid)
     subprocess.run([sys.executable, "-I", os.path.join(BSP, "bsp.py"), "regen", spec["io"]["store"],
                     "--out", prefix, "--name", cid], check=True, stdout=subprocess.DEVNULL)
-    # The converter also writes free textures, credits and a rule stub; the game draws by generic kind.
-    for extra in ("textures", "dot_map"):
+    # The converter also writes credits and a rule stub; its generated flat images (textures/) stay: a "generated" surface reads them.
+    for extra in ("dot_map",):
         shutil.rmtree(os.path.join(worlds, extra), ignore_errors=True)
     if os.path.exists(os.path.join(worlds, "CREDITS.md")):
         os.remove(os.path.join(worlds, "CREDITS.md"))

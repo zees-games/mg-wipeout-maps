@@ -13,17 +13,15 @@
   },
   "free_by_tier": {
    "addon": 18,
-   "default": 3,
-   "nearest": 9
+   "default": 4,
+   "nearest": 5
   },
   "nearest_photo": [
    "customs/pink_neon",
    "dev/value20",
    "neon/blue",
    "neon/red",
-   "nexore",
    "realworldtextures2/ground/ice_02",
-   "realworldtextures2/misc/space_08",
    "ryan_dev/10",
    "ryan_dev/20",
    "ryan_dev/30",
@@ -31,7 +29,6 @@
    "ryan_dev/65",
    "ryan_dev/75",
    "ryan_dev/85",
-   "ryan_dev/black",
    "ryan_dev/dev_15",
    "ryan_dev/dev_30",
    "ryan_dev/dev_45",
@@ -39,8 +36,7 @@
    "ryan_dev/dev_cmyk_green",
    "ryan_dev/dev_dark_green2",
    "ryan_dev/dev_dark_red",
-   "ryan_dev/pastel_blue1",
-   "sprites/blackbeam"
+   "ryan_dev/pastel_blue1"
   ]
  },
  "models": {
@@ -111,7 +107,11 @@
    "RYAN_DEV/DEV_DARK_RED",
    "RYAN_DEV/PASTEL_BLUE1"
   ],
-  "textures_flat": [],
+  "textures_flat": [
+   "realworldtextures2/misc/space_08",
+   "ryan_dev/black",
+   "sprites/blackbeam"
+  ],
   "models_unmapped": [],
   "sounds_unmapped": [
    "voyagefinal.wav"
@@ -126,15 +126,17 @@
    "point_viewcontrol.acceleration",
    "point_viewcontrol.deceleration"
   ],
-  "links_unresolved": []
+  "links_unresolved": [],
+  "surfaces_opaque": []
  },
  "counts": {
   "textures_unmapped": 21,
-  "textures_flat": 0,
+  "textures_flat": 3,
   "models_unmapped": 0,
   "sounds_unmapped": 1,
   "classes_unmapped": 0,
   "keys_unmapped": 7,
-  "links_unresolved": 0
+  "links_unresolved": 0,
+  "surfaces_opaque": 0
  }
 }

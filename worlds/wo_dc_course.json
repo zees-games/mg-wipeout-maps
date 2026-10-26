@@ -3,8 +3,8 @@
   "bytes": 6752684,
   "compression": "gzip",
   "file": "wo_dc_course.bin",
-  "sha256": "96487a926b89d0099001059b5215602df01750fba409dd11d28861d5acf9bb39",
-  "stored_bytes": 1474120
+  "sha256": "7f76c6f0e5a7f3c034fd6d40b3e906e401e9f8334dbf46a0f23867965ab25d2a",
+  "stored_bytes": 1474266
  },
  "breakables": [],
  "counts": {
@@ -8160,6 +8160,7 @@
      0.875,
      0.875
     ],
+    "fallback_file": "textures/fb_Wallpaper001A.webp",
     "file": "pbr/Wallpaper001A",
     "generic": "pbr_Wallpaper001A",
     "how": "library",
@@ -8182,6 +8183,7 @@
      0.75,
      0.75
     ],
+    "fallback_file": "textures/fb_Concrete013.webp",
     "file": "pbr/Concrete013",
     "generic": "pbr_Concrete013",
     "how": "library",
@@ -8204,6 +8206,7 @@
      0.5,
      0.5
     ],
+    "fallback_file": "textures/fb_concrete_debris.webp",
     "file": "pbr/concrete_debris",
     "generic": "pbr_concrete_debris",
     "how": "library",
@@ -8226,6 +8229,7 @@
      0.0,
      0.125
     ],
+    "fallback_file": "textures/fb_Fabric054.webp",
     "file": "pbr/Fabric054",
     "generic": "pbr_Fabric054",
     "how": "library",
@@ -8248,6 +8252,7 @@
      0.375,
      0.375
     ],
+    "fallback_file": "textures/fb_Tiles129A.webp",
     "file": "pbr/Tiles129A",
     "generic": "pbr_Tiles129A",
     "how": "library",
@@ -8270,6 +8275,7 @@
      0.125,
      0.125
     ],
+    "fallback_file": "textures/fb_Tiles106.webp",
     "file": "pbr/Tiles106",
     "generic": "pbr_Tiles106",
     "how": "library",
@@ -8286,25 +8292,24 @@
    },
    {
     "area": 0.2,
-    "author": "Lennart Demes and contributors",
+    "author": "TMC (generated)",
     "colour": [
      0.0,
      0.0,
      0.0
     ],
-    "file": "pbr/Facade011",
-    "generic": "pbr_Facade011",
-    "how": "library",
-    "key": "pbr:pbr_Facade011",
-    "kind": "pbr",
+    "file": "textures/gen_flat_000000.png",
+    "generic": "flat",
+    "how": "flat",
+    "key": "generated:flat:000000",
+    "kind": "generated",
     "licence": "CC0-1.0",
-    "source": "ambientCG",
+    "source": "dot-map cutout_texture",
     "sources": [
      "ryan_dev/black"
     ],
     "surfaces": 1,
-    "tier": "1k",
-    "url": "https://ambientcg.com/view?id=Facade011"
+    "url": "drawn in code by addons/dot_map/bsp/dot_map_bsp_mesh.gd (cutout_texture)"
    },
    {
     "area": 3638.3,
@@ -8314,6 +8319,7 @@
      0.75,
      0.75
     ],
+    "fallback_file": "textures/fb_Tiles039.webp",
     "file": "pbr/Tiles039",
     "generic": "pbr_Tiles039",
     "how": "library",
@@ -8359,6 +8365,7 @@
      0.625,
      0.625
     ],
+    "fallback_file": "textures/fb_PavingStones017.webp",
     "file": "pbr/PavingStones017",
     "generic": "pbr_PavingStones017",
     "how": "table",
@@ -8381,6 +8388,7 @@
      0.875,
      0.875
     ],
+    "fallback_file": "textures/fb_Snow007C.webp",
     "file": "pbr/Snow007C",
     "generic": "pbr_Snow007C",
     "how": "table",
@@ -8425,6 +8433,7 @@
      0.375,
      0.375
     ],
+    "fallback_file": "textures/fb_Asphalt003.webp",
     "file": "pbr/Asphalt003",
     "generic": "pbr_Asphalt003",
     "how": "table",
@@ -8448,6 +8457,7 @@
      0.625,
      0.875
     ],
+    "fallback_file": "textures/fb_Paint002.webp",
     "file": "pbr/Paint002",
     "generic": "pbr_Paint002",
     "how": "library",
@@ -8470,6 +8480,7 @@
      0.5,
      0.5
     ],
+    "fallback_file": "textures/fb_Ground014.webp",
     "file": "pbr/Ground014",
     "generic": "pbr_Ground014",
     "how": "table",
@@ -8492,6 +8503,7 @@
      1.0,
      1.0
     ],
+    "fallback_file": "textures/fb_Tiles011.webp",
     "file": "pbr/Tiles011",
     "generic": "pbr_Tiles011",
     "how": "library",
@@ -11997,6 +12009,19 @@
     -0.0118,
     -9.2967
    ],
+   "bounds": {
+    "at": [
+     0.4575,
+     0.0034,
+     -9.2966
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12010,6 +12035,19 @@
     -0.0118,
     -9.2967
    ],
+   "bounds": {
+    "at": [
+     9.1823,
+     0.0034,
+     -9.2966
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12023,6 +12061,19 @@
     -0.0118,
     -0.4575
    ],
+   "bounds": {
+    "at": [
+     0.4575,
+     0.0034,
+     -0.4575
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12036,6 +12087,19 @@
     -0.0118,
     -0.4575
    ],
+   "bounds": {
+    "at": [
+     9.1823,
+     0.0034,
+     -0.4575
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12049,6 +12113,19 @@
     -0.0118,
     1.6761
    ],
+   "bounds": {
+    "at": [
+     0.4575,
+     0.0034,
+     1.6762
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12062,6 +12139,19 @@
     -0.0118,
     1.6761
    ],
+   "bounds": {
+    "at": [
+     9.1811,
+     0.0034,
+     1.6762
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12075,6 +12165,19 @@
     -0.0118,
     11.7345
    ],
+   "bounds": {
+    "at": [
+     0.4575,
+     0.0034,
+     11.7346
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12088,6 +12191,19 @@
     -0.0118,
     11.7345
    ],
+   "bounds": {
+    "at": [
+     9.1823,
+     0.0034,
+     11.7346
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12101,6 +12217,19 @@
     -0.0118,
     13.2585
    ],
+   "bounds": {
+    "at": [
+     0.4575,
+     0.0034,
+     13.2586
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12114,6 +12243,19 @@
     -0.0118,
     13.2585
    ],
+   "bounds": {
+    "at": [
+     9.1823,
+     0.0034,
+     13.2586
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12127,6 +12269,19 @@
     -0.0118,
     31.2417
    ],
+   "bounds": {
+    "at": [
+     0.4575,
+     0.0034,
+     31.2417
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12140,6 +12295,19 @@
     -0.0118,
     38.5569
    ],
+   "bounds": {
+    "at": [
+     19.9647,
+     0.0034,
+     38.557
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12153,6 +12321,19 @@
     -0.0118,
     23.6217
    ],
+   "bounds": {
+    "at": [
+     19.9647,
+     0.0034,
+     23.6217
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12166,6 +12347,19 @@
     -0.0118,
     31.2417
    ],
+   "bounds": {
+    "at": [
+     45.5678,
+     0.0034,
+     31.2417
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12179,6 +12373,19 @@
     -0.0118,
     31.2417
    ],
+   "bounds": {
+    "at": [
+     59.2839,
+     0.0034,
+     31.2417
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12192,6 +12399,19 @@
     -0.0118,
     24.8409
    ],
+   "bounds": {
+    "at": [
+     61.4365,
+     0.0034,
+     24.8409
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12205,6 +12425,19 @@
     -0.0118,
     24.8409
    ],
+   "bounds": {
+    "at": [
+     75.1144,
+     0.0034,
+     24.8409
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12218,6 +12451,19 @@
     -0.0118,
     31.2417
    ],
+   "bounds": {
+    "at": [
+     75.1144,
+     0.0034,
+     31.2417
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12231,6 +12477,19 @@
     -0.0118,
     24.8409
    ],
+   "bounds": {
+    "at": [
+     93.1357,
+     0.0034,
+     24.8409
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12244,6 +12503,19 @@
     -0.0118,
     31.2417
    ],
+   "bounds": {
+    "at": [
+     93.1357,
+     0.0034,
+     31.2417
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12257,6 +12529,19 @@
     9.7228,
     24.8409
    ],
+   "bounds": {
+    "at": [
+     100.4318,
+     9.7379,
+     24.8409
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12270,6 +12555,19 @@
     9.7228,
     31.2417
    ],
+   "bounds": {
+    "at": [
+     100.4318,
+     9.7379,
+     31.2417
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12283,6 +12581,19 @@
     9.7228,
     22.4025
    ],
+   "bounds": {
+    "at": [
+     112.6239,
+     9.7379,
+     22.4026
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12296,6 +12607,19 @@
     9.7228,
     33.6801
    ],
+   "bounds": {
+    "at": [
+     112.6239,
+     9.7379,
+     33.6801
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12309,6 +12633,19 @@
     10.1229,
     33.6801
    ],
+   "bounds": {
+    "at": [
+     138.6842,
+     10.138,
+     33.6801
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12322,6 +12659,19 @@
     10.1229,
     22.4025
    ],
+   "bounds": {
+    "at": [
+     138.6842,
+     10.138,
+     22.4026
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12335,6 +12685,19 @@
     11.1897,
     22.4025
    ],
+   "bounds": {
+    "at": [
+     156.5151,
+     11.2048,
+     22.4026
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12348,6 +12711,19 @@
     11.1897,
     33.6801
    ],
+   "bounds": {
+    "at": [
+     156.5151,
+     11.2048,
+     33.6801
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12361,6 +12737,19 @@
     11.1897,
     22.4025
    ],
+   "bounds": {
+    "at": [
+     210.4647,
+     11.2048,
+     22.4026
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12374,6 +12763,19 @@
     11.1897,
     38.5569
    ],
+   "bounds": {
+    "at": [
+     210.4647,
+     11.2048,
+     38.557
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12387,6 +12789,19 @@
     11.1897,
     38.5569
    ],
+   "bounds": {
+    "at": [
+     206.5023,
+     11.2048,
+     38.557
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12400,6 +12815,19 @@
     -28.0724,
     46.8055
    ],
+   "bounds": {
+    "at": [
+     211.6839,
+     -28.0573,
+     46.8056
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12413,6 +12841,19 @@
     -28.0724,
     46.8055
    ],
+   "bounds": {
+    "at": [
+     205.2831,
+     -28.0573,
+     46.8056
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12426,6 +12867,19 @@
     -28.0724,
     71.4753
    ],
+   "bounds": {
+    "at": [
+     211.6839,
+     -28.0573,
+     71.4754
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12439,6 +12893,19 @@
     -28.0724,
     71.4753
    ],
+   "bounds": {
+    "at": [
+     205.2831,
+     -28.0573,
+     71.4754
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12452,6 +12919,19 @@
     -28.0724,
     93.7257
    ],
+   "bounds": {
+    "at": [
+     211.6839,
+     -28.0573,
+     93.7258
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12465,6 +12945,19 @@
     -28.0724,
     93.7257
    ],
+   "bounds": {
+    "at": [
+     205.2831,
+     -28.0573,
+     93.7258
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12478,6 +12971,19 @@
     -28.0724,
     97.6881
    ],
+   "bounds": {
+    "at": [
+     205.2831,
+     -28.0573,
+     97.6882
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12491,6 +12997,19 @@
     -28.0724,
     97.6881
    ],
+   "bounds": {
+    "at": [
+     211.6839,
+     -28.0573,
+     97.6882
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12504,6 +13023,19 @@
     -20.7382,
     98.6025
    ],
+   "bounds": {
+    "at": [
+     216.5607,
+     -20.723,
+     98.6026
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12517,6 +13049,19 @@
     -20.7382,
     98.6025
    ],
+   "bounds": {
+    "at": [
+     200.4062,
+     -20.723,
+     98.6026
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12530,6 +13075,19 @@
     -20.7382,
     142.7985
    ],
+   "bounds": {
+    "at": [
+     216.5607,
+     -20.723,
+     142.7986
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12543,6 +13101,19 @@
     -20.7382,
     142.7985
    ],
+   "bounds": {
+    "at": [
+     200.4062,
+     -20.723,
+     142.7986
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12556,6 +13127,19 @@
     -20.7382,
     146.7609
    ],
+   "bounds": {
+    "at": [
+     216.5607,
+     -20.723,
+     146.761
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12569,6 +13153,19 @@
     -20.7382,
     146.7609
    ],
+   "bounds": {
+    "at": [
+     200.4062,
+     -20.723,
+     146.761
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12582,6 +13179,19 @@
     -20.7382,
     166.1538
    ],
+   "bounds": {
+    "at": [
+     216.5607,
+     -20.723,
+     166.1539
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12595,6 +13205,19 @@
     -20.7382,
     166.1538
    ],
+   "bounds": {
+    "at": [
+     200.4062,
+     -20.723,
+     166.1539
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12608,6 +13231,19 @@
     -26.2436,
     203.7585
    ],
+   "bounds": {
+    "at": [
+     196.139,
+     -26.2285,
+     203.7586
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12621,6 +13257,19 @@
     -25.0244,
     179.4507
    ],
+   "bounds": {
+    "at": [
+     223.3043,
+     -25.0093,
+     179.4508
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12634,6 +13283,19 @@
     -25.0244,
     176.0217
    ],
+   "bounds": {
+    "at": [
+     223.3043,
+     -25.0093,
+     176.0218
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12647,6 +13309,19 @@
     -25.0244,
     176.0217
    ],
+   "bounds": {
+    "at": [
+     196.101,
+     -25.0093,
+     176.0218
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12660,6 +13335,19 @@
     -25.0244,
     179.4507
    ],
+   "bounds": {
+    "at": [
+     196.101,
+     -25.0093,
+     179.4508
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12673,6 +13361,19 @@
     -26.2436,
     203.7585
    ],
+   "bounds": {
+    "at": [
+     223.2663,
+     -26.2285,
+     203.7586
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12686,6 +13387,19 @@
     -26.396,
     242.7729
    ],
+   "bounds": {
+    "at": [
+     253.1367,
+     -26.3809,
+     242.773
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12699,6 +13413,19 @@
     -26.396,
     216.2553
    ],
+   "bounds": {
+    "at": [
+     235.1534,
+     -26.3809,
+     216.2554
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12712,6 +13439,19 @@
     -26.396,
     216.2553
    ],
+   "bounds": {
+    "at": [
+     253.1367,
+     -26.3809,
+     216.2554
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12725,6 +13465,19 @@
     9.7228,
     24.8409
    ],
+   "bounds": {
+    "at": [
+     109.2711,
+     9.7379,
+     24.8409
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12738,6 +13491,19 @@
     9.7228,
     31.2417
    ],
+   "bounds": {
+    "at": [
+     109.2711,
+     9.7379,
+     31.2417
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12751,6 +13517,19 @@
     -20.7382,
     165.849
    ],
+   "bounds": {
+    "at": [
+     208.4835,
+     -20.723,
+     165.8491
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12764,6 +13543,19 @@
     9.7228,
     28.0413
    ],
+   "bounds": {
+    "at": [
+     108.9663,
+     9.7379,
+     28.0414
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -12772,6 +13564,7 @@
    "yaw": 180.0
   }
  ],
+ "roles": [],
  "scripts": [],
  "settings": {
   "sv_airaccelerate": 150
@@ -13673,6 +14466,9 @@
    "index_offset": 1184,
    "lightmap_page": 0,
    "material": "destinyclan",
+   "material_flags": [
+    "translucent"
+   ],
    "model": 0,
    "normal_offset": 1072,
    "position_offset": 1024,
@@ -13712,6 +14508,9 @@
    "index_offset": 1848,
    "lightmap_page": 0,
    "material": "destinyrouge",
+   "material_flags": [
+    "translucent"
+   ],
    "model": 0,
    "normal_offset": 1400,
    "position_offset": 1208,
@@ -13751,6 +14550,9 @@
    "index_offset": 2104,
    "lightmap_page": 0,
    "material": "mgdccourse",
+   "material_flags": [
+    "translucent"
+   ],
    "model": 0,
    "normal_offset": 1992,
    "position_offset": 1944,
@@ -13862,7 +14664,7 @@
     1054
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 24,
    "index_offset": 8512,
@@ -19546,6 +20348,9 @@
    "index_offset": 252280,
    "lightmap_page": 0,
    "material": "icecreamlock/blueglass",
+   "material_flags": [
+    "translucent"
+   ],
    "model": 0,
    "normal_offset": 251328,
    "position_offset": 250920,
@@ -19950,6 +20755,9 @@
    "index_offset": 269240,
    "lightmap_page": 0,
    "material": "icecreamlock/blueglass",
+   "material_flags": [
+    "translucent"
+   ],
    "model": 0,
    "normal_offset": 269016,
    "position_offset": 268920,

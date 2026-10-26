@@ -3,8 +3,8 @@
   "bytes": 29208578,
   "compression": "gzip",
   "file": "wo_sweet_course.bin",
-  "sha256": "1ca71e09cae3ba2cb96222481cb7df6b947a427ba58c22000634c7dc386ed3e7",
-  "stored_bytes": 6600750
+  "sha256": "313b3fa32b652d21b2ff60ac16bb5a5bb2b54874018df07f7189f248c804fc2b",
+  "stored_bytes": 6601085
  },
  "breakables": [
   {
@@ -12868,26 +12868,25 @@
   "textures": [
    {
     "area": 3845.0,
-    "author": "Lennart Demes and contributors",
+    "author": "TMC (generated)",
     "colour": [
      0.0,
      0.0,
      0.0
     ],
-    "file": "pbr/Facade011",
-    "generic": "pbr_Facade011",
-    "how": "library",
-    "key": "pbr:pbr_Facade011",
-    "kind": "pbr",
+    "file": "textures/gen_flat_000000.png",
+    "generic": "flat",
+    "how": "flat",
+    "key": "generated:flat:000000",
+    "kind": "generated",
     "licence": "CC0-1.0",
-    "source": "ambientCG",
+    "source": "dot-map cutout_texture",
     "sources": [
      "ryan_dev/black",
      "sprites/blackbeam"
     ],
     "surfaces": 71,
-    "tier": "2k",
-    "url": "https://ambientcg.com/view?id=Facade011"
+    "url": "drawn in code by addons/dot_map/bsp/dot_map_bsp_mesh.gd (cutout_texture)"
    },
    {
     "area": 220.0,
@@ -12897,6 +12896,7 @@
      0.0,
      0.0
     ],
+    "fallback_file": "textures/fb_PaintedWood003.webp",
     "file": "pbr/PaintedWood003",
     "generic": "pbr_PaintedWood003",
     "how": "library",
@@ -12919,6 +12919,7 @@
      0.75,
      1.0
     ],
+    "fallback_file": "textures/fb_Paint002.webp",
     "file": "pbr/Paint002",
     "generic": "pbr_Paint002",
     "how": "library",
@@ -12963,6 +12964,7 @@
      0.875,
      0.875
     ],
+    "fallback_file": "textures/fb_Wallpaper001A.webp",
     "file": "pbr/Wallpaper001A",
     "generic": "pbr_Wallpaper001A",
     "how": "library",
@@ -13006,6 +13008,7 @@
      0.875,
      0.875
     ],
+    "fallback_file": "textures/fb_white_stucco.webp",
     "file": "pbr/white_stucco",
     "generic": "pbr_white_stucco",
     "how": "library",
@@ -13028,6 +13031,7 @@
      0.375,
      0.375
     ],
+    "fallback_file": "textures/fb_Tiles129A.webp",
     "file": "pbr/Tiles129A",
     "generic": "pbr_Tiles129A",
     "how": "library",
@@ -13050,6 +13054,7 @@
      0.625,
      0.875
     ],
+    "fallback_file": "textures/fb_rough_linen.webp",
     "file": "pbr/rough_linen",
     "generic": "pbr_rough_linen",
     "how": "library",
@@ -13072,6 +13077,7 @@
      0.875,
      0.875
     ],
+    "fallback_file": "textures/fb_Wallpaper002B.webp",
     "file": "pbr/Wallpaper002B",
     "generic": "pbr_Wallpaper002B",
     "how": "library",
@@ -13094,6 +13100,7 @@
      0.125,
      0.125
     ],
+    "fallback_file": "textures/fb_quatrefoil_jacquard_fabric.webp",
     "file": "pbr/quatrefoil_jacquard_fabric",
     "generic": "pbr_quatrefoil_jacquard_fabric",
     "how": "library",
@@ -13116,6 +13123,7 @@
      0.75,
      0.75
     ],
+    "fallback_file": "textures/fb_Concrete013.webp",
     "file": "pbr/Concrete013",
     "generic": "pbr_Concrete013",
     "how": "library",
@@ -13132,34 +13140,34 @@
    },
    {
     "area": 609.8,
-    "author": "Lennart Demes and contributors",
+    "author": "TMC (generated)",
     "colour": [
      0.125,
      0.125,
      0.125
     ],
-    "file": "pbr/Tiles075",
-    "generic": "pbr_Tiles075",
-    "how": "library",
-    "key": "pbr:pbr_Tiles075",
-    "kind": "pbr",
+    "file": "textures/gen_flat_202020.png",
+    "generic": "flat",
+    "how": "flat",
+    "key": "generated:flat:202020",
+    "kind": "generated",
     "licence": "CC0-1.0",
-    "source": "ambientCG",
+    "source": "dot-map cutout_texture",
     "sources": [
      "realworldtextures2/misc/space_08"
     ],
     "surfaces": 15,
-    "tier": "1k",
-    "url": "https://ambientcg.com/view?id=Tiles075"
+    "url": "drawn in code by addons/dot_map/bsp/dot_map_bsp_mesh.gd (cutout_texture)"
    },
    {
-    "area": 126.0,
+    "area": 125.9,
     "author": "Lennart Demes and contributors",
     "colour": [
      0.0,
      0.0,
      0.0
     ],
+    "fallback_file": "textures/fb_Ground014.webp",
     "file": "pbr/Ground014",
     "generic": "pbr_Ground014",
     "how": "table",
@@ -13184,6 +13192,7 @@
      0.625,
      0.375
     ],
+    "fallback_file": "textures/fb_Tiles031.webp",
     "file": "pbr/Tiles031",
     "generic": "pbr_Tiles031",
     "how": "library",
@@ -13206,6 +13215,7 @@
      0.75,
      0.75
     ],
+    "fallback_file": "textures/fb_Concrete025.webp",
     "file": "pbr/Concrete025",
     "generic": "pbr_Concrete025",
     "how": "library",
@@ -13228,6 +13238,7 @@
      0.5,
      0.5
     ],
+    "fallback_file": "textures/fb_Metal024.webp",
     "file": "pbr/Metal024",
     "generic": "pbr_Metal024",
     "how": "library",
@@ -13250,6 +13261,7 @@
      0.625,
      0.625
     ],
+    "fallback_file": "textures/fb_Snow013.webp",
     "file": "pbr/Snow013",
     "generic": "pbr_Snow013",
     "how": "library",
@@ -13272,6 +13284,7 @@
      0.5,
      0.5
     ],
+    "fallback_file": "textures/fb_CorrugatedSteel009.webp",
     "file": "pbr/CorrugatedSteel009",
     "generic": "pbr_CorrugatedSteel009",
     "how": "library",
@@ -13294,6 +13307,7 @@
      0.5,
      0.25
     ],
+    "fallback_file": "textures/fb_Fabric024.webp",
     "file": "pbr/Fabric024",
     "generic": "pbr_Fabric024",
     "how": "library",
@@ -13316,6 +13330,7 @@
      0.25,
      0.25
     ],
+    "fallback_file": "textures/fb_Tiles090.webp",
     "file": "pbr/Tiles090",
     "generic": "pbr_Tiles090",
     "how": "library",
@@ -13338,6 +13353,7 @@
      0.125,
      0.125
     ],
+    "fallback_file": "textures/fb_Tiles058.webp",
     "file": "pbr/Tiles058",
     "generic": "pbr_Tiles058",
     "how": "library",
@@ -13360,6 +13376,7 @@
      0.5,
      0.5
     ],
+    "fallback_file": "textures/fb_PavingStones006.webp",
     "file": "pbr/PavingStones006",
     "generic": "pbr_PavingStones006",
     "how": "library",
@@ -13376,25 +13393,24 @@
    },
    {
     "area": 2.9,
-    "author": "Lennart Demes and contributors",
+    "author": "TMC (generated)",
     "colour": [
      1.0,
      1.0,
      1.0
     ],
-    "file": "pbr/OfficeCeiling003",
-    "generic": "pbr_OfficeCeiling003",
-    "how": "library",
-    "key": "pbr:pbr_OfficeCeiling003",
-    "kind": "pbr",
+    "file": "textures/gen_foliage_card_ffffff.png",
+    "generic": "foliage_card",
+    "how": "table",
+    "key": "generated:foliage_card:ffffff",
+    "kind": "generated",
     "licence": "CC0-1.0",
-    "source": "ambientCG",
+    "source": "dot-map cutout_texture",
     "sources": [
      "nexore"
     ],
     "surfaces": 1,
-    "tier": "1k",
-    "url": "https://ambientcg.com/view?id=OfficeCeiling003"
+    "url": "drawn in code by addons/dot_map/bsp/dot_map_bsp_mesh.gd (cutout_texture)"
    },
    {
     "area": 50.5,
@@ -13404,6 +13420,7 @@
      0.5,
      0.375
     ],
+    "fallback_file": "textures/fb_rocky_trail.webp",
     "file": "pbr/rocky_trail",
     "generic": "pbr_rocky_trail",
     "how": "library",
@@ -13426,6 +13443,7 @@
      0.0,
      0.375
     ],
+    "fallback_file": "textures/fb_PaintedMetal004.webp",
     "file": "pbr/PaintedMetal004",
     "generic": "pbr_PaintedMetal004",
     "how": "library",
@@ -15391,7 +15409,7 @@
  "movers_without_geometry": [],
  "name": "wo_sweet_course",
  "notes": [
-  "translucent faces whose texture maps to no glass kind or water, drawn opaque (add a row to source_textures.tsv): NEXORE 1"
+  "1 glass surfaces (kinds foliage_card)"
  ],
  "pickups": [
   {
@@ -15426,6 +15444,19 @@
     -0.0242,
     -3.3531
    ],
+   "bounds": {
+    "at": [
+     -5.4862,
+     -0.009,
+     -3.3531
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15439,6 +15470,19 @@
     -0.0242,
     -3.3531
    ],
+   "bounds": {
+    "at": [
+     -11.5822,
+     -0.009,
+     -3.3531
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15452,6 +15496,19 @@
     -0.0242,
     -7.9251
    ],
+   "bounds": {
+    "at": [
+     -11.5822,
+     -0.009,
+     -7.9251
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15465,6 +15522,19 @@
     -0.0242,
     -7.9251
    ],
+   "bounds": {
+    "at": [
+     -5.4862,
+     -0.009,
+     -7.9251
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15478,6 +15548,19 @@
     -0.0242,
     -1.8291
    ],
+   "bounds": {
+    "at": [
+     -11.5822,
+     -0.009,
+     -1.8291
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15491,6 +15574,19 @@
     -0.0242,
     -1.8291
    ],
+   "bounds": {
+    "at": [
+     -5.4862,
+     -0.009,
+     -1.8291
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15504,6 +15600,19 @@
     -0.0242,
     5.4861
    ],
+   "bounds": {
+    "at": [
+     -5.4862,
+     -0.009,
+     5.4862
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15517,6 +15626,19 @@
     -0.0242,
     5.4861
    ],
+   "bounds": {
+    "at": [
+     -11.5822,
+     -0.009,
+     5.4862
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15530,6 +15652,19 @@
     -0.0242,
     6.7053
    ],
+   "bounds": {
+    "at": [
+     -14.0206,
+     -0.009,
+     6.7054
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15543,6 +15678,19 @@
     -0.0242,
     11.5821
    ],
+   "bounds": {
+    "at": [
+     -14.0206,
+     -0.009,
+     11.5822
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15556,6 +15704,19 @@
     -0.0242,
     6.7053
    ],
+   "bounds": {
+    "at": [
+     -29.8701,
+     -0.009,
+     6.7054
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15569,6 +15730,19 @@
     -0.0242,
     11.5821
    ],
+   "bounds": {
+    "at": [
+     -29.8701,
+     -0.009,
+     11.5822
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15582,6 +15756,19 @@
     -0.0242,
     11.5821
    ],
+   "bounds": {
+    "at": [
+     -33.5277,
+     -0.009,
+     11.5822
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15595,6 +15782,19 @@
     -0.0242,
     6.7053
    ],
+   "bounds": {
+    "at": [
+     -33.5277,
+     -0.009,
+     6.7054
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15608,6 +15808,19 @@
     -0.0242,
     6.7053
    ],
+   "bounds": {
+    "at": [
+     -46.9389,
+     -0.009,
+     6.7054
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15621,6 +15834,19 @@
     -0.0242,
     11.5821
    ],
+   "bounds": {
+    "at": [
+     -46.9389,
+     -0.009,
+     11.5822
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15634,6 +15860,19 @@
     6.0656,
     21.3357
    ],
+   "bounds": {
+    "at": [
+     -55.4734,
+     6.0807,
+     21.3358
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15647,6 +15886,19 @@
     6.0656,
     21.3357
    ],
+   "bounds": {
+    "at": [
+     -49.3773,
+     6.0807,
+     21.3358
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15660,6 +15912,19 @@
     6.0656,
     33.5277
    ],
+   "bounds": {
+    "at": [
+     -49.3773,
+     6.0807,
+     33.5277
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15673,6 +15938,19 @@
     6.0656,
     33.5277
    ],
+   "bounds": {
+    "at": [
+     -55.4734,
+     6.0807,
+     33.5277
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15686,6 +15964,19 @@
     6.0656,
     35.0517
    ],
+   "bounds": {
+    "at": [
+     -55.4734,
+     6.0807,
+     35.0517
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15699,6 +15990,19 @@
     6.0656,
     35.0517
    ],
+   "bounds": {
+    "at": [
+     -49.3773,
+     6.0807,
+     35.0517
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15712,6 +16016,19 @@
     -18.3184,
     43.2813
    ],
+   "bounds": {
+    "at": [
+     -55.4734,
+     -18.3033,
+     43.2814
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15725,6 +16042,19 @@
     -18.3184,
     43.2813
    ],
+   "bounds": {
+    "at": [
+     -49.3773,
+     -18.3033,
+     43.2814
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15738,6 +16068,19 @@
     -18.3184,
     37.1853
    ],
+   "bounds": {
+    "at": [
+     -49.3773,
+     -18.3033,
+     37.1853
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15751,6 +16094,19 @@
     -18.3184,
     37.1853
    ],
+   "bounds": {
+    "at": [
+     -55.4734,
+     -18.3033,
+     37.1853
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15764,6 +16120,19 @@
     -9.784,
     10.6677
    ],
+   "bounds": {
+    "at": [
+     -85.6486,
+     -9.7689,
+     10.6678
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15777,6 +16146,19 @@
     -9.784,
     18.5925
    ],
+   "bounds": {
+    "at": [
+     -85.6486,
+     -9.7689,
+     18.5925
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15790,6 +16172,19 @@
     -9.784,
     18.5925
    ],
+   "bounds": {
+    "at": [
+     -87.7822,
+     -9.7689,
+     18.5925
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15803,6 +16198,19 @@
     -9.784,
     10.6677
    ],
+   "bounds": {
+    "at": [
+     -87.7822,
+     -9.7689,
+     10.6678
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15816,6 +16224,19 @@
     -9.784,
     10.6677
    ],
+   "bounds": {
+    "at": [
+     -106.0702,
+     -9.7689,
+     10.6678
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15829,6 +16250,19 @@
     -9.784,
     18.5925
    ],
+   "bounds": {
+    "at": [
+     -106.0702,
+     -9.7689,
+     18.5925
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15842,6 +16276,19 @@
     -9.784,
     38.7093
    ],
+   "bounds": {
+    "at": [
+     -106.6798,
+     -9.7689,
+     38.7094
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15855,6 +16302,19 @@
     -9.784,
     43.5861
    ],
+   "bounds": {
+    "at": [
+     -106.9846,
+     -9.7689,
+     43.5862
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15868,6 +16328,19 @@
     -9.784,
     43.5861
    ],
+   "bounds": {
+    "at": [
+     -114.9094,
+     -9.7689,
+     43.5862
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15881,6 +16354,19 @@
     -9.784,
     93.8781
    ],
+   "bounds": {
+    "at": [
+     -114.9094,
+     -9.7689,
+     93.8782
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15894,6 +16380,19 @@
     -9.784,
     93.8781
    ],
+   "bounds": {
+    "at": [
+     -106.9846,
+     -9.7689,
+     93.8782
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15907,6 +16406,19 @@
     -9.784,
     10.6677
    ],
+   "bounds": {
+    "at": [
+     -63.3982,
+     -9.7689,
+     10.6678
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15920,6 +16432,19 @@
     -9.784,
     16.4589
    ],
+   "bounds": {
+    "at": [
+     -43.2814,
+     -9.7689,
+     16.4589
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15933,6 +16458,19 @@
     -18.3184,
     35.3565
    ],
+   "bounds": {
+    "at": [
+     -61.2645,
+     -18.3033,
+     35.3565
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15946,6 +16484,19 @@
     -18.3184,
     35.3565
    ],
+   "bounds": {
+    "at": [
+     -43.5862,
+     -18.3033,
+     35.3565
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15959,6 +16510,19 @@
     0.274,
     6.0957
    ],
+   "bounds": {
+    "at": [
+     -14.6302,
+     0.2892,
+     6.0957
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.5
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15972,6 +16536,19 @@
     1.1884,
     6.0957
    ],
+   "bounds": {
+    "at": [
+     -15.8494,
+     1.2036,
+     6.0957
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.5
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15985,6 +16562,19 @@
     1.1884,
     12.1923
    ],
+   "bounds": {
+    "at": [
+     -15.8498,
+     1.2036,
+     12.1923
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 0.5
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -15998,6 +16588,19 @@
     0.274,
     12.1923
    ],
+   "bounds": {
+    "at": [
+     -14.6306,
+     0.2892,
+     12.1923
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 0.5
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16011,6 +16614,19 @@
     0.5788,
     12.1923
    ],
+   "bounds": {
+    "at": [
+     -24.9938,
+     0.5939,
+     12.1923
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 0.5
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16024,6 +16640,19 @@
     0.5788,
     6.0957
    ],
+   "bounds": {
+    "at": [
+     -24.9934,
+     0.5939,
+     6.0957
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.5
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16037,6 +16666,19 @@
     -9.784,
     98.1453
    ],
+   "bounds": {
+    "at": [
+     -115.2142,
+     -9.7689,
+     98.1454
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16050,6 +16692,19 @@
     -9.784,
     98.1453
    ],
+   "bounds": {
+    "at": [
+     -106.6798,
+     -9.7689,
+     98.1454
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16063,6 +16718,19 @@
     -9.784,
     142.9509
    ],
+   "bounds": {
+    "at": [
+     -124.0534,
+     -9.7689,
+     142.951
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16076,6 +16744,19 @@
     -9.784,
     135.0261
    ],
+   "bounds": {
+    "at": [
+     -124.0534,
+     -9.7689,
+     135.0262
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16089,6 +16770,19 @@
     -9.784,
     135.0261
    ],
+   "bounds": {
+    "at": [
+     -135.6358,
+     -9.7689,
+     135.0262
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16102,6 +16796,19 @@
     -9.784,
     142.9509
    ],
+   "bounds": {
+    "at": [
+     -135.6358,
+     -9.7689,
+     142.951
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16115,6 +16822,19 @@
     -0.0242,
     149.3517
    ],
+   "bounds": {
+    "at": [
+     -144.475,
+     -0.009,
+     149.3518
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16128,6 +16848,19 @@
     -0.0242,
     149.3517
    ],
+   "bounds": {
+    "at": [
+     -138.379,
+     -0.009,
+     149.3518
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16141,6 +16874,19 @@
     0.274,
     211.5309
    ],
+   "bounds": {
+    "at": [
+     -147.523,
+     0.2892,
+     211.531
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16154,6 +16900,19 @@
     3.6268,
     211.5309
    ],
+   "bounds": {
+    "at": [
+     -147.523,
+     3.642,
+     211.531
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16167,6 +16926,19 @@
     -0.0242,
     181.0509
    ],
+   "bounds": {
+    "at": [
+     -143.2558,
+     -0.009,
+     181.051
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16180,6 +16952,19 @@
     -0.0242,
     181.0509
    ],
+   "bounds": {
+    "at": [
+     -139.5982,
+     -0.009,
+     181.051
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16193,6 +16978,19 @@
     -0.0242,
     205.4349
    ],
+   "bounds": {
+    "at": [
+     -150.571,
+     -0.009,
+     205.435
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16206,6 +17004,19 @@
     -0.0242,
     205.4349
    ],
+   "bounds": {
+    "at": [
+     -144.475,
+     -0.009,
+     205.435
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16219,6 +17030,19 @@
     -0.0242,
     207.8733
    ],
+   "bounds": {
+    "at": [
+     -144.475,
+     -0.009,
+     207.8734
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16232,6 +17056,19 @@
     -0.0242,
     207.8733
    ],
+   "bounds": {
+    "at": [
+     -150.571,
+     -0.009,
+     207.8734
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16245,6 +17082,19 @@
     -0.0242,
     210.3117
    ],
+   "bounds": {
+    "at": [
+     -144.475,
+     -0.009,
+     210.3118
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16258,6 +17108,19 @@
     -0.0242,
     210.3117
    ],
+   "bounds": {
+    "at": [
+     -150.571,
+     -0.009,
+     210.3118
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16271,6 +17134,19 @@
     0.2806,
     211.5309
    ],
+   "bounds": {
+    "at": [
+     -149.3518,
+     0.2958,
+     211.531
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16284,6 +17160,19 @@
     0.2806,
     211.5309
    ],
+   "bounds": {
+    "at": [
+     -145.6942,
+     0.2958,
+     211.531
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16297,6 +17186,19 @@
     3.6268,
     121.3101
    ],
+   "bounds": {
+    "at": [
+     -143.8654,
+     3.642,
+     121.3102
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16310,6 +17212,19 @@
     0.274,
     121.3101
    ],
+   "bounds": {
+    "at": [
+     -143.8654,
+     0.2892,
+     121.3102
+    ],
+    "box": [
+     0.214,
+     0.03,
+     0.214
+    ],
+    "yaw": 180.0
+   },
    "model": "models/props/cs_office/light_inset.mdl",
    "scale": 1.0,
    "shape": true,
@@ -16318,6 +17233,7 @@
    "yaw": 180.0
   }
  ],
+ "roles": [],
  "scripts": [],
  "settings": {
   "sv_airaccelerate": 1000
@@ -17591,7 +18507,7 @@
     777
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 120,
    "index_offset": 2880,
@@ -17620,7 +18536,7 @@
     777
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 36,
    "index_offset": 4240,
@@ -17651,7 +18567,7 @@
     777
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 87,
    "index_offset": 6584,
@@ -17682,7 +18598,7 @@
     777
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 36,
    "index_offset": 7732,
@@ -17711,7 +18627,7 @@
     774
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 42,
    "index_offset": 8916,
@@ -17741,7 +18657,7 @@
     930
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 231,
    "index_offset": 14884,
@@ -17771,7 +18687,7 @@
     930
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 87,
    "index_offset": 17848,
@@ -17845,7 +18761,7 @@
     921
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 117,
    "index_offset": 22104,
@@ -17875,7 +18791,7 @@
     921
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 57,
    "index_offset": 23972,
@@ -17905,7 +18821,7 @@
     921
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 18,
    "index_offset": 24680,
@@ -17935,7 +18851,7 @@
     921
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 126,
    "index_offset": 27872,
@@ -18011,7 +18927,7 @@
     943
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 207,
    "index_offset": 34296,
@@ -18045,7 +18961,7 @@
     943
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 159,
    "index_offset": 39004,
@@ -18114,7 +19030,7 @@
     931
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 108,
    "index_offset": 43024,
@@ -18147,7 +19063,7 @@
     938
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 69,
    "index_offset": 45176,
@@ -18177,7 +19093,7 @@
     931
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 84,
    "index_offset": 47532,
@@ -18207,7 +19123,7 @@
     931
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 36,
    "index_offset": 48828,
@@ -21623,7 +22539,7 @@
     777
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 144,
    "index_offset": 258732,
@@ -21652,7 +22568,7 @@
     777
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 42,
    "index_offset": 260348,
@@ -21683,7 +22599,7 @@
     777
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 105,
    "index_offset": 263196,
@@ -21714,7 +22630,7 @@
     777
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 36,
    "index_offset": 264416,
@@ -21743,7 +22659,7 @@
     774
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 54,
    "index_offset": 265920,
@@ -21773,7 +22689,7 @@
     930
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 270,
    "index_offset": 272936,
@@ -21803,7 +22719,7 @@
     930
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 93,
    "index_offset": 276216,
@@ -21878,7 +22794,7 @@
     921
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 117,
    "index_offset": 280756,
@@ -21908,7 +22824,7 @@
     921
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 60,
    "index_offset": 282664,
@@ -21938,7 +22854,7 @@
     921
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 24,
    "index_offset": 283544,
@@ -21968,7 +22884,7 @@
     921
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 162,
    "index_offset": 287720,
@@ -22048,7 +22964,7 @@
     942
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 216,
    "index_offset": 295272,
@@ -22083,7 +22999,7 @@
     942
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 210,
    "index_offset": 300776,
@@ -22151,7 +23067,7 @@
     931
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 111,
    "index_offset": 304820,
@@ -22184,7 +23100,7 @@
     936
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 78,
    "index_offset": 307104,
@@ -22214,7 +23130,7 @@
     931
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 108,
    "index_offset": 310136,
@@ -22244,7 +23160,7 @@
     931
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 48,
    "index_offset": 311848,
@@ -24858,7 +25774,7 @@
     1280
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 12,
    "index_offset": 550968,
@@ -24888,7 +25804,7 @@
     1280
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 24,
    "index_offset": 551576,
@@ -24918,7 +25834,7 @@
     1280
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 60,
    "index_offset": 553192,
@@ -24948,7 +25864,7 @@
     1280
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 18,
    "index_offset": 553912,
@@ -24977,7 +25893,7 @@
     1274
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 48,
    "index_offset": 555264,
@@ -25345,7 +26261,7 @@
     1274
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 72,
    "index_offset": 583528,
@@ -25930,7 +26846,7 @@
     0.077
    ],
    "entity": null,
-   "free": "pbr:pbr_Tiles075",
+   "free": "generated:flat:202020",
    "generic": null,
    "index_count": 99,
    "index_offset": 620604,
@@ -25968,7 +26884,7 @@
     0.077
    ],
    "entity": null,
-   "free": "pbr:pbr_Tiles075",
+   "free": "generated:flat:202020",
    "generic": null,
    "index_count": 48,
    "index_offset": 622280,
@@ -26005,7 +26921,7 @@
     0.077
    ],
    "entity": null,
-   "free": "pbr:pbr_Tiles075",
+   "free": "generated:flat:202020",
    "generic": null,
    "index_count": 84,
    "index_offset": 624712,
@@ -26046,7 +26962,7 @@
     0.077
    ],
    "entity": null,
-   "free": "pbr:pbr_Tiles075",
+   "free": "generated:flat:202020",
    "generic": null,
    "index_count": 153,
    "index_offset": 628688,
@@ -26086,7 +27002,7 @@
     0.077
    ],
    "entity": null,
-   "free": "pbr:pbr_Tiles075",
+   "free": "generated:flat:202020",
    "generic": null,
    "index_count": 30,
    "index_offset": 630100,
@@ -26128,7 +27044,7 @@
     0.077
    ],
    "entity": null,
-   "free": "pbr:pbr_Tiles075",
+   "free": "generated:flat:202020",
    "generic": null,
    "index_count": 108,
    "index_offset": 632620,
@@ -26170,7 +27086,7 @@
     0.077
    ],
    "entity": null,
-   "free": "pbr:pbr_Tiles075",
+   "free": "generated:flat:202020",
    "generic": null,
    "index_count": 60,
    "index_offset": 634572,
@@ -26686,7 +27602,7 @@
     0.077
    ],
    "entity": null,
-   "free": "pbr:pbr_Tiles075",
+   "free": "generated:flat:202020",
    "generic": null,
    "index_count": 108,
    "index_offset": 663204,
@@ -26715,7 +27631,7 @@
     1200
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 60,
    "index_offset": 665156,
@@ -26744,7 +27660,7 @@
     1200
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 36,
    "index_offset": 666276,
@@ -26782,7 +27698,7 @@
     0.077
    ],
    "entity": null,
-   "free": "pbr:pbr_Tiles075",
+   "free": "generated:flat:202020",
    "generic": null,
    "index_count": 72,
    "index_offset": 668340,
@@ -26811,7 +27727,7 @@
     1200
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 66,
    "index_offset": 670228,
@@ -26849,7 +27765,7 @@
     0.077
    ],
    "entity": null,
-   "free": "pbr:pbr_Tiles075",
+   "free": "generated:flat:202020",
    "generic": null,
    "index_count": 108,
    "index_offset": 673372,
@@ -26887,7 +27803,7 @@
     0.077
    ],
    "entity": null,
-   "free": "pbr:pbr_Tiles075",
+   "free": "generated:flat:202020",
    "generic": null,
    "index_count": 72,
    "index_offset": 675724,
@@ -26928,7 +27844,7 @@
     0.077
    ],
    "entity": null,
-   "free": "pbr:pbr_Tiles075",
+   "free": "generated:flat:202020",
    "generic": null,
    "index_count": 108,
    "index_offset": 678892,
@@ -26962,7 +27878,7 @@
     1281
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 57,
    "index_offset": 680804,
@@ -27000,7 +27916,7 @@
     1281
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 51,
    "index_offset": 682272,
@@ -27040,7 +27956,7 @@
     0.077
    ],
    "entity": null,
-   "free": "pbr:pbr_Tiles075",
+   "free": "generated:flat:202020",
    "generic": null,
    "index_count": 72,
    "index_offset": 684396,
@@ -27071,7 +27987,7 @@
     1208
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 72,
    "index_offset": 686604,
@@ -27113,7 +28029,7 @@
     0.077
    ],
    "entity": null,
-   "free": "pbr:pbr_Tiles075",
+   "free": "generated:flat:202020",
    "generic": null,
    "index_count": 42,
    "index_offset": 688012,
@@ -27148,7 +28064,7 @@
     0.077
    ],
    "entity": null,
-   "free": "pbr:pbr_Tiles075",
+   "free": "generated:flat:202020",
    "generic": null,
    "index_count": 6,
    "index_offset": 688340,
@@ -27685,7 +28601,7 @@
     1409
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 93,
    "index_offset": 707280,
@@ -27715,7 +28631,7 @@
     1409
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 57,
    "index_offset": 709052,
@@ -27745,7 +28661,7 @@
     1409
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 102,
    "index_offset": 711760,
@@ -27775,7 +28691,7 @@
     1409
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 12,
    "index_offset": 712488,
@@ -31030,7 +31946,7 @@
    "vertex_count": 18
   },
   {
-   "area": 8.31,
+   "area": 8.3,
    "chunk": [
     -8,
     12,
@@ -31100,7 +32016,7 @@
     1200
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 132,
    "index_offset": 947404,
@@ -31130,7 +32046,7 @@
     1200
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 60,
    "index_offset": 949452,
@@ -31160,7 +32076,7 @@
     1200
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 138,
    "index_offset": 953212,
@@ -31238,7 +32154,7 @@
    "vertex_count": 74
   },
   {
-   "area": 27.27,
+   "area": 27.26,
    "chunk": [
     -8,
     13,
@@ -31282,7 +32198,7 @@
     1409
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 213,
    "index_offset": 1073780,
@@ -31314,7 +32230,7 @@
     1409
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 105,
    "index_offset": 1077312,
@@ -31346,7 +32262,7 @@
     1409
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 222,
    "index_offset": 1083412,
@@ -31378,7 +32294,7 @@
     1409
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 36,
    "index_offset": 1085260,
@@ -43750,7 +44666,7 @@
     468
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": "flat",
    "index_count": 54,
    "index_offset": 2090360,
@@ -43998,7 +44914,7 @@
     453
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": "flat",
    "index_count": 30,
    "index_offset": 2100908,
@@ -45878,7 +46794,7 @@
     71
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 108,
    "index_offset": 2229608,
@@ -45914,7 +46830,7 @@
     71
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 141,
    "index_offset": 2233360,
@@ -45948,7 +46864,7 @@
     68
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 180,
    "index_offset": 2238324,
@@ -45984,7 +46900,7 @@
     71
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 54,
    "index_offset": 2240484,
@@ -46015,7 +46931,7 @@
     71
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 66,
    "index_offset": 2242380,
@@ -46049,7 +46965,7 @@
     71
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 108,
    "index_offset": 2245364,
@@ -46550,7 +47466,7 @@
     68
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 138,
    "index_offset": 2291168,
@@ -46587,7 +47503,7 @@
     71
    ],
    "entity": null,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 105,
    "index_offset": 2294320,
@@ -48626,18 +49542,27 @@
     0.9527
    ],
    "entity": 128,
-   "free": "pbr:pbr_OfficeCeiling003",
+   "free": "generated:foliage_card:ffffff",
    "generic": null,
+   "glass": "foliage_card",
    "index_count": 6,
    "index_offset": 2421232,
    "lightmap_page": 0,
    "material": "nexore",
+   "material_flags": [
+    "translucent"
+   ],
    "model": 51,
    "normal_offset": 2421120,
    "position_offset": 2421072,
    "texels": [
     512,
     512
+   ],
+   "tint": [
+    1.0,
+    0.996,
+    1.0
    ],
    "uv2_offset": 2421200,
    "uv_offset": 2421168,
@@ -49187,7 +50112,7 @@
     943
    ],
    "entity": 465,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 660,
    "index_offset": 2469480,
@@ -49220,7 +50145,7 @@
     943
    ],
    "entity": 465,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 144,
    "index_offset": 2475480,
@@ -49352,7 +50277,7 @@
     938
    ],
    "entity": 466,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 96,
    "index_offset": 2482280,
@@ -49380,7 +50305,7 @@
     938
    ],
    "entity": 466,
-   "free": "pbr:pbr_Facade011",
+   "free": "generated:flat:000000",
    "generic": null,
    "index_count": 24,
    "index_offset": 2483304,

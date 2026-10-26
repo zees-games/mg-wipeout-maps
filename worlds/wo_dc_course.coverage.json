@@ -13,8 +13,7 @@
   },
   "free_by_tier": {
    "addon": 15,
-   "default": 4,
-   "nearest": 1
+   "default": 4
   },
   "nearest_photo": [
    "destinyclan",
@@ -25,7 +24,6 @@
    "mgdccourse",
    "ryan_dev/10",
    "ryan_dev/80",
-   "ryan_dev/black",
    "ryan_dev/dev_30"
   ]
  },
@@ -75,7 +73,9 @@
    "RYAN_DEV/BLACK",
    "RYAN_DEV/DEV_30"
   ],
-  "textures_flat": [],
+  "textures_flat": [
+   "ryan_dev/black"
+  ],
   "models_unmapped": [],
   "sounds_unmapped": [],
   "classes_unmapped": [],
@@ -83,15 +83,21 @@
    "ambient_generic.pitch",
    "game_player_equip.weapon_knife"
   ],
-  "links_unresolved": []
+  "links_unresolved": [],
+  "surfaces_opaque": [
+   "destinyclan",
+   "destinyrouge",
+   "mgdccourse"
+  ]
  },
  "counts": {
   "textures_unmapped": 9,
-  "textures_flat": 0,
+  "textures_flat": 1,
   "models_unmapped": 0,
   "sounds_unmapped": 0,
   "classes_unmapped": 0,
   "keys_unmapped": 2,
-  "links_unresolved": 0
+  "links_unresolved": 0,
+  "surfaces_opaque": 3
  }
 }
