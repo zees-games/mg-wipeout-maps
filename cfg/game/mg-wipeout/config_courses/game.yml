@@ -1,0 +1,28 @@
+# mg-wipeout: every key of this file at its code default, commented out. Uncomment a line to change it;
+# an operator overrides in cfg/server/game/mg-wipeout/config_courses/game.yml. Layers: defaults < this < env < argv.
+
+# --- Weather
+# Chance, 0 to 1, that a round's course gets gusts of wind. [0.0..1.0]
+# wind_chance: 0.5
+# Strongest gust, as a sideways acceleration in m/s². Six is a stagger; twelve is a fall. [0.0..40.0]
+# wind_strength: 7.0
+# Chance, 0 to 1, that a round's course gets a thunderstorm: rain, and lightning striking the course at drawn... [0.0..1.0]
+# storm_chance: 0.25
+# How many lightning strikes a storm brings over a course. [0..60]
+# storm_strikes: 14
+# How near a strike knocks a player, in metres, and what it costs them. [0.5..20.0]
+# strike_radius: 3.5
+#  [0.0..400.0]
+# strike_damage: 35.0
+
+# --- The courses
+# Which courses this server may play, by id. Empty means every one it has.
+# course_ids: []
+# Whether the next course is drawn at random (seeded) rather than taken in order.
+# shuffle_courses: true
+# The file that says which courses this server ROTATES: `maps.yml` in `cfg/server/addons/dot_map/` of the `--...
+# map_rotation_file: "cfg/maps.yml"
+# Where course and arena documents are read from, beside the one built into this game.
+# course_directory: "courses"
+# Seed every random choice in a round is drawn from: the course, the arena, the spawn areas, the drops.
+# seed_value: 20261005

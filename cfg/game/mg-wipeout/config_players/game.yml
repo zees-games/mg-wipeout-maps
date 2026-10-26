@@ -1,0 +1,74 @@
+# mg-wipeout: every key of this file at its code default, commented out. Uncomment a line to change it;
+# an operator overrides in cfg/server/game/mg-wipeout/config_players/game.yml. Layers: defaults < this < env < argv.
+
+# --- The players
+#  [1.0..400.0]
+# player_health: 100.0
+# Whether the course hurts at all: knocks, lightning and hard landings. Off, a player's health on the course ...
+# health_enabled: true
+# Metres a player may drop onto a deck without it costing health. A jump is 1.25 and a step down a course's o... [0.0..30.0]
+# fall_safe_height: 3.5
+# Health a hard landing costs, per metre fallen past fall_safe_height. 0: never. [0.0..50.0]
+# fall_damage_per_metre: 6.0
+# The health fraction (of player_health) at or below which the blow that knocks a player out throws the body ... [0.0..1.0]
+# knockout_fling_below: 0.5
+# How hard a knockout at no health throws the body: the ragdoll's push strength, 1 being a hundred points of ... [0.0..10.0]
+# knockout_fling_power: 3.0
+# How fast a player runs, in m/s. [1.0..20.0]
+# run_speed: 7.0
+# What fraction of run_speed holding the walk key gives. [0.1..1.0]
+# walk_speed_scale: 0.45
+# Metres a standing jump rises. [0.1..5.0]
+# jump_height: 1.25
+# Metres per second squared, for everything: players and props. [1.0..60.0]
+# gravity: 20.0
+# How hard an obstacle throws a player at the least, in m/s. [0.0..40.0]
+# knock_min_speed: 8.0
+# The most an obstacle can throw a player, in m/s. A safety cap rather than a feel dial. [1.0..80.0]
+# knock_max_speed: 22.0
+# How far up every knock throws a player, in m/s. [0.0..30.0]
+# knock_lift: 5.5
+# Health a knock costs on the course, per m/s it threw the player. 0: knocks never hurt. [0.0..10.0]
+# knock_damage_per_speed: 1.0
+# Whether a player whose health runs out on the course is out for the round (watching from the gallery) rathe...
+# course_deaths_eliminate: true
+# Instant death: a fall into the water, or any death on the course, puts the player out for the rest of the R...
+# instant_death: false
+# Whether crossing a checkpoint restores health, so one bad stretch is not a slow death.
+# checkpoint_heals: true
+
+# --- The final death
+# Which arenas this server may draw, by id. Empty means every one it has.
+# arena_ids: []
+# How many props are dropped into an arena, per side that made it. [0..40]
+# finale_props_per_side: 6
+# How many weapons are laid out in an arena, per side that made it. [0..20]
+# finale_weapons_per_side: 2
+# The most props an arena holds at once, whatever the count above asks for. [4..200]
+# prop_budget: 60
+# Which weapons may be laid out, by id from the pack. Empty means a sensible default set.
+# weapon_pool: []
+# How fast a thrown prop has to be going to hurt somebody, in m/s. [0.5..60.0]
+# throw_hurt_speed: 7.0
+# Damage a thrown prop does, per kilogram metre per second of momentum. [0.0..2.0]
+# throw_damage_per_impulse: 0.075
+# How hard a thrown prop leaves the hands, as an impulse. [10.0..20000.0]
+# throw_impulse: 1500.0
+# Seconds a thrown prop stays dangerous and credited to whoever threw it. [0.5..30.0]
+# thrown_seconds: 3.0
+# Whether a hit hurts a team-mate (blows and thrown props alike).
+# friendly_fire: false
+
+# --- Bots
+# How many players the server keeps in the round by adding stand-ins (`bot_quota`, fill). [0..24]
+# minimum_players: 9
+# Scales every mistake a stand-in makes (`wo_bot_mistakes`): 1 is the difficulty preset's (dot-bot's `bot_dif... [0.0..4.0]
+# bot_mistakes: 1.0
+# Metres a second a stand-in is reckoned to cover on a hop from stone to stone, landing to landing. [1.0..12.0]
+# bot_hop_speed: 4.8
+# Metres a second a full backward wish takes off a stand-in on the ground in one tick (its take-off braking). [0.5..20.0]
+# bot_ground_brake: 3.3
+# Seconds a stand-in standing still may take to get going, reckoned onto each tile of a crossing. [0.0..1.0]
+# bot_tile_start_seconds: 0.1
+# Seconds either side of a stand-in's time on a tile that the tile must also be up. The tile warning and drop... [0.0..0.5]
+# bot_tile_margin_seconds: 0.08

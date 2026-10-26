@@ -1,0 +1,48 @@
+# mg-wipeout: every key of this file at its code default, commented out. Uncomment a line to change it;
+# an operator overrides in cfg/server/game/mg-wipeout/config_round/game.yml. Layers: defaults < this < env < argv.
+
+# --- The round
+# Seconds everybody stands behind the start gate before it drops. [0.0..30.0]
+# countdown_seconds: 4.0
+# Seconds the course is open before the round is called on the clock. [10.0..1200.0]
+# course_seconds: 360.0
+# Seconds between the course closing and the final death starting. [0.0..30.0]
+# handover_seconds: 4.0
+# Seconds the final death runs before the round is called on the clock (a draw). [10.0..900.0]
+# finale_seconds: 100.0
+# How many courses a round runs before its final death, when more than one side finishes. [1..12]
+# courses_per_round: 3
+# Seconds between rounds. [0.0..60.0]
+# intermission_seconds: 8.0
+# Seconds the final killcam plays when a round ends on a kill, added to the intermission (`mp_killcam_time`, ... [0.0..30.0]
+# killcam_seconds: 7.0
+# Seconds of warmup before the first round. 0 starts immediately. [0.0..300.0]
+# warmup_seconds: 10.0
+# Whether the side that got furthest wins a round nobody finished.
+# progress_decides: true
+
+# --- Sides
+# How many teams the server plays with. 0 is every player for themselves. [0..6]
+# team_count: 0
+# Whether players may pick their own side.
+# allow_team_choice: true
+# Whether the server evens the sides up between rounds.
+# autobalance: true
+
+# --- Points
+#  [0..100]
+# finish_points_rest: 3
+# Points for being on the side that wins the round, the final death included. [0..100]
+# winner_points: 10
+
+# --- Watching
+# Who somebody who is out may watch: 0 anybody, 1 their own side, 2 nobody.
+# spectate_camera: 0
+
+# --- Progress
+# Whether the server counts per-player numbers and awards achievements at all.
+# keep_progress: true
+# Where lifetime achievement progress is written. Empty keeps it in memory.
+# progress_directory: ""
+# Whether the numbers and the unlocks are reported to the backbone. Needs a credential.
+# report_progress: false
