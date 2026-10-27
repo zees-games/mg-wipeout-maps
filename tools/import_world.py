@@ -177,7 +177,7 @@ def main_io(spec, worlds):
     if os.path.exists(os.path.join(worlds, "CREDITS.md")):
         os.remove(os.path.join(worlds, "CREDITS.md"))
     doc = {k: spec[k] for k in ("format", "kind", "id", "name", "author", "blurb", "theme", "water_height",
-                                "course_seconds", "instant", "start", "finish") if k in spec}
+                                "course_seconds", "instant", "start", "finish", "io_route") if k in spec}
     doc["pieces"] = [{"kind": "world", "mesh": cid, "io": True}] + spec.get("pieces", [])
     with open(os.path.join(REPO, "courses", cid + ".json"), "w") as out:
         out.write(json.dumps(doc, indent=1) + "\n")

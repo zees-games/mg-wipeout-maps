@@ -67,5 +67,14 @@
  "io": {
   "store": "wipeout/mg_office_coursee"
  },
- "instant": true
+ "instant": true,
+ "io_route": [
+  {
+   "to": [
+    -2.0,
+    1.33,
+    15.57
+   ]
+  }
+ ]
 }

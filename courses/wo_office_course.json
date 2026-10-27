@@ -66,5 +66,14 @@
    "mesh": "wo_office_course",
    "io": true
   }
+ ],
+ "io_route": [
+  {
+   "to": [
+    -2.0,
+    1.33,
+    15.57
+   ]
+  }
  ]
 }
