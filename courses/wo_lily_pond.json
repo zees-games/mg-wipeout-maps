@@ -2438,5 +2438,9 @@
     2.8
    ]
   }
- ]
+ ],
+ "ambient": {
+  "level": 1.5,
+  "lively": true
+ }
 }

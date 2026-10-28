@@ -66,5 +66,8 @@
    "mesh": "wo_sweet_course",
    "io": true
   }
- ]
+ ],
+ "ambient": {
+  "level": 0.8
+ }
 }

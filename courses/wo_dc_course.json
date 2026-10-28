@@ -66,5 +66,8 @@
    "mesh": "wo_dc_course",
    "io": true
   }
- ]
+ ],
+ "ambient": {
+  "level": 0.8
+ }
 }

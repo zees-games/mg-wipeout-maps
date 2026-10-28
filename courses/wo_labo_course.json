@@ -61,5 +61,8 @@
    "mesh": "wo_labo_course",
    "io": true
   }
- ]
+ ],
+ "ambient": {
+  "level": 0.7
+ }
 }

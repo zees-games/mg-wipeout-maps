@@ -1863,12 +1863,70 @@ def documents():
     return courses + arenas()
 
 
+# Each course's `ambient` block for DotAmbienceDirector: bed level (1.0 is the stock 0.35 bed) and whether
+# the birdsong bed may play. Halls and mines sit under 1, open ground over. Courses this script does not
+# build (imported ones) are patched by `--ambient`.
+AMBIENT = {
+    "wo_arena_islands": (1.0, False),
+    "wo_arena_pit": (1.0, False),
+    "wo_arena_ring": (1.0, False),
+    "wo_arena_tiers": (1.0, False),
+    "wo_arena_turntable": (1.0, False),
+    "wo_first_splash": (1.2, False),
+    "wo_spin_cycle": (1.0, False),
+    "wo_big_balls": (1.3, True),
+    "wo_punch_alley": (1.0, False),
+    "wo_trapdoor_run": (1.0, False),
+    "wo_log_roll": (1.2, False),
+    "wo_the_sweeper": (1.0, False),
+    "wo_uphill_belt": (1.3, True),
+    "wo_hammer_gauntlet": (1.0, False),
+    "wo_grand_tour": (1.3, True),
+    "wo_lily_pond": (1.5, True),
+    "wo_dans_course": (0.8, False),
+    "wo_dc_course": (0.8, False),
+    "wo_labo_course": (0.7, False),
+    "wo_lego_course": (0.9, False),
+    "wo_oaks_course": (0.8, False),
+    "wo_office_course": (0.6, False),
+    "wo_pauls_course": (0.7, False),
+    "wo_scary_course": (0.7, False),
+    "wo_sweet_course": (0.8, False),
+    "wo_waytobar_course": (0.7, False),
+}
+
+
+def ambient_block(cid):
+    level, lively = AMBIENT[cid]
+    block = {"level": level}
+    if lively:
+        block["lively"] = True
+    return block
+
+
+def patch_ambient():
+    """Adds the block to every course in courses/ without touching the rest of its layout."""
+    root = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "courses")
+    for cid in AMBIENT:
+        path = os.path.join(root, cid + ".json")
+        with open(path) as f:
+            doc = json.load(f)
+        doc["ambient"] = ambient_block(cid)
+        with open(path, "w") as f:
+            f.write(json.dumps(doc, indent=1) + "\n")
+
+
 def main():
+    if "--ambient" in sys.argv:
+        patch_ambient()
+        return 0
     check = "--check" in sys.argv
     os.makedirs(ROOT, exist_ok=True)
     stale = []
 
     for doc in documents():
+        if doc["id"] in AMBIENT:
+            doc["ambient"] = ambient_block(doc["id"])
         path = os.path.join(ROOT, doc["id"] + ".json")
         text = json.dumps(doc, indent=1, sort_keys=False) + "\n"
 

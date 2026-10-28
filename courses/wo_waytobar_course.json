@@ -66,5 +66,8 @@
    "mesh": "wo_waytobar_course",
    "io": true
   }
- ]
+ ],
+ "ambient": {
+  "level": 0.7
+ }
 }
