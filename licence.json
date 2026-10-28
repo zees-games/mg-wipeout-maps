@@ -1,0 +1,131 @@
+[
+  {
+    "paths": [
+      ""
+    ],
+    "licence": "MIT",
+    "author": "TMC",
+    "url": "https://github.com/zees-games/mg-wipeout-maps",
+    "title": "mg-wipeout-maps (original content)"
+  },
+  {
+    "paths": [
+      "courses/wo_dans_course.json",
+      "worlds/wo_dans_course."
+    ],
+    "licence": "CC-BY-NC-ND-4.0",
+    "exception": "credited-community-map",
+    "title": "Dan's Course",
+    "author": "Dan (skybox by shini)",
+    "source_url": "https://gamebanana.com/mods/127888",
+    "removal_contact": "https://github.com/zees-games/mg-wipeout-maps/issues"
+  },
+  {
+    "paths": [
+      "courses/wo_dc_course.json",
+      "worlds/wo_dc_course."
+    ],
+    "licence": "CC-BY-NC-ND-4.0",
+    "exception": "credited-community-map",
+    "title": "Destiny Course",
+    "author": "Xmortel (project by HAARDCORE)",
+    "source_url": "https://gamebanana.com/mods/127896",
+    "removal_contact": "https://github.com/zees-games/mg-wipeout-maps/issues"
+  },
+  {
+    "paths": [
+      "courses/wo_labo_course.json",
+      "worlds/wo_labo_course."
+    ],
+    "licence": "CC-BY-NC-ND-4.0",
+    "exception": "credited-community-map",
+    "title": "Laboratory Course",
+    "author": "Patator (with Artek and Xmortel, for the Furaxx team)",
+    "source_url": "https://gamebanana.com/mods/128233",
+    "removal_contact": "https://github.com/zees-games/mg-wipeout-maps/issues"
+  },
+  {
+    "paths": [
+      "courses/wo_lego_course.json",
+      "worlds/wo_lego_course."
+    ],
+    "licence": "CC-BY-NC-ND-4.0",
+    "exception": "credited-community-map",
+    "title": "Lego Course",
+    "author": "The_Prodigy",
+    "source_url": "https://gamebanana.com/mods/128253",
+    "removal_contact": "https://github.com/zees-games/mg-wipeout-maps/issues"
+  },
+  {
+    "paths": [
+      "courses/wo_oaks_course.json",
+      "worlds/wo_oaks_course."
+    ],
+    "licence": "CC-BY-NC-ND-4.0",
+    "exception": "credited-community-map",
+    "title": "Oaks Course",
+    "author": "ProfessorOak",
+    "source_url": "https://gamebanana.com/mods/128401",
+    "removal_contact": "https://github.com/zees-games/mg-wipeout-maps/issues"
+  },
+  {
+    "paths": [
+      "courses/wo_office_course.json",
+      "worlds/wo_office_course."
+    ],
+    "licence": "CC-BY-NC-ND-4.0",
+    "exception": "credited-community-map",
+    "title": "Office Course",
+    "author": "Lionheartnl",
+    "source_url": "https://gamebanana.com/mods/127637",
+    "removal_contact": "https://github.com/zees-games/mg-wipeout-maps/issues"
+  },
+  {
+    "paths": [
+      "courses/wo_pauls_course.json",
+      "worlds/wo_pauls_course."
+    ],
+    "licence": "CC-BY-NC-ND-4.0",
+    "exception": "credited-community-map",
+    "title": "Pauls Mine Course",
+    "author": "Paul_Deagle ([SG]Paul)",
+    "source_url": "https://gamebanana.com/mods/128438",
+    "removal_contact": "https://github.com/zees-games/mg-wipeout-maps/issues"
+  },
+  {
+    "paths": [
+      "courses/wo_scary_course.json",
+      "worlds/wo_scary_course."
+    ],
+    "licence": "CC-BY-NC-ND-4.0",
+    "exception": "credited-community-map",
+    "title": "Scary Course",
+    "author": "BeesCz and eamy-dnb",
+    "source_url": "https://gamebanana.com/mods/128598",
+    "removal_contact": "https://github.com/zees-games/mg-wipeout-maps/issues"
+  },
+  {
+    "paths": [
+      "courses/wo_sweet_course.json",
+      "worlds/wo_sweet_course."
+    ],
+    "licence": "CC-BY-NC-ND-4.0",
+    "exception": "credited-community-map",
+    "title": "Sweet Course",
+    "author": "Nexore",
+    "source_url": "https://gamebanana.com/mods/658326",
+    "removal_contact": "https://github.com/zees-games/mg-wipeout-maps/issues"
+  },
+  {
+    "paths": [
+      "courses/wo_waytobar_course.json",
+      "worlds/wo_waytobar_course."
+    ],
+    "licence": "CC-BY-NC-ND-4.0",
+    "exception": "credited-community-map",
+    "title": "Waytobar Course",
+    "author": "BeesCz",
+    "source_url": "https://gamebanana.com/mods/128852",
+    "removal_contact": "https://github.com/zees-games/mg-wipeout-maps/issues"
+  }
+]
