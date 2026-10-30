@@ -20,15 +20,15 @@
 # walk_speed_scale: 0.45
 # Metres a standing jump rises. [0.1..5.0]
 # jump_height: 1.25
-# Metres per second squared, for everything: players and props. [1.0..60.0]
+# Metres per second squared, for everything. Here, not in `project.godot`, because a project setting does not... [1.0..60.0]
 # gravity: 20.0
-# How hard an obstacle throws a player at the least, in m/s. [0.0..40.0]
+# How hard an obstacle throws a player at the least, in m/s. A floor under the knock: the knock is the surfac... [0.0..40.0]
 # knock_min_speed: 8.0
 # The most an obstacle can throw a player, in m/s. A safety cap rather than a feel dial. [1.0..80.0]
 # knock_max_speed: 22.0
-# How far up every knock throws a player, in m/s. [0.0..30.0]
+# How far up every knock throws a player, in m/s. Up as well as away: a knock along the ground is a shove a p... [0.0..30.0]
 # knock_lift: 5.5
-# Health a knock costs on the course, per m/s it threw the player. 0: knocks never hurt. [0.0..10.0]
+# Health a knock costs on the course, per m/s it threw the player. 0: knocks never hurt. At 1.0 a slow arm (8... [0.0..10.0]
 # knock_damage_per_speed: 1.0
 # Whether a player whose health runs out on the course is out for the round (watching from the gallery) rathe...
 # course_deaths_eliminate: true
@@ -60,7 +60,7 @@
 # friendly_fire: false
 
 # --- Bots
-# How many players the server keeps in the round by adding stand-ins (`bot_quota`, fill). [0..24]
+# How many players the server keeps in the round by adding stand-ins (`bot_quota`, fill). Nine, so one person... [0..24]
 # minimum_players: 9
 # Scales every mistake a stand-in makes (`wo_bot_mistakes`): 1 is the difficulty preset's (dot-bot's `bot_dif... [0.0..4.0]
 # bot_mistakes: 1.0

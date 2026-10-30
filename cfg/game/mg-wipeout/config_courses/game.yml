@@ -16,13 +16,13 @@
 # strike_damage: 35.0
 
 # --- The courses
-# Which courses this server may play, by id. Empty means every one it has.
+# Which courses this server may play, by id. Empty means every one it has. Ids, like mg-smash-copter's layout...
 # course_ids: []
 # Whether the next course is drawn at random (seeded) rather than taken in order.
 # shuffle_courses: true
 # The file that says which courses this server ROTATES: `maps.yml` in `cfg/server/addons/dot_map/` of the `--...
 # map_rotation_file: "cfg/maps.yml"
-# Where course and arena documents are read from, beside the one built into this game.
+# Where course and arena documents are read from, beside the one built into this game. Relative to the game's...
 # course_directory: "courses"
-# Seed every random choice in a round is drawn from: the course, the arena, the spawn areas, the drops.
+# Seed every random choice in a round is drawn from: course, arena, spawn areas, drops. A seed rather than a ...
 # seed_value: 20261005
