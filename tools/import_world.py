@@ -31,7 +31,7 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.join(HERE, "..")
-BSP = os.environ.get("DOTBSP_PATH") or os.path.join(REPO, "..", "dot-map", "tools", "bsp")
+BSP = os.environ.get("DOTBSP_PATH") or os.path.join(REPO, "..", "dot-map-convert")
 MAX_SPIN = 120.0
 
 
