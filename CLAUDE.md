@@ -47,6 +47,8 @@ A new piece KIND is a game change (`wo_course_doc.gd` and `wo_course.gd`), and a
 
 ## Publishing
 
+
+**Publish to the CDN with `tools/publish.sh`** (pack `gamemann/mg-wipeout-maps`, `--version V` or `--bump patch`, run from dot-cloud under `heavy`; first published 2026-11-03 as 1.0.1 on dev and prod). The script is the recipe and holds no secret; a token comes from `--token-file`.
 **This repository is a pack of its own, mounted on the server alone.** mg-wipeout's `game.yml` names it under `server_dependencies`; a server mounts it at `res://dot_cloud/<owner>/mg-wipeout-maps/<version>/` and the game adds that mount's `courses/` to its catalogue (`WoModule._add_delivered_courses`). It is never in a client's `content.sync`: a client is sent the one document being played. `.github/workflows/release.yml` runs `build.py --check` and then dot-ci's release with `pack: true` (and `server-compat: false`, because there is no code in it to check). In dot-server-deploy it is `content/wipeout_maps/` (`tmc/wipeout_maps`), and `examples/wipeout_client.tscn` is the proof that it arrives: it fails seven checks with the dependency removed.
 
 `project.godot` exists only so dot-ci's release can import this repository and attach the `-pack.zip`; it carries the editor's own header and no comments, because the editor rewrites the file on its first save and a checkout would show it modified.
