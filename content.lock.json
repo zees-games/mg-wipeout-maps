@@ -1,0 +1,15 @@
+{
+	"format": 1,
+	"mirrors": [],
+	"origin": "https://dotgames.org/content",
+	"packs": [
+		{
+			"id": "gamemann/mg-wipeout-maps",
+			"into": "",
+			"kind": "pack",
+			"manifest_sha256": "9947b97208ddab1f859e544409001d056467ff26a170907787b31ac3ad8bb458",
+			"optional": false,
+			"version": "1.0.1"
+		}
+	]
+}
