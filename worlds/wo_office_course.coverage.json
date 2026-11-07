@@ -12,22 +12,15 @@
    "fallback": 4
   },
   "free_by_tier": {
-   "addon": 47,
-   "default": 11,
+   "addon": 38,
+   "default": 15,
    "nearest": 4
   },
   "nearest_photo": [
-   "de_dust/tilefloor01",
-   "dev/dev_measurecolorscale01",
-   "effects/fleck_glass1",
+   "custom/office/office_intro",
    "models/effects/portalfunnel_sheet",
    "models/props/cs_militia/river01",
-   "nature/blendsandsand008b_antlion_wvt_patch",
-   "nature/rockwall009b",
-   "particle/particle_smokegrenade1",
-   "plaster/offwllf",
-   "sprites/bluelaser1",
-   "sprites/purplelaser1"
+   "particle/particle_smokegrenade1"
   ]
  },
  "models": {
@@ -110,6 +103,20 @@
   "links_unresolved": [
    "func_button.OnPressed->Disco_counter_fun",
    "func_button.OnPressed->Disco_floor"
+  ],
+  "inputs_unimplemented": [
+   "env_hudhint.ShowHudHint",
+   "func_monitor.SetCamera",
+   "player_speedmod.ModifySpeed",
+   "point_servercommand.Command",
+   "point_spotlight.LightOff",
+   "point_spotlight.LightOn",
+   "prop_dynamic.SetDefaultAnimation"
+  ],
+  "surfaces_opaque": [
+   "models/effects/portalfunnel_sheet",
+   "models/props/cs_militia/river01",
+   "particle/particle_smokegrenade1"
   ]
  },
  "counts": {
@@ -119,6 +126,8 @@
   "sounds_unmapped": 1,
   "classes_unmapped": 0,
   "keys_unmapped": 9,
-  "links_unresolved": 2
+  "links_unresolved": 2,
+  "inputs_unimplemented": 7,
+  "surfaces_opaque": 3
  }
 }
