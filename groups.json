@@ -1,32 +1,32 @@
 {
     "wo_dans_course": [
-        "worlds/wo_dans_course."
+        "worlds/wo_dans_course.*"
     ],
     "wo_dc_course": [
-        "worlds/wo_dc_course."
+        "worlds/wo_dc_course.*"
     ],
     "wo_labo_course": [
-        "worlds/wo_labo_course."
+        "worlds/wo_labo_course.*"
     ],
     "wo_lego_course": [
-        "worlds/wo_lego_course."
+        "worlds/wo_lego_course.*"
     ],
     "wo_oaks_course": [
-        "worlds/wo_oaks_course."
+        "worlds/wo_oaks_course.*"
     ],
     "wo_office_course": [
-        "worlds/wo_office_course."
+        "worlds/wo_office_course.*"
     ],
     "wo_pauls_course": [
-        "worlds/wo_pauls_course."
+        "worlds/wo_pauls_course.*"
     ],
     "wo_scary_course": [
-        "worlds/wo_scary_course."
+        "worlds/wo_scary_course.*"
     ],
     "wo_sweet_course": [
-        "worlds/wo_sweet_course."
+        "worlds/wo_sweet_course.*"
     ],
     "wo_waytobar_course": [
-        "worlds/wo_waytobar_course."
+        "worlds/wo_waytobar_course.*"
     ]
 }

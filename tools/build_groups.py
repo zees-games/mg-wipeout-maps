@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Writes groups.json: one download group per imported course, holding everything named worlds/<course id>.*
+"""Writes groups.json: one download group per imported course, holding everything named worlds/<course id>.* (the glob worlds/<id>.*)
 
     tools/build_groups.py            # rewrite
     tools/build_groups.py --check    # exit 1 if stale, or a group has no course document
@@ -33,7 +33,7 @@ def build(root=ROOT):
     for i in ids:
         if not os.path.isfile(os.path.join(root, "courses", i + ".json")):
             raise ValueError("worlds/%s.* has no courses/%s.json" % (i, i))
-    return {i: ["worlds/%s." % i] for i in ids}
+    return {i: ["worlds/%s.*" % i] for i in ids}
 
 
 def text(groups):

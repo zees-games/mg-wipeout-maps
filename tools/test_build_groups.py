@@ -22,7 +22,7 @@ def main():
             touch(root, rel)
         groups = g.build(root)
         for ok, what in ((sorted(groups) == ["wo_a", "wo_ab"], "one group per course, shared files left out"),
-                         (groups["wo_a"] == ["worlds/wo_a."], "the prefix ends in a dot so wo_ab is not wo_a's"),
+                         (groups["wo_a"] == ["worlds/wo_a.*"], "the prefix ends in a dot so wo_ab is not wo_a's"),
                          (g.text(groups).endswith("}\n"), "text ends with a newline")):
             print(("ok   " if ok else "FAIL ") + what)
             failed += not ok
