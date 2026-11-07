@@ -1,0 +1,11 @@
+# Which courses rotate (dot-map's DotMapRotationFile). The game tier of maps.yml: the weakest file the game ships.
+# Nothing is left out and no rotation is named, so every installed course rotates in the order shuffle_courses gives, as it did with no file.
+# A server copies this to its --config directory as cfg/server/addons/dot_map/maps.yml (or cfg/server/game/mg-wipeout/dot_map/maps.yml
+# for this game only). That file replaces this one; start it with `merge: true` to add to it instead.
+# A course left out stays installed (the map menu still loads it); it is only never drawn, balloted or nominated:
+#   exempt: [wo_scary_course]
+#   rotations:
+#     short:
+#       mode: cycle
+#       maps: [wo_dc_course, wo_labo_course]
+exempt: []
