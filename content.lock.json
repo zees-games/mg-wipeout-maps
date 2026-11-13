@@ -7,9 +7,9 @@
 			"id": "gamemann/mg-wipeout-maps",
 			"into": "",
 			"kind": "pack",
-			"manifest_sha256": "92b043c40ab18469697626a524450ae9d4261f17aaccc3696456c64ffe9e1002",
+			"manifest_sha256": "1332a525ab0ccfbc46f27fc0154462fb978d89995b5a1a8ea1fbd013fa47b8d3",
 			"optional": false,
-			"version": "1.0.2"
+			"version": "1.0.3"
 		}
 	]
 }
