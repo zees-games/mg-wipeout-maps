@@ -13,3 +13,10 @@ config_version=5
 config/name="mg-wipeout-maps"
 config/description="Courses and arenas for mg-wipeout, as JSON documents."
 config/features=PackedStringArray("4.7")
+
+[importer_defaults]
+
+texture={
+"compress/mode": 1,
+"mipmaps/generate": true
+}
