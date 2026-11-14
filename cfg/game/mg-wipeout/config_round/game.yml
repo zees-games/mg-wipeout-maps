@@ -22,7 +22,7 @@
 # progress_decides: true
 
 # --- Sides
-# How many teams the server plays with. 0 is every player for themselves, because a course is run by one pers... [0..6]
+# How many teams the server plays with. 0 is every player for themselves, because a course is run by one pers... [0..]
 # team_count: 0
 # Whether players may pick their own side.
 # allow_team_choice: true

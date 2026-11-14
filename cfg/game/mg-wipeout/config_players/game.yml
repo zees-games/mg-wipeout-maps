@@ -40,11 +40,11 @@
 # --- The final death
 # Which arenas this server may draw, by id. Empty means every one it has.
 # arena_ids: []
-# How many props are dropped into an arena, per side that made it. [0..40]
+# How many props are dropped into an arena, per side that made it (default 6, any value). [0..]
 # finale_props_per_side: 6
-# How many weapons are laid out in an arena, per side that made it. [0..20]
+# How many weapons are laid out in an arena, per side that made it (default 2, any value). [0..]
 # finale_weapons_per_side: 2
-# The most props an arena holds at once, whatever the count above asks for. [4..200]
+# The most props an arena holds at once, whatever the count above asks for. 0 is no limit. [0..]
 # prop_budget: 60
 # Which weapons may be laid out, by id from the pack. Empty means a sensible default set.
 # weapon_pool: []
@@ -60,7 +60,7 @@
 # friendly_fire: false
 
 # --- Bots
-# How many players the server keeps in the round by adding stand-ins (`bot_quota`, fill). [0..24]
+# How many players the server keeps in the round by adding stand-ins (`bot_quota`, fill). [0..]
 # minimum_players: 9
 # Scales every mistake a stand-in makes (`wo_bot_mistakes`): 1 is the difficulty preset's (dot-bot's `bot_dif... [0.0..4.0]
 # bot_mistakes: 1.0
