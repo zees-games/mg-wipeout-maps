@@ -20569,7 +20569,7 @@
     "url": "https://kenney.nl/assets/mini-market"
    },
    {
-    "author": "TMC (generated for dot-map)",
+    "author": "Gamespice (generated for map)",
     "count": 40,
     "file": "own/own_box_120x10x20_e8e8e0/own_box_120x10x20_e8e8e0.glb",
     "files": [],
@@ -20580,7 +20580,7 @@
     "url": "https://github.com/gamespice-platform/map"
    },
    {
-    "author": "TMC (generated for dot-map)",
+    "author": "Gamespice (generated for map)",
     "count": 10,
     "file": "own/own_box_18x2x5_909088/own_box_18x2x5_909088.glb",
     "files": [],
@@ -20591,7 +20591,7 @@
     "url": "https://github.com/gamespice-platform/map"
    },
    {
-    "author": "TMC (generated for dot-map)",
+    "author": "Gamespice (generated for map)",
     "count": 1,
     "file": "own/own_box_24x204x467_b8996a/own_box_24x204x467_b8996a.glb",
     "files": [],
@@ -21053,7 +21053,7 @@
    },
    {
     "area": 2029.2,
-    "author": "TMC (generated)",
+    "author": "Gamespice (generated)",
     "colour": [
      0.5,
      0.5,
@@ -21065,7 +21065,7 @@
     "key": "generated:water:808080",
     "kind": "generated",
     "licence": "CC0-1.0",
-    "source": "dot-map cutout_texture",
+    "source": "Gamespice cutout_texture",
     "sources": [
      "nature/water_coast01_beneath",
      "nature/water_wasteland002a"
@@ -21075,7 +21075,7 @@
    },
    {
     "area": 71.7,
-    "author": "TMC (generated)",
+    "author": "Gamespice (generated)",
     "colour": [
      0.0,
      0.125,
@@ -21087,7 +21087,7 @@
     "key": "generated:glass:002020",
     "kind": "generated",
     "licence": "CC0-1.0",
-    "source": "dot-map cutout_texture",
+    "source": "Gamespice cutout_texture",
     "sources": [
      "glass/combineglass001a",
      "glass/glasswindow070c"
@@ -21274,7 +21274,7 @@
    },
    {
     "area": 5.3,
-    "author": "TMC (generated)",
+    "author": "Gamespice (generated)",
     "colour": [
      0.5,
      0.5,
@@ -21286,7 +21286,7 @@
     "key": "generated:grate:808080",
     "kind": "generated",
     "licence": "CC0-1.0",
-    "source": "dot-map cutout_texture",
+    "source": "Gamespice cutout_texture",
     "sources": [
      "de_nuke/nuke_metalvent"
     ],

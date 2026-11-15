@@ -9971,10 +9971,10 @@
   "skipped_skybox_models": 0,
   "sounds": [
    {
-    "author": "TMC (dot-audio authors)",
+    "author": "Gamespice (audio authors)",
     "count": 1,
     "licence": "CC0-1.0",
-    "source": "dot-audio stock ambience (synthesised)",
+    "source": "Gamespice audio stock ambience (synthesised)",
     "stand_in": "amb_rain",
     "url": "https://github.com/gamespice-platform/audio"
    },
@@ -10477,7 +10477,7 @@
    },
    {
     "area": 3018.0,
-    "author": "TMC (generated)",
+    "author": "Gamespice (generated)",
     "colour": [
      1.0,
      1.0,
@@ -10489,7 +10489,7 @@
     "key": "generated:glass:ffffff",
     "kind": "generated",
     "licence": "CC0-1.0",
-    "source": "dot-map cutout_texture",
+    "source": "Gamespice cutout_texture",
     "sources": [
      "custom/mcglass"
     ],
@@ -10830,7 +10830,7 @@
    },
    {
     "area": 1230.8,
-    "author": "TMC (generated)",
+    "author": "Gamespice (generated)",
     "colour": [
      0.125,
      0.375,
@@ -10842,7 +10842,7 @@
     "key": "generated:water:2060ff",
     "kind": "generated",
     "licence": "CC0-1.0",
-    "source": "dot-map cutout_texture",
+    "source": "Gamespice cutout_texture",
     "sources": [
      "custom/mcwater"
     ],

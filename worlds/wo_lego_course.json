@@ -6607,7 +6607,7 @@
  "licence": {
   "model_stand_ins": [
    {
-    "author": "TMC (generated for dot-map)",
+    "author": "Gamespice (generated for map)",
     "count": 15,
     "file": "own/own_box_21x3x21_e8e8e0/own_box_21x3x21_e8e8e0.glb",
     "files": [],
@@ -6823,7 +6823,7 @@
    },
    {
     "area": 1273.4,
-    "author": "TMC (generated)",
+    "author": "Gamespice (generated)",
     "colour": [
      0.5,
      0.5,
@@ -6835,7 +6835,7 @@
     "key": "generated:water:808080",
     "kind": "generated",
     "licence": "CC0-1.0",
-    "source": "dot-map cutout_texture",
+    "source": "Gamespice cutout_texture",
     "sources": [
      "dev/dev_water2",
      "dev/dev_waterbeneath2"
