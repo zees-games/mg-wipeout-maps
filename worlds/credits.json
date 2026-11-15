@@ -460,7 +460,7 @@
    "name": "lib/dm_generatortrailer",
    "author": "TMC (modelled for dot-map)",
    "licence": "CC0-1.0",
-   "url": "https://github.com/modcommunity/dot-map/blob/main/tools/models/vehicles.py",
+   "url": "https://github.com/gamespice-platform/map/blob/main/tools/models/vehicles.py",
    "source": "dot-map Blender model",
    "attribution": false,
    "uses": 1
@@ -470,7 +470,7 @@
    "name": "lib/dm_lightpendant",
    "author": "TMC (modelled for dot-map)",
    "licence": "CC0-1.0",
-   "url": "https://github.com/modcommunity/dot-map/blob/main/tools/models/building_props.py",
+   "url": "https://github.com/gamespice-platform/map/blob/main/tools/models/building_props.py",
    "source": "dot-map Blender model",
    "attribution": false,
    "uses": 78
@@ -520,7 +520,7 @@
    "name": "lib/own_box_14x31x38_e8e8e0",
    "author": "TMC (generated for dot-map)",
    "licence": "CC0-1.0",
-   "url": "https://github.com/modcommunity/dot-map",
+   "url": "https://github.com/gamespice-platform/map",
    "source": "TMC generated model",
    "attribution": false,
    "uses": 3
