@@ -29,10 +29,10 @@
   ]
  },
  "models": {
-  "looked_up": 69,
+  "looked_up": 73,
   "by_tier": {
-   "category": 9,
-   "default": 60
+   "category": 11,
+   "default": 62
   }
  },
  "sounds": {

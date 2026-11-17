@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regression checks for import_world.pieces_from: python3 -I tools/test_import_world.py"""
+"""Regression checks for import_world.pieces_from: python3 -P tools/test_import_world.py"""
 import os
 import sys
 

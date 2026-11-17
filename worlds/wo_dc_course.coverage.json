@@ -5,7 +5,7 @@
  "sha256": "4766e2f212ceaff0aa7abe4a9bd632ed4b85b04604521ff3e81eabd48c3a188b",
  "textures": {
   "looked_up": 20,
-  "drawn": 20,
+  "drawn": 19,
   "by_tier": {
    "addon": 5,
    "default": 6,
@@ -13,7 +13,7 @@
   },
   "free_by_tier": {
    "addon": 15,
-   "default": 4
+   "default": 3
   },
   "nearest_photo": [
    "destinyclan",
@@ -49,9 +49,6 @@
  "keys": {
   "catalogue": true,
   "unmapped": {
-   "ambient_generic": [
-    "pitch"
-   ],
    "game_player_equip": [
     "weapon_knife"
    ]
@@ -80,10 +77,13 @@
   "sounds_unmapped": [],
   "classes_unmapped": [],
   "keys_unmapped": [
-   "ambient_generic.pitch",
    "game_player_equip.weapon_knife"
   ],
   "links_unresolved": [],
+  "inputs_unimplemented": [
+   "env_hudhint.ShowHudHint",
+   "point_servercommand.Command"
+  ],
   "surfaces_opaque": [
    "destinyclan",
    "destinyrouge",
@@ -96,8 +96,9 @@
   "models_unmapped": 0,
   "sounds_unmapped": 0,
   "classes_unmapped": 0,
-  "keys_unmapped": 2,
+  "keys_unmapped": 1,
   "links_unresolved": 0,
+  "inputs_unimplemented": 2,
   "surfaces_opaque": 3
  }
 }

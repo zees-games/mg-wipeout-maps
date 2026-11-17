@@ -60,13 +60,6 @@
    89.3
   ]
  },
- "pieces": [
-  {
-   "kind": "world",
-   "mesh": "wo_office_course",
-   "io": true
-  }
- ],
  "io_route": [
   {
    "to": [
@@ -74,6 +67,13 @@
     1.33,
     15.57
    ]
+  }
+ ],
+ "pieces": [
+  {
+   "kind": "world",
+   "mesh": "wo_office_course",
+   "io": true
   }
  ],
  "ambient": {

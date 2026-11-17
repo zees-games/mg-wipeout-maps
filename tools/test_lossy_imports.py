@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tests for tools/lossy_imports.py. Run: python3 -I tools/test_lossy_imports.py"""
+"""Tests for tools/lossy_imports.py. Run: python3 -P tools/test_lossy_imports.py"""
 import os
 import subprocess
 import sys

@@ -5,16 +5,15 @@
  "sha256": "88f416e8c7bd7340a0949c81c2482a76861eff56766bef37f9fb03cad6e02541",
  "textures": {
   "looked_up": 30,
-  "drawn": 30,
+  "drawn": 29,
   "by_tier": {
    "addon": 3,
    "default": 6,
    "fallback": 21
   },
   "free_by_tier": {
-   "addon": 18,
-   "default": 4,
-   "nearest": 5
+   "addon": 23,
+   "default": 3
   },
   "nearest_photo": [
    "customs/pink_neon",
@@ -62,9 +61,6 @@
  "keys": {
   "catalogue": true,
   "unmapped": {
-   "ambient_generic": [
-    "pitch"
-   ],
    "game_player_equip": [
     "weapon_knife"
    ],
@@ -72,10 +68,6 @@
     "Solidity",
     "StartDisabled",
     "solidbsp"
-   ],
-   "point_viewcontrol": [
-    "acceleration",
-    "deceleration"
    ]
   }
  },
@@ -118,15 +110,17 @@
   ],
   "classes_unmapped": [],
   "keys_unmapped": [
-   "ambient_generic.pitch",
    "game_player_equip.weapon_knife",
    "info_camera_link.Solidity",
    "info_camera_link.StartDisabled",
-   "info_camera_link.solidbsp",
-   "point_viewcontrol.acceleration",
-   "point_viewcontrol.deceleration"
+   "info_camera_link.solidbsp"
   ],
   "links_unresolved": [],
+  "inputs_unimplemented": [
+   "env_hudhint.ShowHudHint",
+   "point_servercommand.Command",
+   "trigger_apply_impulse.ApplyImpulse"
+  ],
   "surfaces_opaque": []
  },
  "counts": {
@@ -135,8 +129,9 @@
   "models_unmapped": 0,
   "sounds_unmapped": 1,
   "classes_unmapped": 0,
-  "keys_unmapped": 7,
+  "keys_unmapped": 4,
   "links_unresolved": 0,
+  "inputs_unimplemented": 3,
   "surfaces_opaque": 0
  }
 }

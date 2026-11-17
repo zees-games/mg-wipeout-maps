@@ -337,16 +337,6 @@
   },
   {
    "kind": "texture",
-   "name": "pbr_Tiles106",
-   "author": "Lennart Demes and contributors",
-   "licence": "CC0-1.0",
-   "url": "https://ambientcg.com/view?id=Tiles106",
-   "source": "ambientCG",
-   "attribution": false,
-   "uses": 1
-  },
-  {
-   "kind": "texture",
    "name": "pbr_MetalWalkway007",
    "author": "Lennart Demes and contributors",
    "licence": "CC0-1.0",
@@ -457,6 +447,66 @@
   },
   {
    "kind": "model",
+   "name": "lib/dm_coffeemug",
+   "author": "Gamespice (modelled for map)",
+   "licence": "CC0-1.0",
+   "url": "https://github.com/gamespice-platform/map-convert/blob/main/tools/models/household.py",
+   "source": "Gamespice map Blender model",
+   "attribution": false,
+   "uses": 9
+  },
+  {
+   "kind": "model",
+   "name": "lib/dm_doorknob",
+   "author": "Gamespice (modelled for map)",
+   "licence": "CC0-1.0",
+   "url": "https://github.com/gamespice-platform/map-convert/blob/main/tools/models/fc_details.py",
+   "source": "Gamespice map Blender model",
+   "attribution": false,
+   "uses": 26
+  },
+  {
+   "kind": "model",
+   "name": "lib/dm_electricalbox",
+   "author": "Gamespice (modelled for map)",
+   "licence": "CC0-1.0",
+   "url": "https://github.com/gamespice-platform/map-convert/blob/main/tools/models/clutter.py",
+   "source": "Gamespice map Blender model",
+   "attribution": false,
+   "uses": 2
+  },
+  {
+   "kind": "model",
+   "name": "lib/dm_exitsign",
+   "author": "Gamespice (modelled for map)",
+   "licence": "CC0-1.0",
+   "url": "https://github.com/gamespice-platform/map-convert/blob/main/tools/models/debris_goods.py",
+   "source": "Gamespice map Blender model",
+   "attribution": false,
+   "uses": 3
+  },
+  {
+   "kind": "model",
+   "name": "lib/dm_fanmount",
+   "author": "Gamespice (modelled for map)",
+   "licence": "CC0-1.0",
+   "url": "https://github.com/gamespice-platform/map-convert/blob/main/tools/models/fc_final.py",
+   "source": "Gamespice map Blender model",
+   "attribution": false,
+   "uses": 5
+  },
+  {
+   "kind": "model",
+   "name": "lib/dm_foodstack",
+   "author": "Gamespice (modelled for map)",
+   "licence": "CC0-1.0",
+   "url": "https://github.com/gamespice-platform/map-convert/blob/main/tools/models/props.py",
+   "source": "Gamespice map Blender model",
+   "attribution": false,
+   "uses": 9
+  },
+  {
+   "kind": "model",
    "name": "lib/dm_generatortrailer",
    "author": "Gamespice (modelled for map)",
    "licence": "CC0-1.0",
@@ -477,13 +527,13 @@
   },
   {
    "kind": "model",
-   "name": "lib/kenney_food-kit_ice-cream-cup",
+   "name": "lib/kenney_food-kit_lemon-half",
    "author": "Kenney",
    "licence": "CC0-1.0",
    "url": "https://kenney.nl/assets/food-kit",
    "source": "Kenney Food Kit",
    "attribution": false,
-   "uses": 24
+   "uses": 2
   },
   {
    "kind": "model",
@@ -493,7 +543,7 @@
    "url": "https://kenney.nl/assets/furniture-kit",
    "source": "Kenney Furniture Kit",
    "attribution": false,
-   "uses": 7
+   "uses": 6
   },
   {
    "kind": "model",
@@ -517,13 +567,13 @@
   },
   {
    "kind": "model",
-   "name": "lib/own_box_14x31x38_e8e8e0",
-   "author": "Gamespice (generated for map)",
+   "name": "lib/kenney_survival-kit_bottle",
+   "author": "Kenney",
    "licence": "CC0-1.0",
-   "url": "https://github.com/gamespice-platform/map",
-   "source": "TMC generated model",
+   "url": "https://kenney.nl/assets/survival-kit",
+   "source": "Kenney Survival Kit",
    "attribution": false,
-   "uses": 3
+   "uses": 8
   },
   {
    "kind": "model",
@@ -567,6 +617,16 @@
   },
   {
    "kind": "model",
+   "name": "lib/ph_bananas",
+   "author": "Alexander Shulha",
+   "licence": "CC0-1.0",
+   "url": "https://polyhaven.com/a/bananas",
+   "source": "Poly Haven",
+   "attribution": false,
+   "uses": 3
+  },
+  {
+   "kind": "model",
    "name": "lib/ph_bar_chair_round_01",
    "author": "Dairon Sanchez",
    "licence": "CC0-1.0",
@@ -574,16 +634,6 @@
    "source": "Poly Haven",
    "attribution": false,
    "uses": 20
-  },
-  {
-   "kind": "model",
-   "name": "lib/ph_bleach_bottle",
-   "author": "James Ray Cock",
-   "licence": "CC0-1.0",
-   "url": "https://polyhaven.com/a/bleach_bottle",
-   "source": "Poly Haven",
-   "attribution": false,
-   "uses": 4
   },
   {
    "kind": "model",
@@ -617,6 +667,46 @@
   },
   {
    "kind": "model",
+   "name": "lib/ph_fancy_picture_frame_01",
+   "author": "Rob Tuytel, Rico Cilliers",
+   "licence": "CC0-1.0",
+   "url": "https://polyhaven.com/a/fancy_picture_frame_01",
+   "source": "Poly Haven",
+   "attribution": false,
+   "uses": 2
+  },
+  {
+   "kind": "model",
+   "name": "lib/ph_fancy_picture_frame_02",
+   "author": "Rob Tuytel, Rico Cilliers",
+   "licence": "CC0-1.0",
+   "url": "https://polyhaven.com/a/fancy_picture_frame_02",
+   "source": "Poly Haven",
+   "attribution": false,
+   "uses": 4
+  },
+  {
+   "kind": "model",
+   "name": "lib/ph_hanging_picture_frame_01",
+   "author": "James Ray Cock",
+   "licence": "CC0-1.0",
+   "url": "https://polyhaven.com/a/hanging_picture_frame_01",
+   "source": "Poly Haven",
+   "attribution": false,
+   "uses": 7
+  },
+  {
+   "kind": "model",
+   "name": "lib/ph_hanging_picture_frame_02",
+   "author": "James Ray Cock",
+   "licence": "CC0-1.0",
+   "url": "https://polyhaven.com/a/hanging_picture_frame_02",
+   "source": "Poly Haven",
+   "attribution": false,
+   "uses": 3
+  },
+  {
+   "kind": "model",
    "name": "lib/ph_industrial_pipe_lamp",
    "author": "Mateusz Sadek",
    "licence": "CC0-1.0",
@@ -647,16 +737,6 @@
   },
   {
    "kind": "model",
-   "name": "lib/ph_leather_cleaner_can",
-   "author": "James Ray Cock",
-   "licence": "CC0-1.0",
-   "url": "https://polyhaven.com/a/leather_cleaner_can",
-   "source": "Poly Haven",
-   "attribution": false,
-   "uses": 8
-  },
-  {
-   "kind": "model",
    "name": "lib/ph_modular_airduct_circular_01",
    "author": "Riley Queen",
    "licence": "CC0-1.0",
@@ -664,6 +744,16 @@
    "source": "Poly Haven",
    "attribution": false,
    "uses": 1
+  },
+  {
+   "kind": "model",
+   "name": "lib/ph_multi_cleaner_bottle",
+   "author": "James Ray Cock",
+   "licence": "CC0-1.0",
+   "url": "https://polyhaven.com/a/multi_cleaner_bottle",
+   "source": "Poly Haven",
+   "attribution": false,
+   "uses": 4
   },
   {
    "kind": "model",

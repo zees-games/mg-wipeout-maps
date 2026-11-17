@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regression checks for build_groups: python3 -I tools/test_build_groups.py"""
+"""Regression checks for build_groups: python3 -P tools/test_build_groups.py"""
 import json
 import os
 import sys

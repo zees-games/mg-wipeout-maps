@@ -5,16 +5,15 @@
  "sha256": "9599496a86a33af333dff40697cce1664534395b535b6e1e503680c1478c55a6",
  "textures": {
   "looked_up": 33,
-  "drawn": 33,
+  "drawn": 32,
   "by_tier": {
    "addon": 9,
    "default": 21,
    "fallback": 3
   },
   "free_by_tier": {
-   "addon": 21,
-   "default": 2,
-   "nearest": 10
+   "addon": 29,
+   "default": 3
   },
   "nearest_photo": [
    "boharox/lego/daceil_01",
@@ -34,8 +33,6 @@
    "boharox/lego/daplate_08",
    "boharox/lego/dawall_05",
    "boharox/lego/dawall_09stripes",
-   "boharox/simpsons/{sewerladder",
-   "boharox/simpsons/{simpladder",
    "courselego/courselego"
   ]
  },
@@ -61,15 +58,8 @@
  "keys": {
   "catalogue": true,
   "unmapped": {
-   "ambient_generic": [
-    "pitch"
-   ],
    "game_player_equip": [
     "weapon_knife"
-   ],
-   "point_viewcontrol": [
-    "acceleration",
-    "deceleration"
    ],
    "trigger_once": [
     "wait"
@@ -91,13 +81,16 @@
   "sounds_unmapped": [],
   "classes_unmapped": [],
   "keys_unmapped": [
-   "ambient_generic.pitch",
    "game_player_equip.weapon_knife",
-   "point_viewcontrol.acceleration",
-   "point_viewcontrol.deceleration",
    "trigger_once.wait"
   ],
-  "links_unresolved": []
+  "links_unresolved": [],
+  "inputs_unimplemented": [
+   "point_servercommand.Command"
+  ],
+  "surfaces_opaque": [
+   "courselego/courselego"
+  ]
  },
  "counts": {
   "textures_unmapped": 3,
@@ -105,7 +98,9 @@
   "models_unmapped": 0,
   "sounds_unmapped": 0,
   "classes_unmapped": 0,
-  "keys_unmapped": 5,
-  "links_unresolved": 0
+  "keys_unmapped": 2,
+  "links_unresolved": 0,
+  "inputs_unimplemented": 1,
+  "surfaces_opaque": 1
  }
 }
