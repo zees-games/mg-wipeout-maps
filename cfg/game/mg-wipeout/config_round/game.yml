@@ -14,7 +14,7 @@
 # courses_per_round: 3
 # Seconds between rounds. [0.0..60.0]
 # intermission_seconds: 8.0
-# Seconds the final killcam plays when a round ends on a kill, added to the intermission (`mp_killcam_time`, ... [0.0..30.0]
+# Seconds the final killcam plays when a round ends on a kill, added to the intermission (`mp_killcam_time`, ... [0.0..]
 # killcam_seconds: 7.0
 # Seconds of warmup before the first round. 0 starts immediately. [0.0..300.0]
 # warmup_seconds: 10.0
