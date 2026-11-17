@@ -12,9 +12,8 @@
    "fallback": 2
   },
   "free_by_tier": {
-   "addon": 34,
-   "default": 6,
-   "nearest": 1
+   "addon": 35,
+   "default": 6
   },
   "nearest_photo": [
    "cs_assault/assault_vent_decal01",
@@ -46,11 +45,7 @@
  },
  "keys": {
   "catalogue": true,
-  "unmapped": {
-   "ambient_generic": [
-    "pitch"
-   ]
-  }
+  "unmapped": {}
  },
  "links": {
   "total": 28,
@@ -67,12 +62,12 @@
    "mg_dans_course/endgame.wav"
   ],
   "classes_unmapped": [],
-  "keys_unmapped": [
-   "ambient_generic.pitch"
-  ],
+  "keys_unmapped": [],
   "links_unresolved": [
    "func_button.OnPressed->poopclot"
-  ]
+  ],
+  "inputs_unimplemented": [],
+  "surfaces_opaque": []
  },
  "counts": {
   "textures_unmapped": 2,
@@ -80,7 +75,9 @@
   "models_unmapped": 0,
   "sounds_unmapped": 1,
   "classes_unmapped": 0,
-  "keys_unmapped": 1,
-  "links_unresolved": 1
+  "keys_unmapped": 0,
+  "links_unresolved": 1,
+  "inputs_unimplemented": 0,
+  "surfaces_opaque": 0
  }
 }

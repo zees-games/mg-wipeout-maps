@@ -12,14 +12,11 @@
    "fallback": 33
   },
   "free_by_tier": {
-   "addon": 33,
-   "default": 2,
-   "nearest": 24
+   "addon": 53,
+   "default": 6
   },
   "nearest_photo": [
    "custom/mcblubrick",
-   "custom/mcbrick",
-   "custom/mccage",
    "custom/mcchest_front",
    "custom/mcchest_large",
    "custom/mcchest_side",
@@ -37,7 +34,6 @@
    "custom/mchalfblocktop",
    "custom/mcinnertree",
    "custom/mclava",
-   "custom/mcleaves",
    "custom/mcmossy",
    "custom/mcobsidian",
    "custom/mcred",
@@ -47,7 +43,6 @@
    "custom/mctntbottom",
    "custom/mctntside",
    "custom/mctnttop",
-   "custom/mctrack",
    "custom/mctreetrunk",
    "custom/mcwood",
    "custom/mcworkbench_side2",
@@ -62,7 +57,6 @@
    "mytextures/cher4",
    "mytextures/howto",
    "mytextures/lookagain",
-   "mytextures/paul3",
    "mytextures/qqcorner"
   ]
  },
@@ -88,18 +82,11 @@
  "keys": {
   "catalogue": true,
   "unmapped": {
-   "ambient_generic": [
-    "pitch"
-   ],
    "func_breakable": [
     ""
    ],
    "game_player_equip": [
     "weapon_knife"
-   ],
-   "point_viewcontrol": [
-    "acceleration",
-    "deceleration"
    ]
   }
  },
@@ -148,13 +135,16 @@
   "sounds_unmapped": [],
   "classes_unmapped": [],
   "keys_unmapped": [
-   "ambient_generic.pitch",
    "func_breakable.",
-   "game_player_equip.weapon_knife",
-   "point_viewcontrol.acceleration",
-   "point_viewcontrol.deceleration"
+   "game_player_equip.weapon_knife"
   ],
-  "links_unresolved": []
+  "links_unresolved": [],
+  "inputs_unimplemented": [
+   "env_hudhint.ShowHudHint",
+   "env_physexplosion.Explode",
+   "point_servercommand.Command"
+  ],
+  "surfaces_opaque": []
  },
  "counts": {
   "textures_unmapped": 33,
@@ -162,7 +152,9 @@
   "models_unmapped": 0,
   "sounds_unmapped": 0,
   "classes_unmapped": 0,
-  "keys_unmapped": 5,
-  "links_unresolved": 0
+  "keys_unmapped": 2,
+  "links_unresolved": 0,
+  "inputs_unimplemented": 3,
+  "surfaces_opaque": 0
  }
 }

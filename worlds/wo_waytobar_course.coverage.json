@@ -11,9 +11,8 @@
    "default": 10
   },
   "free_by_tier": {
-   "addon": 34,
-   "default": 6,
-   "nearest": 1
+   "addon": 35,
+   "default": 6
   },
   "nearest_photo": [
    "brick/brickwall019a",
@@ -44,9 +43,6 @@
  "keys": {
   "catalogue": true,
   "unmapped": {
-   "ambient_generic": [
-    "pitch"
-   ],
    "func_Detail": [
     "StartDisabled",
     "damage",
@@ -60,10 +56,6 @@
    ],
    "game_player_equip": [
     "weapon_knife"
-   ],
-   "point_viewcontrol": [
-    "acceleration",
-    "deceleration"
    ]
   }
  },
@@ -78,7 +70,6 @@
   "sounds_unmapped": [],
   "classes_unmapped": [],
   "keys_unmapped": [
-   "ambient_generic.pitch",
    "func_Detail.StartDisabled",
    "func_Detail.damage",
    "func_Detail.damagecap",
@@ -86,12 +77,14 @@
    "func_Detail.nodmgforce",
    "func_Detail.spawnflags",
    "func_illusionary.",
-   "game_player_equip.weapon_knife",
-   "point_viewcontrol.acceleration",
-   "point_viewcontrol.deceleration"
+   "game_player_equip.weapon_knife"
   ],
   "links_unresolved": [
    "prop_physics_multiplayer.OnMotionEnabled->steam"
+  ],
+  "inputs_unimplemented": [],
+  "surfaces_opaque": [
+   "de_train/train_bombsite_arrow_02"
   ]
  },
  "counts": {
@@ -100,7 +93,9 @@
   "models_unmapped": 0,
   "sounds_unmapped": 0,
   "classes_unmapped": 0,
-  "keys_unmapped": 11,
-  "links_unresolved": 1
+  "keys_unmapped": 8,
+  "links_unresolved": 1,
+  "inputs_unimplemented": 0,
+  "surfaces_opaque": 1
  }
 }

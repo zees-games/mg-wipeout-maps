@@ -4,26 +4,27 @@
  "map": "wo_scary_course",
  "sha256": "5e6faff9c21cade5a9b917bcc2453db22ea5269a9fc5e20c463c0e14677f1c9c",
  "textures": {
-  "looked_up": 28,
-  "drawn": 28,
+  "looked_up": 26,
+  "drawn": 25,
   "by_tier": {
-   "addon": 21,
+   "addon": 19,
    "default": 6,
    "fallback": 1
   },
   "free_by_tier": {
-   "addon": 23,
-   "default": 5
+   "addon": 21,
+   "default": 4
   },
   "nearest_photo": [
    "course_map/credits"
   ]
  },
  "models": {
-  "looked_up": 17,
+  "looked_up": 19,
   "by_tier": {
+   "category": 3,
    "default": 13,
-   "fallback": 4
+   "fallback": 3
   }
  },
  "sounds": {
@@ -41,15 +42,7 @@
  },
  "keys": {
   "catalogue": true,
-  "unmapped": {
-   "ambient_generic": [
-    "pitch"
-   ],
-   "point_viewcontrol": [
-    "acceleration",
-    "deceleration"
-   ]
-  }
+  "unmapped": {}
  },
  "links": {
   "total": 47,
@@ -61,29 +54,33 @@
   ],
   "textures_flat": [],
   "models_unmapped": [
-   "pg_props/pg_hospital/pg_opplate.mdl",
    "pg_props/pg_hospital/pg_oprollwagen.mdl",
    "pg_props/pg_hospital/pg_optabel_simpel.mdl",
    "pg_props/pg_hospital/pg_opverbandschere.mdl"
   ],
   "sounds_unmapped": [],
   "classes_unmapped": [],
-  "keys_unmapped": [
-   "ambient_generic.pitch",
-   "point_viewcontrol.acceleration",
-   "point_viewcontrol.deceleration"
-  ],
+  "keys_unmapped": [],
   "links_unresolved": [
    "trigger_multiple.OnStartTouch->spark_on"
-  ]
+  ],
+  "inputs_unimplemented": [
+   "point_servercommand.Command",
+   "point_spotlight.LightOff",
+   "point_spotlight.LightOn",
+   "prop_dynamic_override.Break"
+  ],
+  "surfaces_opaque": []
  },
  "counts": {
   "textures_unmapped": 1,
   "textures_flat": 0,
-  "models_unmapped": 4,
+  "models_unmapped": 3,
   "sounds_unmapped": 0,
   "classes_unmapped": 0,
-  "keys_unmapped": 3,
-  "links_unresolved": 1
+  "keys_unmapped": 0,
+  "links_unresolved": 1,
+  "inputs_unimplemented": 4,
+  "surfaces_opaque": 0
  }
 }
