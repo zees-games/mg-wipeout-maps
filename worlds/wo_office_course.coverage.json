@@ -5,21 +5,20 @@
  "sha256": "a9e3ece71266f106b39d8a6bfe07a599c02a9be22c4004c3dcde8c69083ba6f8",
  "textures": {
   "looked_up": 67,
-  "drawn": 61,
+  "drawn": 60,
   "by_tier": {
    "addon": 38,
-   "default": 26,
-   "fallback": 3
+   "default": 27,
+   "fallback": 2
   },
   "free_by_tier": {
-   "addon": 50,
+   "addon": 49,
    "default": 11
   },
   "nearest_photo": [
    "de_dust/tilefloor01",
    "dev/dev_measurecolorscale01",
    "effects/fleck_glass1",
-   "models/effects/portalfunnel_sheet",
    "nature/blendsandsand008b_antlion_wvt_patch",
    "nature/rockwall009b",
    "particle/particle_smokegrenade1",
@@ -72,10 +71,32 @@
   "total": 171,
   "unresolved": 2
  },
+ "gameplay": {
+  "findings": {
+   "class_unsupported": 7,
+   "filter_dangling": 3,
+   "input_unimplemented": 6,
+   "player_input": 3,
+   "target_dangling": 2,
+   "volume_follows": 6
+  },
+  "severity": {
+   "class_unsupported": "unsupported",
+   "filter_dangling": "source",
+   "input_unimplemented": "unsupported",
+   "player_input": "unsupported",
+   "target_dangling": "source",
+   "volume_follows": "handled"
+  },
+  "classes": {
+   "approximated": 12,
+   "ignored": 7,
+   "implemented": 36
+  }
+ },
  "lists": {
   "textures_unmapped": [
    "CUSTOM/OFFICE/OFFICE_INTRO",
-   "MODELS/EFFECTS/PORTALFUNNEL_SHEET",
    "PARTICLE/PARTICLE_SMOKEGRENADE1"
   ],
   "textures_flat": [],
@@ -105,7 +126,6 @@
    "point_spotlight.LightOn"
   ],
   "surfaces_opaque": [
-   "models/effects/portalfunnel_sheet",
    "particle/particle_smokegrenade1"
   ],
   "gameplay_lost": [
@@ -124,17 +144,11 @@
    "input_unimplemented:point_spotlight.LightOn",
    "player_input:addoutput renderfx x1",
    "player_input:addoutput targetname x4",
-   "player_input:ignite x1",
-   "volume_parented:trigger_hurt#150 -> Obstacle3_TracktrainA",
-   "volume_parented:trigger_hurt#151 -> Obstacle3_TracktrainB",
-   "volume_parented:trigger_hurt#152 -> Obstacle3_TracktrainC",
-   "volume_parented:trigger_hurt#170 -> lasertrain1",
-   "volume_parented:trigger_hurt#315 -> Obstacle3_TracktrainD",
-   "volume_parented:trigger_hurt#317 -> Obstacle3_Tracktrain"
+   "player_input:ignite x1"
   ]
  },
  "counts": {
-  "textures_unmapped": 3,
+  "textures_unmapped": 2,
   "textures_flat": 0,
   "models_unmapped": 0,
   "sounds_unmapped": 1,
@@ -142,30 +156,7 @@
   "keys_unmapped": 6,
   "links_unresolved": 2,
   "inputs_unimplemented": 6,
-  "surfaces_opaque": 2,
-  "gameplay_lost": 22
- },
- "gameplay": {
-  "findings": {
-   "class_unsupported": 7,
-   "filter_dangling": 3,
-   "input_unimplemented": 6,
-   "player_input": 3,
-   "target_dangling": 2,
-   "volume_parented": 6
-  },
-  "severity": {
-   "class_unsupported": "unsupported",
-   "filter_dangling": "source",
-   "input_unimplemented": "unsupported",
-   "player_input": "unsupported",
-   "target_dangling": "source",
-   "volume_parented": "unsupported"
-  },
-  "classes": {
-   "approximated": 12,
-   "ignored": 7,
-   "implemented": 36
-  }
+  "surfaces_opaque": 1,
+  "gameplay_lost": 16
  }
 }

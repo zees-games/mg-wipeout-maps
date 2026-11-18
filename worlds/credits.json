@@ -357,16 +357,6 @@
   },
   {
    "kind": "texture",
-   "name": "pbr_rusty_metal",
-   "author": "Rob Tuytel",
-   "licence": "CC0-1.0",
-   "url": "https://polyhaven.com/a/rusty_metal",
-   "source": "polyhaven",
-   "attribution": false,
-   "uses": 2
-  },
-  {
-   "kind": "texture",
    "name": "pbr_MetalPlates010",
    "author": "Lennart Demes and contributors",
    "licence": "CC0-1.0",
