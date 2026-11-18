@@ -90,6 +90,13 @@
   ],
   "surfaces_opaque": [
    "courselego/courselego"
+  ],
+  "gameplay_lost": [
+   "class_unsupported:path_track (ignored)",
+   "class_unsupported:point_viewcontrol (ignored)",
+   "input_unimplemented:point_servercommand.Command",
+   "volume_parented:trigger_hurt#29 -> func_rotating2",
+   "volume_parented:trigger_hurt#63 -> func_rotating1"
   ]
  },
  "counts": {
@@ -101,6 +108,24 @@
   "keys_unmapped": 2,
   "links_unresolved": 0,
   "inputs_unimplemented": 1,
-  "surfaces_opaque": 1
+  "surfaces_opaque": 1,
+  "gameplay_lost": 5
+ },
+ "gameplay": {
+  "findings": {
+   "class_unsupported": 2,
+   "input_unimplemented": 1,
+   "volume_parented": 2
+  },
+  "severity": {
+   "class_unsupported": "unsupported",
+   "input_unimplemented": "unsupported",
+   "volume_parented": "unsupported"
+  },
+  "classes": {
+   "approximated": 1,
+   "ignored": 3,
+   "implemented": 31
+  }
  }
 }

@@ -107,6 +107,32 @@
   "surfaces_opaque": [
    "models/effects/portalfunnel_sheet",
    "particle/particle_smokegrenade1"
+  ],
+  "gameplay_lost": [
+   "class_unsupported:env_fire (approximated)",
+   "class_unsupported:env_laser (approximated)",
+   "class_unsupported:path_track (ignored)",
+   "class_unsupported:player_speedmod (approximated)",
+   "class_unsupported:point_tesla (approximated)",
+   "class_unsupported:point_viewcontrol (ignored)",
+   "class_unsupported:weapon_smokegrenade (approximated)",
+   "input_unimplemented:env_hudhint.ShowHudHint",
+   "input_unimplemented:func_monitor.SetCamera",
+   "input_unimplemented:player_speedmod.ModifySpeed",
+   "input_unimplemented:point_servercommand.Command",
+   "input_unimplemented:point_spotlight.LightOff",
+   "input_unimplemented:point_spotlight.LightOn",
+   "player_input:addoutput renderfx x1",
+   "player_input:addoutput targetname x4",
+   "player_input:ignite x1",
+   "volume_key_unread:trigger_hurt.damagecap=150",
+   "volume_key_unread:trigger_hurt.damagecap=200",
+   "volume_parented:trigger_hurt#150 -> Obstacle3_TracktrainA",
+   "volume_parented:trigger_hurt#151 -> Obstacle3_TracktrainB",
+   "volume_parented:trigger_hurt#152 -> Obstacle3_TracktrainC",
+   "volume_parented:trigger_hurt#170 -> lasertrain1",
+   "volume_parented:trigger_hurt#315 -> Obstacle3_TracktrainD",
+   "volume_parented:trigger_hurt#317 -> Obstacle3_Tracktrain"
   ]
  },
  "counts": {
@@ -118,6 +144,32 @@
   "keys_unmapped": 6,
   "links_unresolved": 2,
   "inputs_unimplemented": 6,
-  "surfaces_opaque": 2
+  "surfaces_opaque": 2,
+  "gameplay_lost": 24
+ },
+ "gameplay": {
+  "findings": {
+   "class_unsupported": 7,
+   "filter_dangling": 3,
+   "input_unimplemented": 6,
+   "player_input": 3,
+   "target_dangling": 2,
+   "volume_key_unread": 2,
+   "volume_parented": 6
+  },
+  "severity": {
+   "class_unsupported": "unsupported",
+   "filter_dangling": "source",
+   "input_unimplemented": "unsupported",
+   "player_input": "unsupported",
+   "target_dangling": "source",
+   "volume_key_unread": "unsupported",
+   "volume_parented": "unsupported"
+  },
+  "classes": {
+   "approximated": 12,
+   "ignored": 7,
+   "implemented": 36
+  }
  }
 }

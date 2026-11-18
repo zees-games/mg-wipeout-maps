@@ -67,7 +67,18 @@
    "func_button.OnPressed->poopclot"
   ],
   "inputs_unimplemented": [],
-  "surfaces_opaque": []
+  "surfaces_opaque": [],
+  "gameplay_lost": [
+   "class_unsupported:env_laser (approximated)",
+   "class_unsupported:func_hostage_rescue (ignored)",
+   "class_unsupported:path_track (ignored)",
+   "volume_key_unread:trigger_hurt.damagecap=100",
+   "volume_key_unread:trigger_hurt.damagecap=9999",
+   "volume_parented:trigger_hurt#243 -> 2swifty",
+   "volume_parented:trigger_hurt#26 -> swifty",
+   "volume_parented:trigger_hurt#36 -> sphoncter1",
+   "volume_parented:trigger_hurt#40 -> ramen"
+  ]
  },
  "counts": {
   "textures_unmapped": 2,
@@ -78,6 +89,26 @@
   "keys_unmapped": 0,
   "links_unresolved": 1,
   "inputs_unimplemented": 0,
-  "surfaces_opaque": 0
+  "surfaces_opaque": 0,
+  "gameplay_lost": 9
+ },
+ "gameplay": {
+  "findings": {
+   "class_unsupported": 3,
+   "target_dangling": 1,
+   "volume_key_unread": 2,
+   "volume_parented": 4
+  },
+  "severity": {
+   "class_unsupported": "unsupported",
+   "target_dangling": "source",
+   "volume_key_unread": "unsupported",
+   "volume_parented": "unsupported"
+  },
+  "classes": {
+   "approximated": 4,
+   "ignored": 3,
+   "implemented": 23
+  }
  }
 }

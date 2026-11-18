@@ -85,6 +85,15 @@
   "inputs_unimplemented": [],
   "surfaces_opaque": [
    "de_train/train_bombsite_arrow_02"
+  ],
+  "gameplay_lost": [
+   "class_unsupported:path_track (ignored)",
+   "class_unsupported:point_viewcontrol (ignored)",
+   "volume_key_unread:trigger_hurt.damagecap=100",
+   "volume_key_unread:trigger_hurt.damagecap=1000",
+   "volume_key_unread:trigger_hurt.damagecap=2000",
+   "volume_key_unread:trigger_hurt.damagecap=40",
+   "volume_parented:trigger_hurt#378 -> lol"
   ]
  },
  "counts": {
@@ -96,6 +105,26 @@
   "keys_unmapped": 8,
   "links_unresolved": 1,
   "inputs_unimplemented": 0,
-  "surfaces_opaque": 1
+  "surfaces_opaque": 1,
+  "gameplay_lost": 7
+ },
+ "gameplay": {
+  "findings": {
+   "class_unsupported": 2,
+   "target_dangling": 2,
+   "volume_key_unread": 4,
+   "volume_parented": 1
+  },
+  "severity": {
+   "class_unsupported": "unsupported",
+   "target_dangling": "source",
+   "volume_key_unread": "unsupported",
+   "volume_parented": "unsupported"
+  },
+  "classes": {
+   "approximated": 2,
+   "ignored": 4,
+   "implemented": 36
+  }
  }
 }
