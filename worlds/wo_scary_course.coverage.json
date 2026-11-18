@@ -78,9 +78,6 @@
    "input_unimplemented:point_spotlight.LightOff",
    "input_unimplemented:point_spotlight.LightOn",
    "input_unimplemented:prop_dynamic_override.Break",
-   "volume_key_unread:trigger_hurt.damagecap=100",
-   "volume_key_unread:trigger_hurt.damagecap=1000",
-   "volume_key_unread:trigger_hurt.damagecap=500",
    "volume_parented:trigger_hurt#135 -> ota\ufffdak_a1",
    "volume_parented:trigger_hurt#136 -> ota\ufffdak_a2",
    "volume_parented:trigger_hurt#138 -> ota\ufffdak_a3",
@@ -100,21 +97,19 @@
   "links_unresolved": 1,
   "inputs_unimplemented": 4,
   "surfaces_opaque": 0,
-  "gameplay_lost": 16
+  "gameplay_lost": 13
  },
  "gameplay": {
   "findings": {
    "class_unsupported": 2,
    "input_unimplemented": 4,
    "target_dangling": 1,
-   "volume_key_unread": 3,
    "volume_parented": 7
   },
   "severity": {
    "class_unsupported": "unsupported",
    "input_unimplemented": "unsupported",
    "target_dangling": "source",
-   "volume_key_unread": "unsupported",
    "volume_parented": "unsupported"
   },
   "classes": {

@@ -125,8 +125,6 @@
    "player_input:addoutput renderfx x1",
    "player_input:addoutput targetname x4",
    "player_input:ignite x1",
-   "volume_key_unread:trigger_hurt.damagecap=150",
-   "volume_key_unread:trigger_hurt.damagecap=200",
    "volume_parented:trigger_hurt#150 -> Obstacle3_TracktrainA",
    "volume_parented:trigger_hurt#151 -> Obstacle3_TracktrainB",
    "volume_parented:trigger_hurt#152 -> Obstacle3_TracktrainC",
@@ -145,7 +143,7 @@
   "links_unresolved": 2,
   "inputs_unimplemented": 6,
   "surfaces_opaque": 2,
-  "gameplay_lost": 24
+  "gameplay_lost": 22
  },
  "gameplay": {
   "findings": {
@@ -154,7 +152,6 @@
    "input_unimplemented": 6,
    "player_input": 3,
    "target_dangling": 2,
-   "volume_key_unread": 2,
    "volume_parented": 6
   },
   "severity": {
@@ -163,7 +160,6 @@
    "input_unimplemented": "unsupported",
    "player_input": "unsupported",
    "target_dangling": "source",
-   "volume_key_unread": "unsupported",
    "volume_parented": "unsupported"
   },
   "classes": {

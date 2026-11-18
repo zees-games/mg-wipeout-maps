@@ -132,7 +132,6 @@
    "input_unimplemented:env_hudhint.ShowHudHint",
    "input_unimplemented:point_servercommand.Command",
    "input_unimplemented:trigger_apply_impulse.ApplyImpulse",
-   "volume_key_unread:trigger_hurt.damagecap=2000",
    "volume_parented:trigger_hurt#10 -> Rotation_3",
    "volume_parented:trigger_hurt#11 -> Rotation_2",
    "volume_parented:trigger_hurt#12 -> Rotation_1",
@@ -154,19 +153,17 @@
   "links_unresolved": 0,
   "inputs_unimplemented": 3,
   "surfaces_opaque": 0,
-  "gameplay_lost": 19
+  "gameplay_lost": 18
  },
  "gameplay": {
   "findings": {
    "class_unsupported": 6,
    "input_unimplemented": 3,
-   "volume_key_unread": 1,
    "volume_parented": 9
   },
   "severity": {
    "class_unsupported": "unsupported",
    "input_unimplemented": "unsupported",
-   "volume_key_unread": "unsupported",
    "volume_parented": "unsupported"
   },
   "classes": {
