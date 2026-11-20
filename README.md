@@ -66,6 +66,10 @@ The JSON is committed and CI runs `--check`. Hand-written and imported documents
 
 mg-wipeout's `examples/headless_courses.tscn` plays every course to the finish with a stand-in and every hazard live. A course it cannot finish inside its clock has a missing window somewhere, and the test says where it got to. mg-wipeout's `tools/race_times.tscn` races a field of eight at each difficulty and is what sets each course's length.
 
+## Quality and ongoing improvement
+
+The maps, models, textures and sounds in this pack are being improved over time, and some of them are low quality today. Improvement is driven by the Nightly queue, a work queue where agents pick up items, and by a visual judge loop that views rendered frames and files defects until each asset passes repeated clean reviews. Known defects are filed there and fixed in later releases, and the screenshots here are regenerated as the assets improve.
+
 ## Licence
 
 MIT, see [LICENSE](LICENSE). The converted courses keep the licences listed above.
