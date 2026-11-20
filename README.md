@@ -1,3 +1,5 @@
+![Wipeout Maps banner](https://raw.githubusercontent.com/zees-games/mg-wipeout-maps/main/docs/banner.png)
+
 The courses and arenas for [mg-wipeout](https://github.com/zees-games/mg-wipeout): obstacle courses over open water, and the arenas a final fight is played in. Eleven courses of our own (a minute or two for a good run, five of them in front of a full house), ten converted community courses, and five arenas.
 
 A course or arena is a JSON document, not a scene. The server reads every `.json` file in its course directory and sends the current one to each client when the round begins, so players need no course files. To add one, drop a file in the directory. The format is in [docs/format.md](docs/format.md).
