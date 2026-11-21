@@ -1,4 +1,4 @@
-# Which courses rotate (dot-map's DotMapRotationFile). The game tier of maps.yml: the weakest file the game ships.
+# Which courses rotate (dot-map's GSMapRotationFile). The game tier of maps.yml: the weakest file the game ships.
 # Nothing is left out and no rotation is named, so every installed course rotates in the order shuffle_courses gives, as it did with no file.
 # A server copies this to its --config directory as cfg/server/addons/dot_map/maps.yml (or cfg/server/game/mg-wipeout/dot_map/maps.yml
 # for this game only). That file replaces this one; start it with `merge: true` to add to it instead.

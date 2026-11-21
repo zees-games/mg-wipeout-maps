@@ -16,13 +16,13 @@ Pit crossings by water or a hurt plane, ladders (the importer makes bounce pads)
 
 ## Open items
 
-- Online clients still get the whole maps pack (`maps_delivery: client`), about 20 MB with all 19 imported. mg-wipeout now asks for a course's mesh by group when a stage names a mesh no mounted pack holds (`WoWorld.fetch`), but nothing publishes groups yet: nightly item `wipeout-mesh-groups` (a `groups.json` read by `DotCloudPublisher`, passed through by the site, written here one group per course). dot-server-deploy's `wipeout_client` example still expects `server` delivery.
+- Online clients still get the whole maps pack (`maps_delivery: client`), about 20 MB with all 19 imported. mg-wipeout now asks for a course's mesh by group when a stage names a mesh no mounted pack holds (`WoWorld.fetch`), but nothing publishes groups yet: nightly item `wipeout-mesh-groups` (a `groups.json` read by `GSCloudPublisher`, passed through by the site, written here one group per course). dot-server-deploy's `wipeout_client` example still expects `server` delivery.
 - The pilot's bot falls about 25 times at the two island jumps before it lands them; the takeoffs want tuning.
 - Dan's Course needed no vent bounds or rock-wall rows in dot-map. Its second stage (the hall of seven stones with two sweeping walls of light) is not finished by the stand-in: with `tune` the walls hold in the gaps (`at` -79.0 and -56.2, `reach` 22.8, `period` 40, `duty` 0.8) and a route lined up at (-49.9, 0, -3.3) takes the first jump, but a run-up that fast overshoots each 2 m stone and the follow-up hop carries it back into the gap, so the hall stays scenery. A human crosses it; the stand-in needs a slower, stone-by-stone hop (a route point that caps the take-off speed) before it will. `mg-wipeout/tools/trace_course.tscn --heights=x0,x1,z0,z1` prints the floor heights of a box.
 
 ## Io courses (WP9)
 
-`wo_oaks_course` is imported whole through `tools/import_world.py`'s `main_io` (spec has an `io` store; the course document's world piece sets `io: true`) and the game runs its entities through dot-map's `DotMapWorld`. This replaces the stand-in built by `tools/build.py`. The other stand-ins in `build.py` are unchanged (3 converted: oaks, office, dans); each community map with a source `.bsp` follows the same spec. The finish zone is inferred from the map's score trigger and wants a look from a human run.
+`wo_oaks_course` is imported whole through `tools/import_world.py`'s `main_io` (spec has an `io` store; the course document's world piece sets `io: true`) and the game runs its entities through dot-map's `GSMapWorld`. This replaces the stand-in built by `tools/build.py`. The other stand-ins in `build.py` are unchanged (3 converted: oaks, office, dans); each community map with a source `.bsp` follows the same spec. The finish zone is inferred from the map's score trigger and wants a look from a human run.
 
 ## Effort
 

@@ -65,4 +65,4 @@ A new piece KIND is a game change (`wo_course_doc.gd` and `wo_course.gd`), and a
 
 ## Ambience level
 
-Every document carries `"ambient": {"level": n, "lively": true}` for dot-audio's `DotAmbienceDirector` (`level` multiplies the stock bed, 1.0 unchanged; `lively` lets the birdsong bed play): imported interiors 0.6-0.9, arenas 1.0, open bay courses 1.2-1.5, and `lively` on the bay, hill and pond courses. The table is `AMBIENT` in `tools/build.py`, which writes it into built documents; `tools/build.py --ambient` patches the imported ones, so a new map adds a row there.
+Every document carries `"ambient": {"level": n, "lively": true}` for dot-audio's `GSAmbienceDirector` (`level` multiplies the stock bed, 1.0 unchanged; `lively` lets the birdsong bed play): imported interiors 0.6-0.9, arenas 1.0, open bay courses 1.2-1.5, and `lively` on the bay, hill and pond courses. The table is `AMBIENT` in `tools/build.py`, which writes it into built documents; `tools/build.py --ambient` patches the imported ones, so a new map adds a row there.
