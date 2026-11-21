@@ -1,5 +1,5 @@
 {
- "format": "dot-bsp-coverage",
+ "format": "gs-bsp-coverage",
  "version": 1,
  "map": "wo_scary_course",
  "sha256": "5e6faff9c21cade5a9b917bcc2453db22ea5269a9fc5e20c463c0e14677f1c9c",

@@ -1,5 +1,5 @@
 {
- "format": "dot-bsp-coverage",
+ "format": "gs-bsp-coverage",
  "version": 1,
  "map": "wo_lego_course",
  "sha256": "9599496a86a33af333dff40697cce1664534395b535b6e1e503680c1478c55a6",

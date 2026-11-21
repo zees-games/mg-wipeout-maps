@@ -62,7 +62,7 @@
 # --- Bots
 # How many players the server keeps in the round by adding stand-ins (`bot_quota`, fill). [0..]
 # minimum_players: 9
-# Scales every mistake a stand-in makes (`wo_bot_mistakes`): 1 is the difficulty preset's (dot-bot's `bot_dif... [0.0..4.0]
+# Scales every mistake a stand-in makes (`wo_bot_mistakes`): 1 is the difficulty preset's (gs-bot's `bot_dif... [0.0..4.0]
 # bot_mistakes: 1.0
 # Metres a second a stand-in is reckoned to cover on a hop from stone to stone, landing to landing. [1.0..12.0]
 # bot_hop_speed: 4.8

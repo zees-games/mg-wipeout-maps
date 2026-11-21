@@ -1,5 +1,5 @@
 {
- "format": "dot-bsp-coverage",
+ "format": "gs-bsp-coverage",
  "version": 1,
  "map": "wo_labo_course",
  "sha256": "1bfc0465b683c94b88b64d18ea97cf46c8f6ca64c12ac34149402bf8d5711e2f",

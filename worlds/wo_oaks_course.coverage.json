@@ -1,5 +1,5 @@
 {
- "format": "dot-bsp-coverage",
+ "format": "gs-bsp-coverage",
  "version": 1,
  "map": "wo_oaks_course",
  "sha256": "3bf717883e78b8345561aea83faab86befd35e0bc8b41ab18b295445ea45d557",

@@ -1158,7 +1158,7 @@ class Course:
         return self.doc
 
 
-# dot-props' toys, read by mg-wipeout (a game from before them ignores the field). Loose ones only,
+# gs-props' toys, read by mg-wipeout (a game from before them ignores the field). Loose ones only,
 # by the family's rule for a competitive game: a person walks through a ball and pushes it, so it
 # never holds a runner up or covers anybody, where a pad or a trampoline would be a way past an
 # obstacle. A beach ball in each back corner of the start pen, to bat about while the gate is up;

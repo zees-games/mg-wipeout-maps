@@ -6,11 +6,11 @@ library art that world's licence names (pbr-library/<set>/<tier>/, model-library
     tools/build_groups.py            # rewrite
     tools/build_groups.py --check    # exit 1 if stale, or a group has no course document
 
-dot-cloud's publisher reads groups.json at the source root and writes each group into the manifest entries
+gs-cloud's publisher reads groups.json at the source root and writes each group into the manifest entries
 (GSCloudPublisher, GROUPS_FILE), so a client fetches courses/ and cfg/ and the worlds/ groups of the courses
 it plays (mg-wipeout's WoWorld.fetch). Shared files (worlds/credits.json, worlds/textures/) stay ungrouped. A file
 named by several courses carries each of their groups. The library paths come from the tracked worlds/<id>.json, so
---check works without the staged libraries; dot-map draws a set or model it cannot find as a stand-in.
+--check works without the staged libraries; gs-map draws a set or model it cannot find as a stand-in.
 """
 import json
 import os

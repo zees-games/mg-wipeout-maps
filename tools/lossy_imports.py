@@ -4,8 +4,8 @@
 pbr-library/ and model-library/ are staged from the shared stores, whose
 .import files use Godot's default (lossless, no mipmaps). Shipped that way
 the maps pack was 1.4 GiB of textures and the web page ran out of memory
-fetching it for solo. The family convention (dot-map docs/surfaces.md,
-dot-cloud docs/sources.md) is lossy WebP (compress/mode=1) with mipmaps.
+fetching it for solo. The family convention (gs-map docs/surfaces.md,
+gs-cloud docs/sources.md) is lossy WebP (compress/mode=1) with mipmaps.
 
     tools/lossy_imports.py [root]          rewrite the .import files
     tools/lossy_imports.py --check [root]  exit 1 if any still need it

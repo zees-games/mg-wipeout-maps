@@ -1,5 +1,5 @@
 {
- "format": "dot-bsp-coverage",
+ "format": "gs-bsp-coverage",
  "version": 1,
  "map": "wo_pauls_course",
  "sha256": "c1f2c6ea7867b8230848e149cb8cceff159df6138d6d6c41398b2ab9a0668fc0",

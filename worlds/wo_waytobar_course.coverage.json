@@ -1,5 +1,5 @@
 {
- "format": "dot-bsp-coverage",
+ "format": "gs-bsp-coverage",
  "version": 1,
  "map": "wo_waytobar_course",
  "sha256": "0e39768989f601513344ee78327905d80f228585dd5a69ecd156edc49f85e2df",

@@ -1,5 +1,5 @@
 {
- "format": "dot-bsp-coverage",
+ "format": "gs-bsp-coverage",
  "version": 1,
  "map": "wo_dans_course",
  "sha256": "9f6fc8329ce13e3af3a2299ef94f36d08a4f56dcd855d64415a8ce13258de693",
