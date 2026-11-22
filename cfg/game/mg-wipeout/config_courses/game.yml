@@ -20,7 +20,7 @@
 # course_ids: []
 # Whether the next course is drawn at random (seeded) rather than taken in order.
 # shuffle_courses: true
-# The file that says which courses this server ROTATES: `maps.yml` in `cfg/server/addons/gs_map/` of the `--...
+# The file that says which courses this server ROTATES: `maps.yml` in `cfg/server/addons/gs_map/` of the `--c...
 # map_rotation_file: "cfg/maps.yml"
 # Where course and arena documents are read from, beside the one built into this game.
 # course_directory: "courses"
