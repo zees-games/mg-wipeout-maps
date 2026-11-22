@@ -8,12 +8,11 @@
   "drawn": 59,
   "by_tier": {
    "addon": 11,
-   "default": 15,
-   "fallback": 33
+   "default": 48
   },
   "free_by_tier": {
-   "addon": 53,
-   "default": 6
+   "addon": 54,
+   "default": 5
   },
   "nearest_photo": [
    "custom/mcblubrick",
@@ -48,7 +47,6 @@
    "custom/mcworkbench_side2",
    "custom/mcworkbench_top",
    "metal/metalwall006b",
-   "metal/metalwall013a",
    "metal/metalwall061h",
    "mytextures/bannerminecraft",
    "mytextures/cher1",
@@ -57,6 +55,7 @@
    "mytextures/cher4",
    "mytextures/howto",
    "mytextures/lookagain",
+   "mytextures/paul3",
    "mytextures/qqcorner"
   ]
  },
@@ -95,42 +94,29 @@
   "total": 415,
   "unresolved": 0
  },
+ "gameplay": {
+  "findings": {
+   "class_unsupported": 2,
+   "filter_dangling": 1,
+   "input_unimplemented": 3,
+   "player_input": 3,
+   "volume_follows": 3
+  },
+  "severity": {
+   "class_unsupported": "unsupported",
+   "filter_dangling": "source",
+   "input_unimplemented": "unsupported",
+   "player_input": "unsupported",
+   "volume_follows": "handled"
+  },
+  "classes": {
+   "approximated": 5,
+   "ignored": 2,
+   "implemented": 41
+  }
+ },
  "lists": {
-  "textures_unmapped": [
-   "CUSTOM/MCCAGE",
-   "CUSTOM/MCCHEST_FRONT",
-   "CUSTOM/MCCHEST_LARGE",
-   "CUSTOM/MCCHEST_SIDE",
-   "CUSTOM/MCCHEST_TOP",
-   "CUSTOM/MCCOAL",
-   "CUSTOM/MCDIAMOND",
-   "CUSTOM/MCFURNACE_SIDE",
-   "CUSTOM/MCGOLD",
-   "CUSTOM/MCHALFBLOCKSIDE",
-   "CUSTOM/MCHALFBLOCKTOP",
-   "CUSTOM/MCINNERTREE",
-   "CUSTOM/MCLAVA",
-   "CUSTOM/MCLEAVES",
-   "CUSTOM/MCMOSSY",
-   "CUSTOM/MCOBSIDIAN",
-   "CUSTOM/MCRED",
-   "CUSTOM/MCTNTBOTTOM",
-   "CUSTOM/MCTNTSIDE",
-   "CUSTOM/MCTNTTOP",
-   "CUSTOM/MCTRACK",
-   "CUSTOM/MCTREETRUNK",
-   "CUSTOM/MCWORKBENCH_SIDE2",
-   "CUSTOM/MCWORKBENCH_TOP",
-   "MYTEXTURES/BANNERMINECRAFT",
-   "MYTEXTURES/CHER1",
-   "MYTEXTURES/CHER2",
-   "MYTEXTURES/CHER3",
-   "MYTEXTURES/CHER4",
-   "MYTEXTURES/HOWTO",
-   "MYTEXTURES/LOOKAGAIN",
-   "MYTEXTURES/PAUL3",
-   "MYTEXTURES/QQCORNER"
-  ],
+  "textures_unmapped": [],
   "textures_flat": [],
   "models_unmapped": [],
   "sounds_unmapped": [],
@@ -154,14 +140,11 @@
    "input_unimplemented:point_servercommand.Command",
    "player_input:addoutput rendermode x2",
    "player_input:addoutput targetname x1",
-   "player_input:alpha x2",
-   "volume_parented:trigger_hurt#10 -> train2",
-   "volume_parented:trigger_hurt#12 -> train3",
-   "volume_parented:trigger_hurt#9 -> train1"
+   "player_input:alpha x2"
   ]
  },
  "counts": {
-  "textures_unmapped": 33,
+  "textures_unmapped": 0,
   "textures_flat": 0,
   "models_unmapped": 0,
   "sounds_unmapped": 0,
@@ -170,27 +153,10 @@
   "links_unresolved": 0,
   "inputs_unimplemented": 3,
   "surfaces_opaque": 0,
-  "gameplay_lost": 11
+  "gameplay_lost": 8
  },
- "gameplay": {
-  "findings": {
-   "class_unsupported": 2,
-   "filter_dangling": 1,
-   "input_unimplemented": 3,
-   "player_input": 3,
-   "volume_parented": 3
-  },
-  "severity": {
-   "class_unsupported": "unsupported",
-   "filter_dangling": "source",
-   "input_unimplemented": "unsupported",
-   "player_input": "unsupported",
-   "volume_parented": "unsupported"
-  },
-  "classes": {
-   "approximated": 5,
-   "ignored": 2,
-   "implemented": 41
-  }
+ "prop_fit": {
+  "rescaled": 6,
+  "fits": 8
  }
 }

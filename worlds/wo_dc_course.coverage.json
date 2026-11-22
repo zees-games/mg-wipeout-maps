@@ -8,8 +8,7 @@
   "drawn": 19,
   "by_tier": {
    "addon": 5,
-   "default": 6,
-   "fallback": 9
+   "default": 15
   },
   "free_by_tier": {
    "addon": 15,
@@ -58,21 +57,28 @@
   "total": 115,
   "unresolved": 0
  },
+ "gameplay": {
+  "findings": {
+   "class_unsupported": 3,
+   "input_unimplemented": 2,
+   "player_input": 1,
+   "volume_follows": 22
+  },
+  "severity": {
+   "class_unsupported": "unsupported",
+   "input_unimplemented": "unsupported",
+   "player_input": "unsupported",
+   "volume_follows": "handled"
+  },
+  "classes": {
+   "approximated": 5,
+   "ignored": 3,
+   "implemented": 23
+  }
+ },
  "lists": {
-  "textures_unmapped": [
-   "/DESTINYCLAN",
-   "/DESTINYROUGE",
-   "/MGDCCOURSE",
-   "DEVNEONS/BLUE_NEON",
-   "DEVNEONS/WHITE_NEON",
-   "RYAN_DEV/10",
-   "RYAN_DEV/80",
-   "RYAN_DEV/BLACK",
-   "RYAN_DEV/DEV_30"
-  ],
-  "textures_flat": [
-   "ryan_dev/black"
-  ],
+  "textures_unmapped": [],
+  "textures_flat": [],
   "models_unmapped": [],
   "sounds_unmapped": [],
   "classes_unmapped": [],
@@ -84,71 +90,29 @@
    "env_hudhint.ShowHudHint",
    "point_servercommand.Command"
   ],
-  "surfaces_opaque": [
-   "destinyclan",
-   "destinyrouge",
-   "mgdccourse"
-  ],
+  "surfaces_opaque": [],
   "gameplay_lost": [
    "class_unsupported:env_laser (approximated)",
    "class_unsupported:path_track (ignored)",
    "class_unsupported:weapon_hegrenade (approximated)",
    "input_unimplemented:env_hudhint.ShowHudHint",
    "input_unimplemented:point_servercommand.Command",
-   "player_input:addoutput renderfx x1",
-   "volume_parented:trigger_hurt#137 -> rotat2",
-   "volume_parented:trigger_hurt#141 -> rotat1",
-   "volume_parented:trigger_hurt#231 -> track1",
-   "volume_parented:trigger_hurt#249 -> bare1",
-   "volume_parented:trigger_hurt#252 -> bare2",
-   "volume_parented:trigger_hurt#266 -> bare3",
-   "volume_parented:trigger_hurt#298 -> tracke1",
-   "volume_parented:trigger_hurt#316 -> train1",
-   "volume_parented:trigger_hurt#555 -> bonus11",
-   "volume_parented:trigger_hurt#556 -> bonus2",
-   "volume_parented:trigger_hurt#557 -> bonus3",
-   "volume_parented:trigger_hurt#558 -> bonus4",
-   "volume_parented:trigger_hurt#560 -> bonus5",
-   "volume_parented:trigger_hurt#563 -> bonus6",
-   "volume_parented:trigger_hurt#564 -> bonus7",
-   "volume_parented:trigger_hurt#86 -> barre1",
-   "volume_parented:trigger_hurt#87 -> barre2",
-   "volume_parented:trigger_hurt#88 -> barre3",
-   "volume_parented:trigger_hurt#89 -> barre4",
-   "volume_parented:trigger_hurt#90 -> barre5",
-   "volume_parented:trigger_hurt#91 -> barre6",
-   "volume_parented:trigger_hurt#92 -> bar1"
+   "player_input:addoutput renderfx x1"
   ]
  },
  "counts": {
-  "textures_unmapped": 9,
-  "textures_flat": 1,
+  "textures_unmapped": 0,
+  "textures_flat": 0,
   "models_unmapped": 0,
   "sounds_unmapped": 0,
   "classes_unmapped": 0,
   "keys_unmapped": 1,
   "links_unresolved": 0,
   "inputs_unimplemented": 2,
-  "surfaces_opaque": 3,
-  "gameplay_lost": 28
+  "surfaces_opaque": 0,
+  "gameplay_lost": 6
  },
- "gameplay": {
-  "findings": {
-   "class_unsupported": 3,
-   "input_unimplemented": 2,
-   "player_input": 1,
-   "volume_parented": 22
-  },
-  "severity": {
-   "class_unsupported": "unsupported",
-   "input_unimplemented": "unsupported",
-   "player_input": "unsupported",
-   "volume_parented": "unsupported"
-  },
-  "classes": {
-   "approximated": 5,
-   "ignored": 3,
-   "implemented": 23
-  }
+ "prop_fit": {
+  "fits": 120
  }
 }

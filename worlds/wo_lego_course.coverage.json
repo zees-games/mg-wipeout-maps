@@ -8,8 +8,7 @@
   "drawn": 32,
   "by_tier": {
    "addon": 9,
-   "default": 21,
-   "fallback": 3
+   "default": 24
   },
   "free_by_tier": {
    "addon": 29,
@@ -70,12 +69,25 @@
   "total": 45,
   "unresolved": 0
  },
+ "gameplay": {
+  "findings": {
+   "class_unsupported": 2,
+   "input_unimplemented": 1,
+   "volume_follows": 2
+  },
+  "severity": {
+   "class_unsupported": "unsupported",
+   "input_unimplemented": "unsupported",
+   "volume_follows": "handled"
+  },
+  "classes": {
+   "approximated": 1,
+   "ignored": 3,
+   "implemented": 31
+  }
+ },
  "lists": {
-  "textures_unmapped": [
-   "BOHAROX/SIMPSONS/{SEWERLADDER",
-   "BOHAROX/SIMPSONS/{SIMPLADDER",
-   "COURSELEGO/COURSELEGO"
-  ],
+  "textures_unmapped": [],
   "textures_flat": [],
   "models_unmapped": [],
   "sounds_unmapped": [],
@@ -88,19 +100,15 @@
   "inputs_unimplemented": [
    "point_servercommand.Command"
   ],
-  "surfaces_opaque": [
-   "courselego/courselego"
-  ],
+  "surfaces_opaque": [],
   "gameplay_lost": [
    "class_unsupported:path_track (ignored)",
    "class_unsupported:point_viewcontrol (ignored)",
-   "input_unimplemented:point_servercommand.Command",
-   "volume_parented:trigger_hurt#29 -> func_rotating2",
-   "volume_parented:trigger_hurt#63 -> func_rotating1"
+   "input_unimplemented:point_servercommand.Command"
   ]
  },
  "counts": {
-  "textures_unmapped": 3,
+  "textures_unmapped": 0,
   "textures_flat": 0,
   "models_unmapped": 0,
   "sounds_unmapped": 0,
@@ -108,24 +116,10 @@
   "keys_unmapped": 2,
   "links_unresolved": 0,
   "inputs_unimplemented": 1,
-  "surfaces_opaque": 1,
-  "gameplay_lost": 5
+  "surfaces_opaque": 0,
+  "gameplay_lost": 3
  },
- "gameplay": {
-  "findings": {
-   "class_unsupported": 2,
-   "input_unimplemented": 1,
-   "volume_parented": 2
-  },
-  "severity": {
-   "class_unsupported": "unsupported",
-   "input_unimplemented": "unsupported",
-   "volume_parented": "unsupported"
-  },
-  "classes": {
-   "approximated": 1,
-   "ignored": 3,
-   "implemented": 31
-  }
+ "prop_fit": {
+  "fits": 30
  }
 }

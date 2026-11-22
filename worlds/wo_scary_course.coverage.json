@@ -8,8 +8,7 @@
   "drawn": 25,
   "by_tier": {
    "addon": 19,
-   "default": 6,
-   "fallback": 1
+   "default": 7
   },
   "free_by_tier": {
    "addon": 21,
@@ -23,8 +22,7 @@
   "looked_up": 19,
   "by_tier": {
    "category": 3,
-   "default": 13,
-   "fallback": 3
+   "default": 16
   }
  },
  "sounds": {
@@ -48,16 +46,29 @@
   "total": 47,
   "unresolved": 1
  },
+ "gameplay": {
+  "findings": {
+   "class_unsupported": 2,
+   "input_unimplemented": 4,
+   "target_dangling": 1,
+   "volume_follows": 7
+  },
+  "severity": {
+   "class_unsupported": "unsupported",
+   "input_unimplemented": "unsupported",
+   "target_dangling": "source",
+   "volume_follows": "handled"
+  },
+  "classes": {
+   "approximated": 4,
+   "ignored": 5,
+   "implemented": 28
+  }
+ },
  "lists": {
-  "textures_unmapped": [
-   "COURSE_MAP/CREDITS"
-  ],
+  "textures_unmapped": [],
   "textures_flat": [],
-  "models_unmapped": [
-   "pg_props/pg_hospital/pg_oprollwagen.mdl",
-   "pg_props/pg_hospital/pg_optabel_simpel.mdl",
-   "pg_props/pg_hospital/pg_opverbandschere.mdl"
-  ],
+  "models_unmapped": [],
   "sounds_unmapped": [],
   "classes_unmapped": [],
   "keys_unmapped": [],
@@ -77,45 +88,25 @@
    "input_unimplemented:point_servercommand.Command",
    "input_unimplemented:point_spotlight.LightOff",
    "input_unimplemented:point_spotlight.LightOn",
-   "input_unimplemented:prop_dynamic_override.Break",
-   "volume_parented:trigger_hurt#135 -> ota\ufffdak_a1",
-   "volume_parented:trigger_hurt#136 -> ota\ufffdak_a2",
-   "volume_parented:trigger_hurt#138 -> ota\ufffdak_a3",
-   "volume_parented:trigger_hurt#140 -> ota\ufffdak_a4",
-   "volume_parented:trigger_hurt#195 -> ota\ufffdak_a5_hurt",
-   "volume_parented:trigger_hurt#219 -> posuvacka_a1x",
-   "volume_parented:trigger_hurt#575 -> lol2"
+   "input_unimplemented:prop_dynamic_override.Break"
   ]
  },
  "counts": {
-  "textures_unmapped": 1,
+  "textures_unmapped": 0,
   "textures_flat": 0,
-  "models_unmapped": 3,
+  "models_unmapped": 0,
   "sounds_unmapped": 0,
   "classes_unmapped": 0,
   "keys_unmapped": 0,
   "links_unresolved": 1,
   "inputs_unimplemented": 4,
   "surfaces_opaque": 0,
-  "gameplay_lost": 13
+  "gameplay_lost": 6
  },
- "gameplay": {
-  "findings": {
-   "class_unsupported": 2,
-   "input_unimplemented": 4,
-   "target_dangling": 1,
-   "volume_parented": 7
-  },
-  "severity": {
-   "class_unsupported": "unsupported",
-   "input_unimplemented": "unsupported",
-   "target_dangling": "source",
-   "volume_parented": "unsupported"
-  },
-  "classes": {
-   "approximated": 4,
-   "ignored": 5,
-   "implemented": 28
-  }
+ "prop_fit": {
+  "rescaled": 116,
+  "boxed": 5,
+  "fits": 144,
+  "unmeasured": 80
  }
 }

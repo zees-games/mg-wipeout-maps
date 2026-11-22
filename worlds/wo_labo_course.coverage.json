@@ -55,6 +55,29 @@
   "total": 95,
   "unresolved": 1
  },
+ "gameplay": {
+  "findings": {
+   "class_unsupported": 1,
+   "input_unimplemented": 1,
+   "player_input": 1,
+   "target_dangling": 1,
+   "volume_follows": 4,
+   "volume_parented": 1
+  },
+  "severity": {
+   "class_unsupported": "unsupported",
+   "input_unimplemented": "unsupported",
+   "player_input": "unsupported",
+   "target_dangling": "source",
+   "volume_follows": "handled",
+   "volume_parented": "unsupported"
+  },
+  "classes": {
+   "approximated": 3,
+   "ignored": 1,
+   "implemented": 33
+  }
+ },
  "lists": {
   "textures_unmapped": [],
   "textures_flat": [],
@@ -76,10 +99,6 @@
    "class_unsupported:path_track (ignored)",
    "input_unimplemented:point_servercommand.Command",
    "player_input:addoutput targetname x2",
-   "volume_parented:trigger_hurt#127 -> rotating1",
-   "volume_parented:trigger_hurt#128 -> rotating2",
-   "volume_parented:trigger_hurt#132 -> door10",
-   "volume_parented:trigger_hurt#2 -> lasertrain2",
    "volume_parented:trigger_push#404 -> cart1-1"
   ]
  },
@@ -93,27 +112,12 @@
   "links_unresolved": 1,
   "inputs_unimplemented": 1,
   "surfaces_opaque": 0,
-  "gameplay_lost": 8
+  "gameplay_lost": 4
  },
- "gameplay": {
-  "findings": {
-   "class_unsupported": 1,
-   "input_unimplemented": 1,
-   "player_input": 1,
-   "target_dangling": 1,
-   "volume_parented": 5
-  },
-  "severity": {
-   "class_unsupported": "unsupported",
-   "input_unimplemented": "unsupported",
-   "player_input": "unsupported",
-   "target_dangling": "source",
-   "volume_parented": "unsupported"
-  },
-  "classes": {
-   "approximated": 3,
-   "ignored": 1,
-   "implemented": 33
-  }
+ "prop_fit": {
+  "unmeasured": 78,
+  "fits": 113,
+  "rescaled": 113,
+  "boxed": 3
  }
 }

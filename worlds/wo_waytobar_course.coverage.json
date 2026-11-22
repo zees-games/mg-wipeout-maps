@@ -63,6 +63,23 @@
   "total": 16,
   "unresolved": 1
  },
+ "gameplay": {
+  "findings": {
+   "class_unsupported": 2,
+   "target_dangling": 2,
+   "volume_follows": 1
+  },
+  "severity": {
+   "class_unsupported": "unsupported",
+   "target_dangling": "source",
+   "volume_follows": "handled"
+  },
+  "classes": {
+   "approximated": 2,
+   "ignored": 4,
+   "implemented": 36
+  }
+ },
  "lists": {
   "textures_unmapped": [],
   "textures_flat": [],
@@ -88,8 +105,7 @@
   ],
   "gameplay_lost": [
    "class_unsupported:path_track (ignored)",
-   "class_unsupported:point_viewcontrol (ignored)",
-   "volume_parented:trigger_hurt#378 -> lol"
+   "class_unsupported:point_viewcontrol (ignored)"
   ]
  },
  "counts": {
@@ -102,23 +118,13 @@
   "links_unresolved": 1,
   "inputs_unimplemented": 0,
   "surfaces_opaque": 1,
-  "gameplay_lost": 3
+  "gameplay_lost": 2
  },
- "gameplay": {
-  "findings": {
-   "class_unsupported": 2,
-   "target_dangling": 2,
-   "volume_parented": 1
-  },
-  "severity": {
-   "class_unsupported": "unsupported",
-   "target_dangling": "source",
-   "volume_parented": "unsupported"
-  },
-  "classes": {
-   "approximated": 2,
-   "ignored": 4,
-   "implemented": 36
-  }
+ "prop_fit": {
+  "unmeasured": 88,
+  "rescaled": 38,
+  "fits": 166,
+  "boxed": 2,
+  "fitted_in": 2
  }
 }

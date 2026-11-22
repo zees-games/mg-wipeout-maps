@@ -8,8 +8,7 @@
   "drawn": 41,
   "by_tier": {
    "addon": 29,
-   "default": 10,
-   "fallback": 2
+   "default": 12
   },
   "free_by_tier": {
    "addon": 35,
@@ -20,6 +19,8 @@
    "effects/combinemuzzle1_nocull",
    "halflife/steel",
    "metal/citadel_metalwall063a",
+   "mg_dans_course/credits",
+   "mg_dans_course/winnerz",
    "skybox/cxlf"
   ]
  },
@@ -51,11 +52,25 @@
   "total": 28,
   "unresolved": 1
  },
+ "gameplay": {
+  "findings": {
+   "class_unsupported": 3,
+   "target_dangling": 1,
+   "volume_follows": 4
+  },
+  "severity": {
+   "class_unsupported": "unsupported",
+   "target_dangling": "source",
+   "volume_follows": "handled"
+  },
+  "classes": {
+   "approximated": 4,
+   "ignored": 3,
+   "implemented": 23
+  }
+ },
  "lists": {
-  "textures_unmapped": [
-   "MG_DANS_COURSE/CREDITS",
-   "MG_DANS_COURSE/WINNERZ"
-  ],
+  "textures_unmapped": [],
   "textures_flat": [],
   "models_unmapped": [],
   "sounds_unmapped": [
@@ -71,15 +86,11 @@
   "gameplay_lost": [
    "class_unsupported:env_laser (approximated)",
    "class_unsupported:func_hostage_rescue (ignored)",
-   "class_unsupported:path_track (ignored)",
-   "volume_parented:trigger_hurt#243 -> 2swifty",
-   "volume_parented:trigger_hurt#26 -> swifty",
-   "volume_parented:trigger_hurt#36 -> sphoncter1",
-   "volume_parented:trigger_hurt#40 -> ramen"
+   "class_unsupported:path_track (ignored)"
   ]
  },
  "counts": {
-  "textures_unmapped": 2,
+  "textures_unmapped": 0,
   "textures_flat": 0,
   "models_unmapped": 0,
   "sounds_unmapped": 1,
@@ -88,23 +99,11 @@
   "links_unresolved": 1,
   "inputs_unimplemented": 0,
   "surfaces_opaque": 0,
-  "gameplay_lost": 7
+  "gameplay_lost": 3
  },
- "gameplay": {
-  "findings": {
-   "class_unsupported": 3,
-   "target_dangling": 1,
-   "volume_parented": 4
-  },
-  "severity": {
-   "class_unsupported": "unsupported",
-   "target_dangling": "source",
-   "volume_parented": "unsupported"
-  },
-  "classes": {
-   "approximated": 4,
-   "ignored": 3,
-   "implemented": 23
-  }
+ "prop_fit": {
+  "rescaled": 5,
+  "unmeasured": 2,
+  "fits": 3
  }
 }

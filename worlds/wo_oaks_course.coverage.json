@@ -94,6 +94,25 @@
   "total": 204,
   "unresolved": 0
  },
+ "gameplay": {
+  "findings": {
+   "class_unsupported": 2,
+   "input_unimplemented": 2,
+   "volume_follows": 4,
+   "volume_parented": 12
+  },
+  "severity": {
+   "class_unsupported": "unsupported",
+   "input_unimplemented": "unsupported",
+   "volume_follows": "handled",
+   "volume_parented": "unsupported"
+  },
+  "classes": {
+   "approximated": 8,
+   "ignored": 1,
+   "implemented": 38
+  }
+ },
  "lists": {
   "textures_unmapped": [],
   "textures_flat": [],
@@ -124,9 +143,6 @@
    "class_unsupported:path_track (ignored)",
    "input_unimplemented:point_servercommand.Command",
    "input_unimplemented:prop_dynamic.Break",
-   "volume_parented:trigger_hurt#14 -> Mover2",
-   "volume_parented:trigger_hurt#18 -> Mover1",
-   "volume_parented:trigger_hurt#19 -> Mover4",
    "volume_parented:trigger_hurt#242 -> Car1",
    "volume_parented:trigger_hurt#247 -> Car2",
    "volume_parented:trigger_hurt#254 -> Car3",
@@ -138,8 +154,7 @@
    "volume_parented:trigger_hurt#295 -> car5",
    "volume_parented:trigger_hurt#296 -> Car12",
    "volume_parented:trigger_hurt#306 -> Car8",
-   "volume_parented:trigger_hurt#445 -> Car9",
-   "volume_parented:trigger_hurt#9 -> Mover2"
+   "volume_parented:trigger_hurt#445 -> Car9"
   ]
  },
  "counts": {
@@ -152,23 +167,13 @@
   "links_unresolved": 0,
   "inputs_unimplemented": 2,
   "surfaces_opaque": 0,
-  "gameplay_lost": 20
+  "gameplay_lost": 16
  },
- "gameplay": {
-  "findings": {
-   "class_unsupported": 2,
-   "input_unimplemented": 2,
-   "volume_parented": 16
-  },
-  "severity": {
-   "class_unsupported": "unsupported",
-   "input_unimplemented": "unsupported",
-   "volume_parented": "unsupported"
-  },
-  "classes": {
-   "approximated": 8,
-   "ignored": 1,
-   "implemented": 38
-  }
+ "prop_fit": {
+  "fits": 74,
+  "rescaled": 65,
+  "boxed": 11,
+  "unmeasured": 22,
+  "fitted_in": 1
  }
 }

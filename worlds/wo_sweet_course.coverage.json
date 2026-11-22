@@ -8,18 +8,18 @@
   "drawn": 29,
   "by_tier": {
    "addon": 3,
-   "default": 6,
-   "fallback": 21
+   "default": 27
   },
   "free_by_tier": {
-   "addon": 23,
-   "default": 3
+   "addon": 24,
+   "default": 2
   },
   "nearest_photo": [
    "customs/pink_neon",
    "dev/value20",
    "neon/blue",
    "neon/red",
+   "nexore",
    "realworldtextures2/ground/ice_02",
    "ryan_dev/10",
    "ryan_dev/20",
@@ -75,35 +75,26 @@
   "total": 51,
   "unresolved": 0
  },
+ "gameplay": {
+  "findings": {
+   "class_unsupported": 6,
+   "input_unimplemented": 3,
+   "volume_follows": 9
+  },
+  "severity": {
+   "class_unsupported": "unsupported",
+   "input_unimplemented": "unsupported",
+   "volume_follows": "handled"
+  },
+  "classes": {
+   "approximated": 6,
+   "ignored": 5,
+   "implemented": 30
+  }
+ },
  "lists": {
-  "textures_unmapped": [
-   "CUSTOMS/PINK_NEON",
-   "NEON/BLUE",
-   "NEON/RED",
-   "NEXORE",
-   "REALWORLDTEXTURES2/MISC/SPACE_08",
-   "RYAN_DEV/10",
-   "RYAN_DEV/20",
-   "RYAN_DEV/30",
-   "RYAN_DEV/50",
-   "RYAN_DEV/65",
-   "RYAN_DEV/75",
-   "RYAN_DEV/85",
-   "RYAN_DEV/BLACK",
-   "RYAN_DEV/DEV_15",
-   "RYAN_DEV/DEV_30",
-   "RYAN_DEV/DEV_45",
-   "RYAN_DEV/DEV_55",
-   "RYAN_DEV/DEV_CMYK_GREEN",
-   "RYAN_DEV/DEV_DARK_GREEN2",
-   "RYAN_DEV/DEV_DARK_RED",
-   "RYAN_DEV/PASTEL_BLUE1"
-  ],
-  "textures_flat": [
-   "realworldtextures2/misc/space_08",
-   "ryan_dev/black",
-   "sprites/blackbeam"
-  ],
+  "textures_unmapped": [],
+  "textures_flat": [],
   "models_unmapped": [],
   "sounds_unmapped": [
    "voyagefinal.wav"
@@ -131,21 +122,12 @@
    "class_unsupported:weapon_usp (approximated)",
    "input_unimplemented:env_hudhint.ShowHudHint",
    "input_unimplemented:point_servercommand.Command",
-   "input_unimplemented:trigger_apply_impulse.ApplyImpulse",
-   "volume_parented:trigger_hurt#10 -> Rotation_3",
-   "volume_parented:trigger_hurt#11 -> Rotation_2",
-   "volume_parented:trigger_hurt#12 -> Rotation_1",
-   "volume_parented:trigger_hurt#132 -> barretrack",
-   "volume_parented:trigger_hurt#134 -> Mur5",
-   "volume_parented:trigger_hurt#139 -> Mur4",
-   "volume_parented:trigger_hurt#143 -> Mur3",
-   "volume_parented:trigger_hurt#147 -> Mur2",
-   "volume_parented:trigger_hurt#151 -> Mur1"
+   "input_unimplemented:trigger_apply_impulse.ApplyImpulse"
   ]
  },
  "counts": {
-  "textures_unmapped": 21,
-  "textures_flat": 3,
+  "textures_unmapped": 0,
+  "textures_flat": 0,
   "models_unmapped": 0,
   "sounds_unmapped": 1,
   "classes_unmapped": 0,
@@ -153,23 +135,9 @@
   "links_unresolved": 0,
   "inputs_unimplemented": 3,
   "surfaces_opaque": 0,
-  "gameplay_lost": 18
+  "gameplay_lost": 9
  },
- "gameplay": {
-  "findings": {
-   "class_unsupported": 6,
-   "input_unimplemented": 3,
-   "volume_parented": 9
-  },
-  "severity": {
-   "class_unsupported": "unsupported",
-   "input_unimplemented": "unsupported",
-   "volume_parented": "unsupported"
-  },
-  "classes": {
-   "approximated": 6,
-   "ignored": 5,
-   "implemented": 30
-  }
+ "prop_fit": {
+  "fits": 138
  }
 }
