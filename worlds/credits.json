@@ -77,13 +77,13 @@
   },
   {
    "kind": "texture",
-   "name": "pbr_Metal010",
+   "name": "pbr_MetalWalkway006",
    "author": "Lennart Demes and contributors",
    "licence": "CC0-1.0",
-   "url": "https://ambientcg.com/view?id=Metal010",
+   "url": "https://ambientcg.com/view?id=MetalWalkway006",
    "source": "ambientCG",
    "attribution": false,
-   "uses": 133
+   "uses": 94
   },
   {
    "kind": "texture",
@@ -143,7 +143,7 @@
    "url": "https://ambientcg.com/view?id=Ground014",
    "source": "ambientCG",
    "attribution": false,
-   "uses": 70
+   "uses": 139
   },
   {
    "kind": "texture",
@@ -154,6 +154,16 @@
    "source": "ambientCG",
    "attribution": false,
    "uses": 78
+  },
+  {
+   "kind": "texture",
+   "name": "pbr_Metal010",
+   "author": "Lennart Demes and contributors",
+   "licence": "CC0-1.0",
+   "url": "https://ambientcg.com/view?id=Metal010",
+   "source": "ambientCG",
+   "attribution": false,
+   "uses": 40
   },
   {
    "kind": "texture",
@@ -343,7 +353,7 @@
    "url": "https://kenney.nl/assets/impact-sounds",
    "source": "Kenney Impact Sounds",
    "attribution": false,
-   "uses": 1
+   "uses": 3
   },
   {
    "kind": "sound",
@@ -413,7 +423,7 @@
    "url": "https://ambientcg.com/view?id=Tiles039",
    "source": "ambientCG",
    "attribution": false,
-   "uses": 31
+   "uses": 37
   },
   {
    "kind": "texture",
@@ -493,7 +503,7 @@
    "url": "https://ambientcg.com/view?id=CorrugatedSteel007C",
    "source": "ambientCG",
    "attribution": false,
-   "uses": 42
+   "uses": 45
   },
   {
    "kind": "texture",
@@ -1113,7 +1123,7 @@
    "url": "https://polyhaven.com/a/metal_plate",
    "source": "polyhaven",
    "attribution": false,
-   "uses": 1
+   "uses": 2
   },
   {
    "kind": "texture",
@@ -1253,6 +1263,16 @@
    "url": "https://polyhaven.com/a/whitewashed_brick",
    "source": "polyhaven",
    "attribution": false,
+   "uses": 15
+  },
+  {
+   "kind": "texture",
+   "name": "pbr_Bricks061",
+   "author": "Lennart Demes and contributors",
+   "licence": "CC0-1.0",
+   "url": "https://ambientcg.com/view?id=Bricks061",
+   "source": "ambientCG",
+   "attribution": false,
    "uses": 16
   },
   {
@@ -1264,16 +1284,6 @@
    "source": "polyhaven",
    "attribution": false,
    "uses": 4
-  },
-  {
-   "kind": "texture",
-   "name": "pbr_Pipe001",
-   "author": "Lennart Demes and contributors",
-   "licence": "CC0-1.0",
-   "url": "https://ambientcg.com/view?id=Pipe001",
-   "source": "ambientCG",
-   "attribution": false,
-   "uses": 5
   },
   {
    "kind": "texture",
@@ -1337,23 +1347,13 @@
   },
   {
    "kind": "texture",
-   "name": "pbr_Plaster007",
-   "author": "Lennart Demes and contributors",
-   "licence": "CC0-1.0",
-   "url": "https://ambientcg.com/view?id=Plaster007",
-   "source": "ambientCG",
-   "attribution": false,
-   "uses": 78
-  },
-  {
-   "kind": "texture",
    "name": "pbr_PaintedPlaster006",
    "author": "Lennart Demes and contributors",
    "licence": "CC0-1.0",
    "url": "https://ambientcg.com/view?id=PaintedPlaster006",
    "source": "ambientCG",
    "attribution": false,
-   "uses": 25
+   "uses": 26
   },
   {
    "kind": "texture",
@@ -1437,11 +1437,11 @@
   },
   {
    "kind": "texture",
-   "name": "pbr_PavingStones098",
-   "author": "Lennart Demes and contributors",
+   "name": "pbr_rectangular_facade_tiles",
+   "author": "Charlotte Baglioni",
    "licence": "CC0-1.0",
-   "url": "https://ambientcg.com/view?id=PavingStones098",
-   "source": "ambientCG",
+   "url": "https://polyhaven.com/a/rectangular_facade_tiles",
+   "source": "polyhaven",
    "attribution": false,
    "uses": 7
   },
@@ -1517,21 +1517,21 @@
   },
   {
    "kind": "texture",
-   "name": "pbr_wood_inlaid_stone_wall",
-   "author": "Amal Kumar",
+   "name": "pbr_patterned_cobblestone_02",
+   "author": "Rob Tuytel",
    "licence": "CC0-1.0",
-   "url": "https://polyhaven.com/a/wood_inlaid_stone_wall",
+   "url": "https://polyhaven.com/a/patterned_cobblestone_02",
    "source": "polyhaven",
    "attribution": false,
    "uses": 1
   },
   {
    "kind": "texture",
-   "name": "pbr_patterned_brick_wall_02",
-   "author": "Dario Barresi, Charlotte Baglioni",
+   "name": "pbr_Bricks108B",
+   "author": "Lennart Demes and contributors",
    "licence": "CC0-1.0",
-   "url": "https://polyhaven.com/a/patterned_brick_wall_02",
-   "source": "polyhaven",
+   "url": "https://ambientcg.com/view?id=Bricks108B",
+   "source": "ambientCG",
    "attribution": false,
    "uses": 1
   },
@@ -1577,16 +1577,6 @@
   },
   {
    "kind": "texture",
-   "name": "pbr_Bricks024",
-   "author": "Lennart Demes and contributors",
-   "licence": "CC0-1.0",
-   "url": "https://ambientcg.com/view?id=Bricks024",
-   "source": "ambientCG",
-   "attribution": false,
-   "uses": 6
-  },
-  {
-   "kind": "texture",
    "name": "pbr_concrete_pavement",
    "author": "Charlotte Baglioni",
    "licence": "CC0-1.0",
@@ -1594,6 +1584,16 @@
    "source": "polyhaven",
    "attribution": false,
    "uses": 7
+  },
+  {
+   "kind": "texture",
+   "name": "pbr_blue_plaster_wall",
+   "author": "Dimitrios Savva",
+   "licence": "CC0-1.0",
+   "url": "https://polyhaven.com/a/blue_plaster_wall",
+   "source": "polyhaven",
+   "attribution": false,
+   "uses": 2
   },
   {
    "kind": "texture",
@@ -1613,7 +1613,7 @@
    "url": "https://ambientcg.com/view?id=Metal037",
    "source": "ambientCG",
    "attribution": false,
-   "uses": 1
+   "uses": 3
   },
   {
    "kind": "texture",
@@ -1634,6 +1634,16 @@
    "source": "polyhaven",
    "attribution": false,
    "uses": 5
+  },
+  {
+   "kind": "texture",
+   "name": "pbr_Pipe001",
+   "author": "Lennart Demes and contributors",
+   "licence": "CC0-1.0",
+   "url": "https://ambientcg.com/view?id=Pipe001",
+   "source": "ambientCG",
+   "attribution": false,
+   "uses": 1
   },
   {
    "kind": "texture",
@@ -1847,13 +1857,23 @@
   },
   {
    "kind": "sound",
+   "name": "amb_city",
+   "author": "Gamespice (audio authors)",
+   "licence": "CC0-1.0",
+   "url": "https://github.com/gamespice-platform/audio",
+   "source": "Gamespice audio stock ambience (synthesised)",
+   "attribution": false,
+   "uses": 3
+  },
+  {
+   "kind": "sound",
    "name": "button",
    "author": "Kenney",
    "licence": "CC0-1.0",
    "url": "https://kenney.nl/assets/interface-sounds",
    "source": "Kenney Interface Sounds",
    "attribution": false,
-   "uses": 2
+   "uses": 6
   },
   {
    "kind": "texture",
@@ -1927,10 +1947,10 @@
   },
   {
    "kind": "texture",
-   "name": "pbr_aerial_ground_rock",
-   "author": "Rob Tuytel",
+   "name": "pbr_mossy_cobblestone",
+   "author": "S\u01a1n Nguy\u1ec5n",
    "licence": "CC0-1.0",
-   "url": "https://polyhaven.com/a/aerial_ground_rock",
+   "url": "https://polyhaven.com/a/mossy_cobblestone",
    "source": "polyhaven",
    "attribution": false,
    "uses": 14
@@ -2547,16 +2567,6 @@
   },
   {
    "kind": "texture",
-   "name": "pbr_MetalWalkway006",
-   "author": "Lennart Demes and contributors",
-   "licence": "CC0-1.0",
-   "url": "https://ambientcg.com/view?id=MetalWalkway006",
-   "source": "ambientCG",
-   "attribution": false,
-   "uses": 1
-  },
-  {
-   "kind": "texture",
    "name": "pbr_DiamondPlate006A",
    "author": "Lennart Demes and contributors",
    "licence": "CC0-1.0",
@@ -2574,16 +2584,6 @@
    "source": "ambientCG",
    "attribution": false,
    "uses": 21
-  },
-  {
-   "kind": "texture",
-   "name": "pbr_Bricks061",
-   "author": "Lennart Demes and contributors",
-   "licence": "CC0-1.0",
-   "url": "https://ambientcg.com/view?id=Bricks061",
-   "source": "ambientCG",
-   "attribution": false,
-   "uses": 15
   },
   {
    "kind": "texture",
@@ -2662,16 +2662,6 @@
    "licence": "CC0-1.0",
    "url": "https://ambientcg.com/view?id=MetalPlates016A",
    "source": "ambientCG",
-   "attribution": false,
-   "uses": 1
-  },
-  {
-   "kind": "sound",
-   "name": "amb_rain",
-   "author": "Gamespice (audio authors)",
-   "licence": "CC0-1.0",
-   "url": "https://github.com/gamespice-platform/audio",
-   "source": "Gamespice audio stock ambience (synthesised)",
    "attribution": false,
    "uses": 1
   },
@@ -2857,6 +2847,16 @@
   },
   {
    "kind": "texture",
+   "name": "pbr_Tiles045",
+   "author": "Lennart Demes and contributors",
+   "licence": "CC0-1.0",
+   "url": "https://ambientcg.com/view?id=Tiles045",
+   "source": "ambientCG",
+   "attribution": false,
+   "uses": 15
+  },
+  {
+   "kind": "texture",
    "name": "pbr_Fabric024",
    "author": "Lennart Demes and contributors",
    "licence": "CC0-1.0",
@@ -2944,6 +2944,16 @@
    "source": "Kenney Foley Sounds",
    "attribution": false,
    "uses": 25
+  },
+  {
+   "kind": "texture",
+   "name": "pbr_Plaster007",
+   "author": "Lennart Demes and contributors",
+   "licence": "CC0-1.0",
+   "url": "https://ambientcg.com/view?id=Plaster007",
+   "source": "ambientCG",
+   "attribution": false,
+   "uses": 77
   },
   {
    "kind": "texture",

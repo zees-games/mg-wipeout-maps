@@ -7,38 +7,26 @@
   "looked_up": 115,
   "drawn": 115,
   "by_tier": {
-   "addon": 79,
-   "default": 36
+   "addon": 92,
+   "default": 23
   },
   "free_by_tier": {
-   "addon": 100,
-   "default": 15
+   "addon": 101,
+   "default": 14
   },
   "nearest_photo": [
-   "brick/brickwall008a",
-   "brick/brickwall019a",
    "brick/brickwall022a",
-   "brick/morwllg",
    "concrete/concreteceiling003a",
    "concrete/concretefloor013a",
    "concrete/concretefloor026a",
    "concrete/concretewall039a",
    "concrete/concretewall061a",
-   "cs_italy/boxsides_t01",
-   "cs_italy/pipe_wall5_1",
-   "de_chateau/intbrickk",
-   "de_dust/picrate2",
-   "de_nuke/nuke_ceiling_02",
    "de_prodigy/concrete03",
    "de_train/train_metal_door_01",
    "de_train/train_metal_door_02",
    "dev/dev_cratewood01a",
-   "environment maps/pipemetal001a",
    "environment maps/pipemetal004a",
-   "metal/citadel_metalwall063a",
-   "metal/ibeama",
    "metal/metalwall089a",
-   "plaster/plasterceiling003a",
    "plaster/plasterceiling008a_c17",
    "props/metalduct004b"
   ]
@@ -53,8 +41,7 @@
  "sounds": {
   "looked_up": 4,
   "by_tier": {
-   "default": 1,
-   "fallback": 3
+   "default": 4
   }
  },
  "classes": {
@@ -117,11 +104,7 @@
   "textures_unmapped": [],
   "textures_flat": [],
   "models_unmapped": [],
-  "sounds_unmapped": [
-   "ambient/misc/carhonk1.wav",
-   "ambient/misc/carhonk2.wav",
-   "mg_oaks_course/circus.wav"
-  ],
+  "sounds_unmapped": [],
   "classes_unmapped": [],
   "keys_unmapped": [
    "func_breakable.no_decomp",
@@ -161,7 +144,7 @@
   "textures_unmapped": 0,
   "textures_flat": 0,
   "models_unmapped": 0,
-  "sounds_unmapped": 3,
+  "sounds_unmapped": 0,
   "classes_unmapped": 0,
   "keys_unmapped": 7,
   "links_unresolved": 0,

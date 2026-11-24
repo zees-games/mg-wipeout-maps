@@ -7,8 +7,8 @@
   "looked_up": 41,
   "drawn": 41,
   "by_tier": {
-   "addon": 29,
-   "default": 12
+   "addon": 30,
+   "default": 11
   },
   "free_by_tier": {
    "addon": 35,
@@ -17,8 +17,6 @@
   "nearest_photo": [
    "cs_assault/assault_vent_decal01",
    "effects/combinemuzzle1_nocull",
-   "halflife/steel",
-   "metal/citadel_metalwall063a",
    "mg_dans_course/credits",
    "mg_dans_course/winnerz",
    "skybox/cxlf"
@@ -33,8 +31,7 @@
  "sounds": {
   "looked_up": 3,
   "by_tier": {
-   "default": 2,
-   "fallback": 1
+   "default": 3
   }
  },
  "classes": {
@@ -73,9 +70,7 @@
   "textures_unmapped": [],
   "textures_flat": [],
   "models_unmapped": [],
-  "sounds_unmapped": [
-   "mg_dans_course/endgame.wav"
-  ],
+  "sounds_unmapped": [],
   "classes_unmapped": [],
   "keys_unmapped": [],
   "links_unresolved": [
@@ -93,7 +88,7 @@
   "textures_unmapped": 0,
   "textures_flat": 0,
   "models_unmapped": 0,
-  "sounds_unmapped": 1,
+  "sounds_unmapped": 0,
   "classes_unmapped": 0,
   "keys_unmapped": 0,
   "links_unresolved": 1,

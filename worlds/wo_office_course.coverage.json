@@ -5,22 +5,20 @@
  "sha256": "a9e3ece71266f106b39d8a6bfe07a599c02a9be22c4004c3dcde8c69083ba6f8",
  "textures": {
   "looked_up": 67,
-  "drawn": 59,
+  "drawn": 60,
   "by_tier": {
-   "addon": 38,
-   "default": 29
+   "addon": 44,
+   "default": 23
   },
   "free_by_tier": {
-   "addon": 48,
-   "default": 11
+   "addon": 50,
+   "default": 10
   },
   "nearest_photo": [
    "custom/office/office_intro",
-   "de_dust/tilefloor01",
    "dev/dev_measurecolorscale01",
    "effects/fleck_glass1",
    "nature/blendsandsand008b_antlion_wvt_patch",
-   "nature/rockwall009b",
    "plaster/offwllf",
    "sprites/bluelaser1",
    "sprites/purplelaser1"
@@ -36,8 +34,7 @@
  "sounds": {
   "looked_up": 3,
   "by_tier": {
-   "default": 2,
-   "fallback": 1
+   "default": 3
   }
  },
  "classes": {
@@ -97,9 +94,7 @@
   "textures_unmapped": [],
   "textures_flat": [],
   "models_unmapped": [],
-  "sounds_unmapped": [
-   "custom/victory.wav"
-  ],
+  "sounds_unmapped": [],
   "classes_unmapped": [],
   "keys_unmapped": [
    "game_player_equip.weapon_knife",
@@ -121,7 +116,9 @@
    "point_spotlight.LightOff",
    "point_spotlight.LightOn"
   ],
-  "surfaces_opaque": [],
+  "surfaces_opaque": [
+   "models/effects/portalfunnel_sheet"
+  ],
   "gameplay_lost": [
    "class_unsupported:env_fire (approximated)",
    "class_unsupported:env_laser (approximated)",
@@ -145,12 +142,12 @@
   "textures_unmapped": 0,
   "textures_flat": 0,
   "models_unmapped": 0,
-  "sounds_unmapped": 1,
+  "sounds_unmapped": 0,
   "classes_unmapped": 0,
   "keys_unmapped": 6,
   "links_unresolved": 2,
   "inputs_unimplemented": 6,
-  "surfaces_opaque": 0,
+  "surfaces_opaque": 1,
   "gameplay_lost": 16
  },
  "prop_fit": {

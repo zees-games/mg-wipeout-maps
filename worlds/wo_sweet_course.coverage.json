@@ -7,27 +7,18 @@
   "looked_up": 30,
   "drawn": 29,
   "by_tier": {
-   "addon": 3,
-   "default": 27
+   "addon": 15,
+   "default": 15
   },
   "free_by_tier": {
-   "addon": 24,
+   "addon": 26,
    "default": 2
   },
   "nearest_photo": [
    "customs/pink_neon",
-   "dev/value20",
-   "neon/blue",
-   "neon/red",
    "nexore",
    "realworldtextures2/ground/ice_02",
-   "ryan_dev/10",
-   "ryan_dev/20",
-   "ryan_dev/30",
    "ryan_dev/50",
-   "ryan_dev/65",
-   "ryan_dev/75",
-   "ryan_dev/85",
    "ryan_dev/dev_15",
    "ryan_dev/dev_30",
    "ryan_dev/dev_45",
@@ -47,8 +38,7 @@
  "sounds": {
   "looked_up": 2,
   "by_tier": {
-   "default": 1,
-   "fallback": 1
+   "default": 2
   }
  },
  "classes": {
@@ -96,9 +86,7 @@
   "textures_unmapped": [],
   "textures_flat": [],
   "models_unmapped": [],
-  "sounds_unmapped": [
-   "voyagefinal.wav"
-  ],
+  "sounds_unmapped": [],
   "classes_unmapped": [],
   "keys_unmapped": [
    "game_player_equip.weapon_knife",
@@ -129,7 +117,7 @@
   "textures_unmapped": 0,
   "textures_flat": 0,
   "models_unmapped": 0,
-  "sounds_unmapped": 1,
+  "sounds_unmapped": 0,
   "classes_unmapped": 0,
   "keys_unmapped": 4,
   "links_unresolved": 0,
